@@ -94,92 +94,45 @@
 
                 <!-- Contact Details Column -->
                 <div class="col-sm-12 del-pad-x">
-                    <form name="sentMessage" id="contactForm" novalidate>
+                    <form name="sentMessage" id="contactForm" action="./add_file.php" enctype="multipart/form-data" method="post">
                         <div class="control-group form-group">
                             <div class="controls">
                                 <label>Заголовок:</label>
-                                <input type="text" class="form-control" id="name" required data-validation-required-message="Введите заголовок новости!" placeholder="Введите заголовок новости...">
+                                <input type="text" class="form-control" id="name" name="postname" required data-validation-required-message="Введите заголовок новости!" placeholder="Введите заголовок новости...">
                                 <p class="help-block"></p>
                             </div>
                         </div>
-                        <div class="control-group form-group">
-                            <div class="controls">
-                                <label>Дата добавления:</label>
-                                <div class="btn-group" role="group">
-                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Дата
-                                        <span class="caret"></span>
-                                    </button>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#">01</a></li>
-                                        <li><a href="#">02</a></li>
-                                        <li><a href="#">03</a></li>
-                                        <li><a href="#">04</a></li>
-                                        <li><a href="#">05</a></li>
-                                        <li><a href="#">06</a></li>
-                                        <li><a href="#">07</a></li>
-                                        <li><a href="#">08</a></li>
-                                        <li><a href="#">09</a></li>
-                                        <li><a href="#">10</a></li>
-                                        <li><a href="#">11</a></li>
-                                        <li><a href="#">12</a></li>
-                                        <li><a href="#">13</a></li>
-                                        <li><a href="#">14</a></li>
-                                        <li><a href="#">15</a></li>
-                                        <li><a href="#">16</a></li>
-                                        <li><a href="#">17</a></li>
-                                        <li><a href="#">18</a></li>
-                                        <li><a href="#">19</a></li>
-                                        <li><a href="#">20</a></li>
-                                        <li><a href="#">21</a></li>
-                                        <li><a href="#">22</a></li>
-                                        <li><a href="#">23</a></li>
-                                        <li><a href="#">24</a></li>
-                                        <li><a href="#">25</a></li>
-                                        <li><a href="#">26</a></li>
-                                        <li><a href="#">27</a></li>
-                                        <li><a href="#">28</a></li>
-                                        <li><a href="#">29</a></li>
-                                        <li><a href="#">30</a></li>
-                                        <li><a href="#">31</a></li>
-                                    </ul>
-                                </div>
-                                <div class="btn-group" role="group">
-                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Месяц
-                                        <span class="caret"></span>
-                                    </button>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#">Января</a></li>
-                                        <li><a href="#">Февраля</a></li>
-                                        <li><a href="#">Марта</a></li>
-                                        <li><a href="#">Апрееля</a></li>
-                                        <li><a href="#">Мая</a></li>
-                                        <li><a href="#">Июня</a></li>
-                                        <li><a href="#">Июля</a></li>
-                                        <li><a href="#">Августа</a></li>
-                                        <li><a href="#">Сентября</a></li>
-                                        <li><a href="#">Октября</a></li>
-                                        <li><a href="#">Ноября</a></li>
-                                        <li><a href="#">Декабря</a></li>
-                                    </ul>
-                                </div>
-                                <div class="btn-group" role="group">
-                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Год
-                                        <span class="caret"></span>
-                                    </button>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#">2015</a></li>
-                                        <li><a href="#">2016</a></li>
-                                        <li><a href="#">2017</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+                        <fieldset class="form-group">
+                            <label for="exampleSelect1">Дата добавления:</label>
+                            <select class="form-control btn btn-default day" name="day" >
+                                <?php
+                                for($i = 1;$i <= 31; $i++){
+                                    echo '<option>'.$i.'</option>';
+                                }
+                                ?>
+                            </select>
+                            <select class="form-control btn btn-default month" name="month">
+                                <?php
+                                $month = array('Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь');
+                                foreach($month as $monthitem => $monthname) {
+                                    $monthitem += 1;
+                                    echo '<option value='.$monthitem.'>'.$monthname.'</option>';
+                                }
+                                ?>
+                            </select>
+                            <select class="form-control btn btn-default year" name="year">
+                                <?php
+                                $date = date('Y');
+                                for($i = $date; $i<=$date+3; $i++){
+                                    echo '<option>'.$i.'</option>';
+                                }
+                                ?>
+                            </select>
+
+                        </fieldset>
                         <div class="form-group mg-tp-20">
                             <label for="exampleInputFile">Добавление файла:</label>
-                            <input type="file" id="exampleInputFile">
+                            <input type="file" id="exampleInputFile" name="addfile">
                         </div>
                         <button type="submit" class="btn btn-primary blue-button mg-tp-20">Сохранить</button>
 
@@ -223,7 +176,7 @@
 <!-- Contact Form JavaScript -->
 <!-- Do not edit these files! In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
 <script src="../js/jqBootstrapValidation.js"></script>
-<script src="../js/contact_me.js"></script>
+<!--<script src="../js/contact_me.js"></script>-->
 
 </body>
 
