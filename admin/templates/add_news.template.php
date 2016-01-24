@@ -136,34 +136,6 @@
                                 <input type="tel" class="form-control" name="name" id="phone" required data-validation-required-message="Введите Вашу фамилию и инициалы!" placeholder="Чеботарева И.Б.">
                             </div>
                         </div>
-                        <fieldset class="form-group">
-                            <label for="exampleSelect1">Дата добавления:</label>
-                            <select class="form-control btn btn-default day" name="day" >
-                                <?php
-                                    for($i = 1;$i <= 31; $i++){
-                                        echo '<option>'.$i.'</option>';
-                                    }
-                                ?>
-                            </select>
-                            <select class="form-control btn btn-default month" name="month">
-                                <?php
-                                $month = array('Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь');
-                                foreach($month as $monthitem => $monthname) {
-                                    $monthitem += 1;
-                                    echo '<option value='.$monthitem.'>'.$monthname.'</option>';
-                                }
-                                ?>
-                            </select>
-                            <select class="form-control btn btn-default year" name="year">
-                                <?php
-                                $date = date('Y');
-                                for($i = $date; $i<=$date+3; $i++){
-                                    echo '<option>'.$i.'</option>';
-                                }
-                                ?>
-                            </select>
-
-                        </fieldset>
 
                         <div class="form-group">
                             <label for="exampleInputFile">Добавление фото:</label>
