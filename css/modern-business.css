@@ -1,0 +1,410 @@
+/*!
+ * Start Bootstrap - Modern Business HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Global Styles */
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+.img-portfolio {
+    margin-bottom: 30px;
+}
+
+.img-hover:hover {
+    opacity: 0.8;
+}
+
+/* Home Page Carousel */
+
+header.carousel {
+    height: 50%;
+}
+
+header.carousel .item,
+header.carousel .item.active,
+header.carousel .carousel-inner {
+    height: 100%;
+}
+
+header.carousel .fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+
+
+
+#myCarousel {
+    margin-top: -50px;
+}
+
+
+/* MENU */
+.navbar-brand {
+    min-height: 70px;
+}
+.navbar-header>a {
+    padding-top: 20px;
+}
+.nav>li>a {
+    padding-top: 25px;
+}
+
+.navbar {
+    min-height: 70px;
+}
+
+.navbar-inverse {
+    background-color: rgba(23,34,64,1);
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #aaa;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #aaa;
+}
+
+.carousel-indicators .active,
+.blue-button:hover,
+.blue-button:focus,
+.red-hover:hover,
+.red-hover:focus,
+.list-group > a:hover,
+.list-group > a:focus,
+.navbar-inverse .navbar-nav>.active>a, 
+.navbar-inverse .navbar-nav>.active>a:hover, 
+.navbar-inverse .navbar-nav>.active>a:focus,
+.li-language .btn-default:hover {
+    color: #fff;
+    background-color: #CE2039; /* red*/
+    -webkit-transition: 0.3s ease-in-out;  
+    -moz-transition: 0.3s ease-in-out; 
+    -o-transition: 0.3s ease-in-out;   
+    -ms-transition: 0.3s ease-in-out;   
+    transition: 0.3s ease-in-out;  
+}
+
+.navbar-right>li>a {
+    min-height: 70px;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover,
+.navbar-inverse .navbar-nav>li>a:focus {
+    border-bottom: 5px #CE2039;
+
+}
+
+h2 > a:hover,
+h2 > a:focus,
+.breadcrumb li > a:hover,
+.breadcrumb li > a:focus {
+    color: #CE2039;
+}
+
+a,
+.text-primary,
+.breadcrumb li > a {
+    color: #172240; /* dark-blue */
+}
+
+.logo {
+    max-height: 30px;
+    max-width: 92px;
+    width: 92px;
+    height: 30px;
+    display: block;
+}
+ /* burger-menu*/
+.navbar-inverse .navbar-toggle, 
+.navbar-inverse .navbar-toggle {
+    background-color: #ddd;
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #172240;
+}
+
+.navbar-inverse .navbar-toggle:hover, 
+.navbar-inverse .navbar-toggle:focus {
+    background-color: #CE2039;
+}
+
+
+
+
+
+/*  Language */
+.selectContainer {
+     padding-top: 18px;
+}
+.selectContainer .form-group-sm, .selectContainer .form-control {
+    font-size: 12px;
+    color: #aaa;
+    background-color: #172240;
+    border: 1px solid #CE2039;
+}
+
+.selectContainer .form-control:hover,
+.selectContainer .form-control:focus {
+    background-color: #CE2039;
+    color: #fff;
+}
+
+/*
+.blue-hover:hover,
+.blue-hover:focus {
+    color: #aaa;
+    background-color: #172240;
+}*/
+
+option {
+    line-height: 1.5em;
+    color: #000;
+    background-color: #ffffff;
+    padding-top: 15px;
+    margin-top: 15px;
+    white-space: pre;
+    min-height: 1.2em;
+
+}
+
+.li-language {
+    padding: 0 15px;
+}
+
+.day{
+    width: 70px;
+}
+
+.month{
+    width: 120px;
+}
+.year{
+    width: 90px;
+}
+
+
+
+/*Language 2*/
+
+.group-language {
+    padding-top: 18px;
+}
+
+.group-language .btn-default {
+    color: #aaa;
+    background-color: #172240;
+    border-color: #CE2039;
+}
+
+.dropdown-menu {
+    min-width: 50px;
+}
+
+.dropdown-menu>li>a{
+    padding: 3px 18px;
+}
+
+ul.dropdown-menu > li > a:hover,
+ul.dropdown-menu > li > a:focus{
+    background-color: #CE2039;
+    color: #fff;
+}
+/*margin < */
+.mg-tp {
+    margin-top: 5px;
+}
+
+.mg-tp-40 {
+    margin-top: 40px;
+}
+
+.mg-tp-70 {
+    margin-top: 70px;
+}
+
+.mg-tp-70 {
+    margin-top: 70px;
+}
+
+.pad-tp-70 {
+    padding-top: 70px;
+}
+
+.mg-tp-20 {
+    margin-top: 20px;
+}
+
+.del-pad-x {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.pad-bot-10 > li{
+    padding-bottom: 10px;
+}
+
+.del-mar-bot {
+    margin-bottom: 0;
+}
+.pad-left-20 {
+    padding-left: 20px;
+}
+.pad-left-5 {
+    padding-left: 50px;
+}
+
+.hover-color >a:hover,
+.hover-color >a:focus {
+    color: #fff;
+    background-color: #CE2039;
+}
+
+.blue-button {
+    color: #fff;
+    background-color: #172240;
+}
+
+.hr-for-mobile {
+        visibility: hidden; 
+    }
+
+@media (max-width: 990px) {
+    .hr-for-mobile {
+        visibility: visible;
+    }
+}
+
+/* admin*/
+
+#submenu1 li a {
+    padding-top: 15px;
+}
+
+#submenu1 li a:hover {
+    color: #CE2039;
+}
+.jumbotron {
+    background-color: inherit;
+    padding: 0;
+}
+.vertical-center {
+    min-height: 50%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 50vh; /* These two lines are counted as one :-)       */
+
+    display: flex;
+    align-items: center;
+}
+
+/* Footer */
+footer {
+    margin-bottom: 0 !important;
+    padding: 50px 0;
+    background-color: #172240;
+    color: #aaa;
+}
+
+
+
+
+
+/* testing sticky footer*/
+
+.footer-push {
+    height: 120px;
+}
+
+html, body {
+    height: 100%;
+} 
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: -40px auto -150px auto;
+} 
+footer { 
+    padding-top: 50px;
+    height: 100px;
+}  
+
+
+
+
+
+/* 404 Page Styles */
+
+.error-404 {
+    font-size: 100px;
+}
+
+/* Pricing Page Styles */
+
+.price {
+    display: block;
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.price sup {
+    top: -20px;
+    left: 2px;
+    font-size: 20px;
+}
+
+.period {
+    display: block;
+    font-style: italic;
+}
+
+.calendar-head {
+  vertical-align: middle;
+  height: 45px;
+}
+
+.hr-min {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+/* Footer Styles */
+
+footer {
+    width: 100%;
+    text-align: center;
+    margin: 50px 0;
+}
+
+/* Responsive Styles */
+
+@media(max-width:991px) {
+    .customer-img,
+    .img-related {
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:767px) {
+    .img-portfolio {
+        margin-bottom: 15px;
+    }
+
+    header.carousel .carousel {
+        height: 70%;
+    }
+}
