@@ -78,10 +78,17 @@ header.carousel .fill {
 .navbar-inverse .navbar-brand {
     color: #aaa;
 }
+.blue-button:hover,
+.blue-button:focus,
+.blue-button:active{
+    border-color: #CE2039;
+}
 
 .carousel-indicators .active,
 .blue-button:hover,
 .blue-button:focus,
+.blue-button:active,
+.blue-button:active:hover,
 .red-hover:hover,
 .red-hover:focus,
 .list-group > a:hover,
@@ -174,8 +181,8 @@ a,
 
 option {
     line-height: 1.5em;
-    color: #000;
-    background-color: #ffffff;
+    color: #aaa;
+    background-color: #172240;
     padding-top: 15px;
     margin-top: 15px;
     white-space: pre;
@@ -187,16 +194,8 @@ option {
     padding: 0 15px;
 }
 
-.day{
-    width: 70px;
-}
 
-.month{
-    width: 120px;
-}
-.year{
-    width: 90px;
-}
+
 
 
 
@@ -234,6 +233,9 @@ ul.dropdown-menu > li > a:focus{
     margin-top: 40px;
 }
 
+.mg-r-20 {
+    margin-right: 20px;
+}
 .mg-tp-70 {
     margin-top: 70px;
 }
@@ -244,6 +246,9 @@ ul.dropdown-menu > li > a:focus{
 
 .pad-tp-70 {
     padding-top: 70px;
+}
+.pad-tp-40 {
+    padding-top: 40px;
 }
 
 .mg-tp-20 {
@@ -268,6 +273,13 @@ ul.dropdown-menu > li > a:focus{
 .pad-left-5 {
     padding-left: 50px;
 }
+.pad-15 {
+    padding: 15px;
+}
+
+.mg-l-20 {
+    margin-left: 20px!important;
+}
 
 .hover-color >a:hover,
 .hover-color >a:focus {
@@ -278,6 +290,7 @@ ul.dropdown-menu > li > a:focus{
 .blue-button {
     color: #fff;
     background-color: #172240;
+    border-color: #172240;
 }
 
 .hr-for-mobile {
@@ -291,11 +304,11 @@ ul.dropdown-menu > li > a:focus{
 }
 
 /* admin*/
-
+#submenu-trans li a,
 #submenu1 li a {
     padding-top: 15px;
 }
-
+#submenu-trans li a:hover,
 #submenu1 li a:hover {
     color: #CE2039;
 }
@@ -408,3 +421,9 @@ footer {
         height: 70%;
     }
 }
+
+embed {
+    width: 850px;
+    height: 459px;
+}
+
