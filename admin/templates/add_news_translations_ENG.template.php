@@ -12,23 +12,23 @@
     <title>Конференция в Харьковском национальном университете радиоэлектроники</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="../../css/modern-business.css" rel="stylesheet">
+    <link href="../css/modern-business.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="../../font-awesome-4.4.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="../font-awesome-4.4.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
 
     <!-- Bootstrap remake CSS -->
-    <link href="../../css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="../css/bootstrap-theme.min" rel="stylesheet">
 
     <!-- Bootstrap remake2 CSS -->
-    <link href="../../css/bootstrap-theme.css" rel="stylesheet">
+    <link href="css/bootstrap-theme" rel="stylesheet">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="../../img/favicon.png">
+    <link rel="shortcut icon" href="../img/favicon.png">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -73,46 +73,36 @@
                     <div class="list-group">
                         <a href="#" class="list-group-item" id="btn-2" data-toggle="collapse" data-target="#submenu-trans" aria-expanded="false">Создание новости <i class="fa fa-sort-desc pull-right"></i></a>
                             <ul class="nav collapse" id="submenu-trans" role="menu" aria-labelledby="btn-2">
-                                <li><a href="add_news.php">Создание новости</a></li>
-                                <li><a href="edit_news.php">Редактирование новостей</a></li>
+                                <li><a href="add_news.php">Создание новости RU</a></li>
+                                <li><a href="add_news_translations.php">Добавление перевода UA/ENG</a></li>
                             </ul>
-                        <a href="creating_newsletter.php" class="list-group-item">Рассылка</a>
+                        <a href="creating_newsletter" class="list-group-item">Рассылка</a>
                         <a href="#" class="list-group-item" id="btn-1" data-toggle="collapse" data-target="#submenu1" aria-expanded="false">Добавление участников <i class="fa fa-sort-desc pull-right"></i></a>
                             <ul class="nav collapse" id="submenu1" role="menu" aria-labelledby="btn-1">
-                                <li><a href="add_user_conf.php">конференции</a></li>
-                                <li><a href="add_user_sem.php">школы-семинара</a></li>
+                                <li><a href="add_user_conf">конференции</a></li>
+                                <li><a href="add_user_sem">школы-семинара</a></li>
                             </ul>
-                        <a href="add_file.php" class="list-group-item">Добавление файлов в архив</a>
+                        <a href="add_file" class="list-group-item">Добавление файлов в архив</a>
                     </div>
                 </div>
             </div>
             <div class="col-sm-9">
-                <h1 class="page-header">Создание новости
+                <h1 class="page-header">Добавление перевода ENG
                 </h1>
                 <ol class="breadcrumb">
                     <li><a href="index.html">Главная</a>
                     </li>
                     <li><a href="main_ADMIN.html">Администратор</a>
                     </li>
-                    <li class="active">Создание новости</li>
+                    <li><a href="add_news_translations.php">Добавление перевода UA/ENG</a>
+                    </li>
+                    <li class="active">Добавление перевода ENG</li>
                 </ol>            
  
             <!-- Contact Details Column -->
                 <div class="col-sm-12 del-pad-x">
 
                     <form name="sentMessage" id="contactForm" novalidate>
-                        <div class="control-group form-group">
-                            <label>Выберите языковую версию новости:</label>
-                            <label class="radio-inline mg-l-20">
-                                <input type="radio" name="languages" id="Radio-RU" value="RU"> RU
-                            </label>
-                            <label class="radio-inline mg-l-20">
-                                <input type="radio" name="languages" id="Radio-UA" value="UA"> UA
-                            </label>
-                            <label class="radio-inline mg-l-20">
-                                <input type="radio" name="languages" id="Radio-ENG" value="ENG"> ENG
-                            </label>
-                        </div>
                         <div class="control-group form-group">
                             <div class="controls">
                                 <label>Заголовок:</label>
@@ -212,11 +202,6 @@
                                 <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Введите новость в виде текстового сообщения!" placeholder="Введите текст..." maxlength="2999" style="resize:none"></textarea>
                             </div>
                         </div>
-                        <div class="checkbox">
-                            <label>
-                                <input type="checkbox"> Выполнить рассылку новости участникам конференции
-                            </label>
-                        </div>
                         <hr>                        
                         <div id="success"></div>
                         <!-- For success/fail messages -->
@@ -243,15 +228,15 @@
     </footer>
 
     <!-- jQuery Version 1.11.0 -->
-    <script src="../../js/jquery-1.11.0.js"></script>
+    <script src="../js/jquery-1.11.0.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
 
     <!-- Contact Form JavaScript -->
     <!-- Do not edit these files! In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
-    <script src="../../js/jqBootstrapValidation.js"></script>
-<!--    <script src="../js/contact_me.js"></script>-->
+    <script src="../js/jqBootstrapValidation.js"></script>
+    <script src="../js/contact_me.js"></script>
 
 </body>
 

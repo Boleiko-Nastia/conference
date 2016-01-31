@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,6 +25,7 @@
     <!-- Bootstrap remake2 CSS -->
     <link href="../css/bootstrap-theme.css" rel="stylesheet">
 
+
     <!-- Favicon -->
     <link rel="shortcut icon" href="../img/favicon.png">
 
@@ -35,8 +34,20 @@
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+     <!-- jQuery Version 1.11.0 -->
+    <script src="../js/jquery-1.11.0.js"></script>
 
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../js/bootstrap.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <!-- Do not edit these files! In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
+    <script src="../js/jqBootstrapValidation.js"></script>
+<!--    <script src="../js/contact_me.js"></script>-->
+    <![endif]-->
+    <script>
+
+    </script>
 </head>
 
 <body>
@@ -87,99 +98,90 @@
                 </div>
             </div>
             <div class="col-sm-9">
-                <h1 class="page-header">Добавление участников конференции
+                <h1 class="page-header">Создание новости
                 </h1>
                 <ol class="breadcrumb">
                     <li><a href="index.php">Главная</a>
                     </li>
                     <li><a href="main.php">Администратор</a>
                     </li>
-                    <li class="active">Добавление участников: конференции</li>
+                    <li class="active">Создание новости</li>
                 </ol>
 
                 <!-- Contact Details Column -->
                 <div class="col-sm-12 del-pad-x">
-                    <form action="./add_user_conf.php" method="post">
+                    <div class="control-group form-group">
                         <div class="controls">
-                            <label>Выберите секцию:</label>
+                            <label>Выберите языковую версию сайта для добавления новости</label>
                             <div class="btn-group" role="group">
-                                <select name="section" class="btn btn-default">
-                                    <option>Секция</option>
-                                    <?php
-                                        foreach($sections as $section){
-                                            echo  '<option value="'.$section['id'].'">'.$section['title'].'</section>';
-                                        }
-                                    ?>
-                                </select>
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    RU
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">RU</a></li>
+                                    <li><a href="#">UA</a></li>
+                                    <li><a href="#">EN</a></li>
+                                </ul>
                             </div>
                         </div>
-                        <div class="mg-tp-40">
-                            <label>Фамилия Имя Отчество участника:</label>
-                            <input class="form-control" name="fullname" type="text" required data-validation-required-message="Введите фамилию, имя и отчество участника!" placeholder="Иванов Иван Иванович">
-                            </input>
-                            <label class="mg-tp-20">Место работы:</label>
-                            <input class="form-control" name="job" type="text" required data-validation-required-message="Введите название учебного заведения или компании!" placeholder="Харьковский национальный университет радиоэлектроники">
-                            </input>
-                            <label class="mg-tp-20">Название доклада:</label>
-                            <input class="form-control" name="titlelecture" type="text" required data-validation-required-message="Введите название доклада!" placeholder="Изучение информационных систем полиграфии в мире">
-                            </input>
-                            <label class="mg-tp-40"><button type="submit" class="btn btn-primary blue-button">Добавить</button>
+                    </div>
+                    <form name="sentMessage" id="contactForm" action="./add_news.php" method="post" enctype="multipart/form-data">
+                        <div class="control-group form-group">
+                            <div class="controls">
+                                <label>Заголовок:</label>
+                                <input type="text" class="form-control" name="title" id="name" required data-validation-required-message="Введите заголовок новости!" placeholder="Введите заголовок новости...">
+                                <p class="help-block"></p>
+                            </div>
+                        </div>
+                        <div class="control-group form-group">
+                            <div class="controls">
+                                <label>Кем добавлено:</label>
+                                <input type="tel" class="form-control" name="name" id="phone" required data-validation-required-message="Введите Вашу фамилию и инициалы!" placeholder="Чеботарева И.Б.">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleInputFile">Добавление фото:</label>
+                            <input type="file" id="exampleInputFile" name="articleimage">
+                            <p class="help-block">Размер изображения: 900px * 300px</p>
+                        </div>
+                        <div class="control-group form-group mg-tp-20">
+                            <div class="controls">
+                                <label>Основной текст новости:</label>
+                                <textarea name="article" rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Введите новость в виде текстового сообщения!" placeholder="Введите текст..." maxlength="2999" style="resize:none"></textarea>
+                            </div>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name="sendnewsletter"> Выполнить рассылку новости участникам конференции
                             </label>
                         </div>
-                    </form>
-
-                    <div class="footer-push"></div>
-
+                        <hr>
+                        <div id="success"></div>
+                        <!-- For success/fail messages -->
+                        <button type="submit" class="btn btn-primary blue-button mg-tp-20">Опубликовать новость</button>
                     </form>
                 </div>
-                <!-- / checkbox-->
-
+                <hr>
             </div>
-            <!-- /.9-->
+            <!-- /.row -->
+
 
         </div>
         <!-- /.row -->
 
     </div>
+    <!-- /.container -->
 
-</div>
-<!-- /.container -->
+    <!-- Footer -->
 
-</div> <!--/wrapper-->
+    <footer>
+        <div class="col-sm-12 text-center">
+            &copy; 2015 PMW
+        </div>
+    </footer>
 
-<!-- Footer -->
-<footer>
-    <div class="col-sm-12 text-center">
-        &copy; 2015 PMW
-    </div>
-</footer>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-<script>
-    var update_receiver = function () {
-        if ($("#Receiver").is(":checked")) {
-            $('#nameReceiver').prop('disabled', false);
-            $('#emailReceiver').prop('disabled', false);
-            $('#buttonReceiver').prop('disabled', false);
-        }
-        else {
-            $('#nameReceiver').prop('disabled', 'disabled');
-            $('#emailReceiver').prop('disabled', 'disabled');
-            $('#buttonReceiver').prop('disabled', 'disabled');
-        }
-    };
-    $(update_receiver);
-    $("#Receiver").change(update_receiver);
-</script>
-<!-- jQuery Version 1.11.0 -->
-<script src="../js/jquery-1.11.0.js"></script>
-
-<!-- Bootstrap Core JavaScript -->
-<script src="../js/bootstrap.min.js"></script>
-
-<!-- Contact Form JavaScript -->
-<!-- Do not edit these files! In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
-<script src="../js/jqBootstrapValidation.js"></script>
-<!--<script src="../js/contact_me.js"></script>-->
 
 </body>
 

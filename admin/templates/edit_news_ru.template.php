@@ -12,23 +12,23 @@
     <title>Конференция в Харьковском национальном университете радиоэлектроники</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="../../css/modern-business.css" rel="stylesheet">
+    <link href="../css/modern-business.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="../../font-awesome-4.4.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="../font-awesome-4.4.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
 
     <!-- Bootstrap remake CSS -->
-    <link href="../../css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="../css/bootstrap-theme.min" rel="stylesheet">
 
     <!-- Bootstrap remake2 CSS -->
-    <link href="../../css/bootstrap-theme.css" rel="stylesheet">
+    <link href="css/bootstrap-theme" rel="stylesheet">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="../../img/favicon.png">
+    <link rel="shortcut icon" href="../img/favicon.png">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -87,32 +87,21 @@
                 </div>
             </div>
             <div class="col-sm-9">
-                <h1 class="page-header">Создание новости
+                <h1 class="page-header">Редактирование новости RU
                 </h1>
                 <ol class="breadcrumb">
                     <li><a href="index.html">Главная</a>
                     </li>
                     <li><a href="main_ADMIN.html">Администратор</a>
                     </li>
-                    <li class="active">Создание новости</li>
-                </ol>            
- 
+                    <li><a href="edit_news.php">Редактирование новостей</a></li>
+                    <li><a href="edit_news_RU.php">Редактирование новости RU</a>
+                    </li>
+                </ol> 
             <!-- Contact Details Column -->
                 <div class="col-sm-12 del-pad-x">
 
                     <form name="sentMessage" id="contactForm" novalidate>
-                        <div class="control-group form-group">
-                            <label>Выберите языковую версию новости:</label>
-                            <label class="radio-inline mg-l-20">
-                                <input type="radio" name="languages" id="Radio-RU" value="RU"> RU
-                            </label>
-                            <label class="radio-inline mg-l-20">
-                                <input type="radio" name="languages" id="Radio-UA" value="UA"> UA
-                            </label>
-                            <label class="radio-inline mg-l-20">
-                                <input type="radio" name="languages" id="Radio-ENG" value="ENG"> ENG
-                            </label>
-                        </div>
                         <div class="control-group form-group">
                             <div class="controls">
                                 <label>Заголовок:</label>
@@ -201,21 +190,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="form-group">
-                            <label for="exampleInputFile">Добавление фото:</label>
-                            <input type="file" id="exampleInputFile">
-                            <p class="help-block">Размер изображения: 900px * 300px</p>
-                        </div>
                         <div class="control-group form-group mg-tp-20">
                             <div class="controls">
                                 <label>Основной текст новости:</label>
                                 <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Введите новость в виде текстового сообщения!" placeholder="Введите текст..." maxlength="2999" style="resize:none"></textarea>
                             </div>
-                        </div>
-                        <div class="checkbox">
-                            <label>
-                                <input type="checkbox"> Выполнить рассылку новости участникам конференции
-                            </label>
                         </div>
                         <hr>                        
                         <div id="success"></div>
@@ -243,15 +222,15 @@
     </footer>
 
     <!-- jQuery Version 1.11.0 -->
-    <script src="../../js/jquery-1.11.0.js"></script>
+    <script src="../js/jquery-1.11.0.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
 
     <!-- Contact Form JavaScript -->
     <!-- Do not edit these files! In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
-    <script src="../../js/jqBootstrapValidation.js"></script>
-<!--    <script src="../js/contact_me.js"></script>-->
+    <script src="../js/jqBootstrapValidation.js"></script>
+    <script src="../js/contact_me.js"></script>
 
 </body>
 
