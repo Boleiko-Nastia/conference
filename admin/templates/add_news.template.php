@@ -48,11 +48,11 @@
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <a class="navbar-brand" href="index.html"><img class="logo" src="../img/logo.svg"  alt="logo"></img></a>
+                <a class="navbar-brand" href="index.php"><img class="logo" src="../../img/logo.svg"  alt="logo"></img></a>
             </div>
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a href="sections.html"><i class="fa fa-sign-out"></i> Выход</a>
+                    <a href="login.php?logout=true"><i class="fa fa-sign-out"></i> Выход</a>
                 </li>
             </ul>
         </div>
@@ -90,9 +90,9 @@
                 <h1 class="page-header">Создание новости
                 </h1>
                 <ol class="breadcrumb">
-                    <li><a href="index.html">Главная</a>
+                    <li><a href="index.php">Главная</a>
                     </li>
-                    <li><a href="main_ADMIN.html">Администратор</a>
+                    <li><a href="main.php">Администратор</a>
                     </li>
                     <li class="active">Создание новости</li>
                 </ol>            
@@ -100,121 +100,47 @@
             <!-- Contact Details Column -->
                 <div class="col-sm-12 del-pad-x">
 
-                    <form name="sentMessage" id="contactForm" novalidate>
+                    <form name="sentMessage" id="contactForm" action="./add_news.php" method="post" enctype="multipart/form-data">
                         <div class="control-group form-group">
                             <label>Выберите языковую версию новости:</label>
                             <label class="radio-inline mg-l-20">
-                                <input type="radio" name="languages" id="Radio-RU" value="RU"> RU
+                                <input type="radio" name="languages" checked id="Radio-RU" value="ru"> RU
                             </label>
                             <label class="radio-inline mg-l-20">
-                                <input type="radio" name="languages" id="Radio-UA" value="UA"> UA
+                                <input type="radio" name="languages" id="Radio-UA" value="ua"> UA
                             </label>
                             <label class="radio-inline mg-l-20">
-                                <input type="radio" name="languages" id="Radio-ENG" value="ENG"> ENG
+                                <input type="radio" name="languages" id="Radio-ENG" value="en"> ENG
                             </label>
                         </div>
                         <div class="control-group form-group">
                             <div class="controls">
                                 <label>Заголовок:</label>
-                                <input type="text" class="form-control" id="name" required data-validation-required-message="Введите заголовок новости!" placeholder="Введите заголовок новости...">
+                                <input type="text" class="form-control" name="title" id="name" required data-validation-required-message="Введите заголовок новости!" placeholder="Введите заголовок новости...">
                                 <p class="help-block"></p>
                             </div>
                         </div>
                         <div class="control-group form-group">
                             <div class="controls">
                                 <label>Кем добавлено:</label>
-                                <input type="tel" class="form-control" id="phone" required data-validation-required-message="Введите Вашу фамилию и инициалы!" placeholder="Чеботарева И.Б.">
+                                <input type="tel" class="form-control" name="name" id="phone" required data-validation-required-message="Введите Вашу фамилию и инициалы!" placeholder="Чеботарева И.Б.">
                             </div>
                         </div>
-                        <div class="control-group form-group">
-                            <div class="controls">
-                                <label>Дата добавления:</label>
-                                <div class="btn-group" role="group">
-                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Дата
-                                        <span class="caret"></span>
-                                    </button>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#">01</a></li>
-                                        <li><a href="#">02</a></li>
-                                        <li><a href="#">03</a></li>
-                                        <li><a href="#">04</a></li>
-                                        <li><a href="#">05</a></li>
-                                        <li><a href="#">06</a></li>
-                                        <li><a href="#">07</a></li>
-                                        <li><a href="#">08</a></li>
-                                        <li><a href="#">09</a></li>
-                                        <li><a href="#">10</a></li>
-                                        <li><a href="#">11</a></li>
-                                        <li><a href="#">12</a></li>
-                                        <li><a href="#">13</a></li>
-                                        <li><a href="#">14</a></li>
-                                        <li><a href="#">15</a></li>
-                                        <li><a href="#">16</a></li>
-                                        <li><a href="#">17</a></li>
-                                        <li><a href="#">18</a></li>
-                                        <li><a href="#">19</a></li>
-                                        <li><a href="#">20</a></li>
-                                        <li><a href="#">21</a></li>
-                                        <li><a href="#">22</a></li>
-                                        <li><a href="#">23</a></li>
-                                        <li><a href="#">24</a></li>
-                                        <li><a href="#">25</a></li>
-                                        <li><a href="#">26</a></li>
-                                        <li><a href="#">27</a></li>
-                                        <li><a href="#">28</a></li>
-                                        <li><a href="#">29</a></li>
-                                        <li><a href="#">30</a></li>
-                                        <li><a href="#">31</a></li>
-                                    </ul>
-                                </div>
-                                <div class="btn-group" role="group">
-                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Месяц
-                                        <span class="caret"></span>
-                                    </button>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#">Января</a></li>
-                                        <li><a href="#">Февраля</a></li>
-                                        <li><a href="#">Марта</a></li>
-                                        <li><a href="#">Апрееля</a></li>
-                                        <li><a href="#">Мая</a></li>
-                                        <li><a href="#">Июня</a></li>
-                                        <li><a href="#">Июля</a></li>
-                                        <li><a href="#">Августа</a></li>
-                                        <li><a href="#">Сентября</a></li>
-                                        <li><a href="#">Октября</a></li>
-                                        <li><a href="#">Ноября</a></li>
-                                        <li><a href="#">Декабря</a></li>
-                                    </ul>
-                                </div>
-                                <div class="btn-group" role="group">
-                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Год
-                                        <span class="caret"></span>
-                                    </button>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#">2015</a></li>
-                                        <li><a href="#">2016</a></li>
-                                        <li><a href="#">2017</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+
                         <div class="form-group">
                             <label for="exampleInputFile">Добавление фото:</label>
-                            <input type="file" id="exampleInputFile">
+                            <input type="file" id="exampleInputFile" name="articleimage">
                             <p class="help-block">Размер изображения: 900px * 300px</p>
                         </div>
                         <div class="control-group form-group mg-tp-20">
                             <div class="controls">
                                 <label>Основной текст новости:</label>
-                                <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Введите новость в виде текстового сообщения!" placeholder="Введите текст..." maxlength="2999" style="resize:none"></textarea>
+                                <textarea name="article" rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Введите новость в виде текстового сообщения!" placeholder="Введите текст..." maxlength="2999" style="resize:none"></textarea>
                             </div>
                         </div>
                         <div class="checkbox">
                             <label>
-                                <input type="checkbox"> Выполнить рассылку новости участникам конференции
+                                <input type="checkbox" name="sendnewsletter"> Выполнить рассылку новости участникам конференции
                             </label>
                         </div>
                         <hr>                        
@@ -238,7 +164,7 @@
 
     <footer>
         <div class="col-sm-12 text-center">
-            &copy; 2015 PMW
+            &copy; <?=date('Y')?> PMW
         </div>
     </footer>
 

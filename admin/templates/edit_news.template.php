@@ -12,23 +12,23 @@
     <title>Конференция в Харьковском национальном университете радиоэлектроники</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="../css/modern-business.css" rel="stylesheet">
+    <link href="../../css/modern-business.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="../font-awesome-4.4.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="../../font-awesome-4.4.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
 
     <!-- Bootstrap remake CSS -->
-    <link href="../css/bootstrap-theme.min" rel="stylesheet">
+    <link href="../../css/bootstrap-theme.min.css" rel="stylesheet">
 
     <!-- Bootstrap remake2 CSS -->
-    <link href="css/bootstrap-theme" rel="stylesheet">
+    <link href="../../css/bootstrap-theme.css" rel="stylesheet">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="../img/favicon.png">
+    <link rel="shortcut icon" href="../../img/favicon.png">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -159,20 +159,20 @@
 
     <footer>
         <div class="col-sm-12 text-center">
-            &copy; 2015 PMW
+            &copy; <?=date('Y')?> PMW
         </div>
     </footer>
 
     <!-- jQuery Version 1.11.0 -->
-    <script src="../js/jquery-1.11.0.js"></script>
+    <script src="../../js/jquery-1.11.0.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="../js/bootstrap.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
 
     <!-- Contact Form JavaScript -->
     <!-- Do not edit these files! In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
-    <script src="../js/jqBootstrapValidation.js"></script>
-    <script src="../js/contact_me.js"></script>
+    <script src="../../js/jqBootstrapValidation.js"></script>
+<!--    <script src="../js/contact_me.js"></script>-->
 
 </body>
 
