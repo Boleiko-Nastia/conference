@@ -1,9 +1,8 @@
 <?php
-require_once('config.php');
-require_once('../db/MysqliDb.php');
+
 require_once('models/site_setting.php');
+require_once('common.php');
 $cfg = site_setting_all();
-session_start();
 $name = $_POST['name'];
 $password = $_POST['password'];
 
