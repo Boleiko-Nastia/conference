@@ -73,8 +73,8 @@
                     <div class="list-group">
                         <a href="#" class="list-group-item" id="btn-2" data-toggle="collapse" data-target="#submenu-trans" aria-expanded="false">Создание новости <i class="fa fa-sort-desc pull-right"></i></a>
                         <ul class="nav collapse" id="submenu-trans" role="menu" aria-labelledby="btn-2">
-                            <li><a href="add_news.php">Создание новости RU</a></li>
-                            <li><a href="add_news_translations.php">Добавление перевода UA/ENG</a></li>
+                            <li><a href="add_news.php">Создание новости</a></li>
+                            <li><a href="add_news_translations.php">Редактирование новостей</a></li>
                         </ul>
                         <a href="creating_newsletter.php" class="list-group-item">Рассылка</a>
                         <a href="#" class="list-group-item" id="btn-1" data-toggle="collapse" data-target="#submenu1" aria-expanded="false">Добавление участников <i class="fa fa-sort-desc pull-right"></i></a>

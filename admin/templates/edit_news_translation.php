@@ -40,6 +40,7 @@
 </head>
 
 <body>
+
 <div class="wrapper">
 
     <!-- Navigation -->
@@ -47,11 +48,11 @@
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <a class="navbar-brand" href="index.php"><img class="logo" src="../img/logo.svg"  alt="logo"></img></a>
+                <a class="navbar-brand" href="index.html"><img class="logo" src="../img/logo.svg"  alt="logo"></img></a>
             </div>
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a href="login.php?logout=true"><i class="fa fa-sign-out"></i> Выход</a>
+                    <a href="sections.html"><i class="fa fa-sign-out"></i> Выход</a>
                 </li>
             </ul>
         </div>
@@ -75,7 +76,6 @@
                             <li><a href="add_news.php">Создание новости</a></li>
                             <li><a href="edit_news.php">Редактирование новостей</a></li>
                         </ul>
-<!--                        <a href="add_news.php" class="list-group-item">Создание новости</a>-->
                         <a href="creating_newsletter.php" class="list-group-item">Рассылка</a>
                         <a href="#" class="list-group-item" id="btn-1" data-toggle="collapse" data-target="#submenu1" aria-expanded="false">Добавление участников <i class="fa fa-sort-desc pull-right"></i></a>
                         <ul class="nav collapse" id="submenu1" role="menu" aria-labelledby="btn-1">
@@ -87,74 +87,76 @@
                 </div>
             </div>
             <div class="col-sm-9">
-                <h1 class="page-header">Добавление файлов в архив
+                <h1 class="page-header">Редактирование новости RU
                 </h1>
                 <ol class="breadcrumb">
-                    <li><a href="index.php">Главная</a>
+                    <li><a href="index.html">Главная</a>
                     </li>
-                    <li><a href="main.php">Администратор</a>
+                    <li><a href="main_ADMIN.html">Администратор</a>
                     </li>
-                    <li class="active">Добавление файлов в архив</li>
+                    <li><a href="edit_news.php">Редактирование новостей</a></li>
+                    <li><a href="edit_news_RU.php">Редактирование новости RU</a>
+                    </li>
                 </ol>
-
                 <!-- Contact Details Column -->
                 <div class="col-sm-12 del-pad-x">
-                    <form name="sentMessage" id="contactForm" action="./add_file.php" enctype="multipart/form-data" method="post">
+
+                    <form name="sentMessage" action="./edit_news_translation.php?article=<?php echo $_GET['article'];?>&lang=<?php echo $_GET['lang'];?>" method="post" id="contactForm" novalidate>
                         <div class="control-group form-group">
                             <div class="controls">
                                 <label>Заголовок:</label>
-                                <input type="text" class="form-control" id="name" name="postname" required data-validation-required-message="Введите заголовок новости!" placeholder="Введите заголовок новости...">
+                                <input type="text" class="form-control" value="<?php echo ($article['title'])?$article['title']:'';  ?>" id="name" name="title" required data-validation-required-message="Введите заголовок новости!" placeholder="Введите заголовок новости...">
                                 <p class="help-block"></p>
                             </div>
                         </div>
-
-                        <div class="form-group mg-tp-20">
-                            <label for="exampleInputFile">Добавление файла:</label>
-                            <input type="file" id="exampleInputFile" name="addfile">
+                        <div class="control-group form-group">
+                            <div class="controls">
+                                <label>Кем добавлено:</label>
+                                <input type="tel" class="form-control" value="<?php echo ($article['addedby'])?$article['addedby']:'';  ?>" name="name" id="phone" required data-validation-required-message="Введите Вашу фамилию и инициалы!" placeholder="Чеботарева И.Б.">
+                            </div>
                         </div>
-                        <button type="submit" class="btn btn-primary blue-button mg-tp-20">Сохранить</button>
 
-                        <!--///////////////////Показать если файл загружен / не загружен
-                                                <hr>
-                                                <div class="alert alert-success">
-                                                    <i class="fa fa-check-square"></i> <strong>Файл загружен успешно!</strong>
-                                                </div>
-                                                <div class="alert alert-danger">
-                                                    <i class="fa fa-times"></i> <strong>Ошибка! Файл не загружен!</strong>
-                                                </div>
-                        /////////////////////////////-->
-
-                        <div class="footer-push"></div>
-
+                        <div class="control-group form-group mg-tp-20">
+                            <div class="controls">
+                                <label>Основной текст новости:</label>
+                                <textarea rows="10" cols="100"  class="form-control" name="article" id="message" required data-validation-required-message="Введите новость в виде текстового сообщения!" placeholder="Введите текст..." maxlength="2999" style="resize:none"><?php echo ($article['full_text'])?$article['full_text']:'';  ?></textarea>
+                            </div>
+                        </div>
+                        <hr>
+                        <div id="success"></div>
+                        <!-- For success/fail messages -->
+                        <button type="submit" class="btn btn-primary blue-button mg-tp-20">Опубликовать новость</button>
                     </form>
                 </div>
+                <hr>
             </div>
             <!-- /.row -->
+
+
         </div>
         <!-- /.row -->
+
     </div>
     <!-- /.container -->
 
+    <!-- Footer -->
 
-</div>
+    <footer>
+        <div class="col-sm-12 text-center">
+            &copy; <?php echo date('Y');?> PMW
+        </div>
+    </footer>
 
-<!-- Footer -->
-<footer>
-    <div class="col-sm-12 text-center">
-        &copy; 2015 PMW
-    </div>
-</footer>
+    <!-- jQuery Version 1.11.0 -->
+    <script src="../js/jquery-1.11.0.js"></script>
 
-<!-- jQuery Version 1.11.0 -->
-<script src="../js/jquery-1.11.0.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../js/bootstrap.min.js"></script>
 
-<!-- Bootstrap Core JavaScript -->
-<script src="../js/bootstrap.min.js"></script>
-
-<!-- Contact Form JavaScript -->
-<!-- Do not edit these files! In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
-<script src="../js/jqBootstrapValidation.js"></script>
-<!--<script src="../js/contact_me.js"></script>-->
+    <!-- Contact Form JavaScript -->
+    <!-- Do not edit these files! In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
+    <script src="../js/jqBootstrapValidation.js"></script>
+<!--    <script src="../js/contact_me.js"></script>-->
 
 </body>
 

@@ -99,49 +99,27 @@
  
             <!-- Contact Details Column -->
                 <div class="col-sm-12 del-pad-x">
-                        <div class="control-group form-group">
-               <!-- Adding translations for NEWS-1 -->
-                            <div class="thumbnail pad-15">
-                                <div class-"col-sm-12">
-                                    <h4>Название новости №1 Пример </h4>
-                                    <p><i class="fa fa-clock-o"></i> Опубликовано 16 декабря, 2015 в 10:00</p><br>
-                                    <div class="controls">
-                                        <a href="edit_news_RU.php"><button type="submit" class="btn btn-primary blue-button">Редактировать RU-версию</button></a>
-                                        <a href="edit_news_UA.php"><button type="submit" class="btn btn-primary blue-button mg-l-20">Редактировать UA-версию</button></a>
-                                        <a href="edit_news_ENG.php"><button type="submit" class="btn btn-primary blue-button mg-l-20">Редактировать ENG-версию</button></a>
+                        <?php
+                            foreach($articles as $ak => $av) {
+                                echo '<div class="control-group form-group">';
+                                echo '<div class="thumbnail pad-15">';
+                                echo '<div class-"col-sm-12">';
+                                echo '<h4>'.$av['title'].'</h4>';
+                                echo '<p><i class="fa fa-clock-o"></i> Опубликовано '.$av['date_create'].'</p><br>';
+                                echo '<div class="controls">
+                                        <a href="edit_news_translation.php?article='.$ak.'&lang=ru"><button type="submit" class="btn btn-primary blue-button">Редактировать RU-версию</button></a>
+                                        <a href="edit_news_translation.php?article='.$ak.'&lang=ua"><button type="submit" class="btn btn-primary blue-button mg-l-20">Редактировать UA-версию</button></a>
+                                        <a href="edit_news_translation.php?article='.$ak.'&lang=en"><button type="submit" class="btn btn-primary blue-button mg-l-20">Редактировать ENG-версию</button></a>
                                     </div>
-                                </div>
-                            </div>
-                <!-- // END Adding translations for NEWS-1 -->
+                                    </div>
+                                    </div>';
+                            }
+                        ?>
 
-                <!-- Adding translations for NEWS-2 -->
-                            <div class="thumbnail pad-15">
-                                <div class-"col-sm-12">
-                                    <h4>Название новости №2 Пример </h4>
-                                    <p><i class="fa fa-clock-o"></i> Опубликовано 21 декабря, 2015 в 11:00</p><br>
-                                    <div class="controls">
-                                        <a href="edit_news_RU.php"><button type="submit" class="btn btn-primary blue-button">Редактировать RU-версию</button></a>
-                                        <a href="edit_news_UA.php"><button type="submit" class="btn btn-primary blue-button mg-l-20">Редактировать UA-версию</button></a>
-                                        <a href="edit_news_ENG.php"><button type="submit" class="btn btn-primary blue-button mg-l-20">Редактировать ENG-версию</button></a>
-                                    </div>
-                                </div>
-                            </div>
-                <!-- // END Adding translations for NEWS-2 -->
 
-                <!-- Adding translations for NEWS-3 -->
-                            <div class="thumbnail pad-15">
-                                <div class-"col-sm-12">
-                                    <h4>Название новости №3 Пример </h4>
-                                    <p><i class="fa fa-clock-o"></i> Опубликовано 22 декабря, 2015 в 12:00</p><br>
-                                    <div class="controls">
-                                        <a href="edit_news_RU.php"><button type="submit" class="btn btn-primary blue-button">Редактировать RU-версию</button></a>
-                                        <a href="edit_news_UA.php"><button type="submit" class="btn btn-primary blue-button mg-l-20">Редактировать UA-версию</button></a>
-                                        <a href="edit_news_ENG.php"><button type="submit" class="btn btn-primary blue-button mg-l-20">Редактировать ENG-версию</button></a>
-                                    </div>
-                                </div>
-                            </div>
-                <!-- // END Adding translations for NEWS-3 -->
-                
+
+
+                </div>
                 </div>
                 <hr>
                 <div class="footer-push"></div>
