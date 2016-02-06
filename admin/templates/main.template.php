@@ -72,8 +72,8 @@
                     <div class="list-group">
                         <a href="#" class="list-group-item" id="btn-2" data-toggle="collapse" data-target="#submenu-trans" aria-expanded="false">Создание новости <i class="fa fa-sort-desc pull-right"></i></a>
                         <ul class="nav collapse" id="submenu-trans" role="menu" aria-labelledby="btn-2">
-                            <li><a href="add_news.php">Создание новости RU</a></li>
-                            <li><a href="add_news_translations.php">Добавление перевода UA/ENG</a></li>
+                            <li><a href="add_news.php">Создание новости</a></li>
+                            <li><a href="edit_news.php">Добавление новостей</a></li>
                         </ul>
                         <a href="creating_newsletter.php" class="list-group-item">Рассылка</a>
                         <a href="#" class="list-group-item" id="btn-1" data-toggle="collapse" data-target="#submenu1" aria-expanded="false">Добавление участников <i class="fa fa-sort-desc pull-right"></i></a>
@@ -122,7 +122,7 @@
 <!-- Footer -->
 <footer>
     <div class="col-sm-12">
-        <center>&copy; 2015 PMW </center>
+        <center>&copy; <?php echo date('Y');?> PMW </center>
     </div>
 </footer>
 
@@ -135,7 +135,7 @@
 <!-- Contact Form JavaScript -->
 <!-- Do not edit these files! In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
 <script src="../js/jqBootstrapValidation.js"></script>
-<script src="../js/contact_me.js"></script>
+<!--<script src="../js/contact_me.js"></script>-->
 
 </body>
 
