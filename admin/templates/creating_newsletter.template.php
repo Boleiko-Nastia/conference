@@ -97,6 +97,7 @@
                 </ol>
 
                 <!-- Contact Details Column -->
+                <div>
                 <div class="col-sm-12 del-pad-x">
                     <form name="sentMessage" action="./creating_newsletter.php" method="post" id="contactForm" novalidate enctype="multipart/form-data">
                         <div class="control-group form-group">
