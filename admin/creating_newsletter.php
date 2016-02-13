@@ -27,8 +27,8 @@ if($_POST['object']) {
     $mail->isSMTP();
     $mail->Host = 'smtp.gmail.com';
     $mail->SMTPAuth = true;
-    $mail->Username = '';
-    $mail->Password = '';
+    $mail->Username = ''; //gmail login
+    $mail->Password = ''; // gmail password
     $mail->Port = 465;
     $mail->SMTPSecure = 'ssl';
         $mail->setFrom('turumburum@gmail.com', 'Mailer');
