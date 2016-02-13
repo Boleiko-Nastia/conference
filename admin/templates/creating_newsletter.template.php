@@ -22,7 +22,32 @@
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="../img/favicon.png">
-
+    <script>
+        function add_user(){
+            var name,email,usermsg;
+            $('.modal-body').html('');
+            name = $("input[name=nameReceiver]").val();
+            email = $("input[name=emailReceiver]").val();
+            if(name && email) {
+                $.ajax({
+                    type: "POST",
+                    url: "./creating_newsletter.php",
+                    data: { name: name, email: email }
+                }).done(function( msg ) {
+                    if(msg == 'false') {
+                        usermsg = 'Field of name or email is empty';
+                    } else if(msg == 'no') {
+                        usermsg = 'This email already added';
+                    } else {
+                        usermsg = "Data Saved";
+                    }
+                    $('.modal-body').append("<p>"+usermsg+'</p>');
+                    $("input[name=nameReceiver]").val('');
+                    $("input[name=emailReceiver]").val('');
+                });
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -107,7 +132,7 @@
                             <label>
                                 <input name="sendnewsletter" type="checkbox"> Выполнить рассылку зарегистрированным участникам</input>
                             </label>
-                            <form>
+
                                 <br/>
                                 <label class="mg-tp-20">
                                     <input name="addreceiver" type="checkbox" value="yes" id="Receiver" name="Receiver">Добавить получателя вручную</input>
@@ -116,19 +141,37 @@
                                 <br>
                                 <div class="pad-left-20">
                                     <label for="Receiver" class="mg-tp-20">Фамилия Имя Отчество:</label>
-                                    <input id="nameReceiver" name="nameReceiver" class="form-control mg-tp" type="text" disabled="disabled"  required data-validation-required-message="Введите фамилию, имя и отчество получателя!" placeholder="Иванов Иван Иванович">
+                                    <input id="nameReceiver" name="nameReceiver" class="form-control mg-tp" type="text" disabled="disabled"  required="required" data-validation-required-message="Введите фамилию, имя и отчество получателя!" placeholder="Иванов Иван Иванович">
                                     </input>
                                     <br>
                                     <label for="Receiver">Email:</label>
-                                    <input id="emailReceiver" name="emailReceiver" class="form-control mg-tp" type="email" disabled="disabled"  required data-validation-required-message="Введите адрес электронной почты получателя!" placeholder="ivanov_ivan@ukr.net">
+                                    <input id="emailReceiver" name="emailReceiver" class="form-control mg-tp" type="email" disabled="disabled"  required="required" data-validation-required-message="Введите адрес электронной почты получателя!" placeholder="ivanov_ivan@ukr.net">
                                     </input>
-                                    <label for="Receiver" class="mg-tp-20"><button type="submit" class="btn btn-primary blue-button" id="buttonReceiver" name="buttonReceiver" disabled="disabled">Добавить</button>
+                                    <label for="Receiver" class="mg-tp-20"><button type="button" onclick="add_user()" data-toggle="modal" data-target="#myModal" class="btn btn-primary blue-button" id="buttonReceiver" name="buttonReceiver" disabled="disabled">Добавить</button>
                                     </label>
                                 </div>
-                            </form>
+
                             <br>
                             <hr>
+                            <!-- Modal -->
+                            <div class="modal fade" id="myModal" role="dialog">
+                                <div class="modal-dialog">
 
+                                    <!-- Modal content-->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title">Modal Header</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
                             <div class="footer-push"></div>
 
                             <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
@@ -182,7 +225,7 @@
 
 <!-- Contact Form JavaScript -->
 <!-- Do not edit these files! In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
-<script src="../js/jqBootstrapValidation.js"></script>
+<!--<script src="../js/jqBootstrapValidation.js"></script>-->
 <!--<script src="../js/contact_me.js"></script>-->
 
 </body>
