@@ -122,14 +122,21 @@
                                     <label for="Receiver">Email:</label>
                                     <input id="emailReceiver" name="emailReceiver" class="form-control mg-tp" type="email" disabled="disabled"  required data-validation-required-message="Введите адрес электронной почты получателя!" placeholder="ivanov_ivan@ukr.net">
                                     </input>
+                                    <!--Show error message for admin (before button)
+                                        <div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> Заполните все поля!</div>
+                                    END error message-->
+                                    <!--Show error message for admin (before button) Если человек с такими же ФИО, местом работы и названием доклада уже есть в таблице
+                                        <div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> Такой участник уже добавлен!</div>
+                                    END error message-->
+                                    <!--Show success message for admin (instead of button)
+                                        <div class="alert alert-success text-left" role="alert"><i class="fa fa-check"></i> ФИО успешно добавлен!</div>
+                                    END success message-->
                                     <label for="Receiver" class="mg-tp-20"><button type="submit" class="btn btn-primary blue-button" id="buttonReceiver" name="buttonReceiver" disabled="disabled">Добавить</button>
                                     </label>
                                 </div>
                             </form>
                             <br>
                             <hr>
-
-                            <div class="footer-push"></div>
 
                             <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
                             <script>
@@ -153,6 +160,7 @@
                             <div id="success"></div>
                             <!-- For success/fail messages -->
                             <button type="submit" class="btn btn-primary blue-button mg-tp-20">Выполнить рассылку</button>
+                            <div class="footer-push"></div>
                     </form>
                 </div>
                 <!-- / checkbox-->
