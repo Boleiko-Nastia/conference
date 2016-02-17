@@ -109,8 +109,12 @@
                             </div>
                         </div>
                         <hr>
-                        <div id="success"></div>
-                        <!-- For success/fail messages -->
+                        <!--Show error message for admin (before button)
+                            <div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> Заполните все поля!</div>
+                        END error message-->
+                        <!--Show success message for admin (instead of button)
+                            <div class="alert alert-success text-left" role="alert"><i class="fa fa-check"></i> Редактирование новости выполнено успешно!</div>
+                        END success message-->
                         <button type="submit" class="btn btn-primary blue-button mg-tp-20">Опубликовать новость</button>
                     </form>
                 </div>
