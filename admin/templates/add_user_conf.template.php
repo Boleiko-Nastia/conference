@@ -109,6 +109,16 @@
                             <label class="mg-tp-20">Название доклада:</label>
                             <input class="form-control" name="titlelecture" type="text" required data-validation-required-message="Введите название доклада!" placeholder="Изучение информационных систем полиграфии в мире">
                             </input>
+                            <hr>
+                            <!--Show error message for admin (before button)
+                                <div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> Заполните все поля!</div>
+                            END error message-->
+                            <!--Show error message for admin (before button) Если человек с такими же ФИО, местом работы и названием доклада уже есть в таблице
+                                <div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> Такой участник уже добавлен!</div>
+                            END error message-->
+                            <!--Show success message for admin (instead of button)
+                                <div class="alert alert-success text-left" role="alert"><i class="fa fa-check"></i> ФИО успешно добавлен!</div>
+                            END success message-->
                             <label class="mg-tp-40"><button type="submit" class="btn btn-primary blue-button">Добавить</button>
                             </label>
                         </div>
