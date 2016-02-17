@@ -194,7 +194,7 @@
             <!-- Sidebar Column -->
             <div class="col-sm-12">
                 <div class="list-group">
-                    <a href="news.html" class="list-group-item">Новости</a>
+                    <a href="news.php" class="list-group-item">Новости</a>
                     <a href="#" class="list-group-item">Программа конференции</a>
                     <a href="#" class="list-group-item">Сборник работ</a>
                     <a href="#" class="list-group-item">Решение конференции</a>
@@ -251,7 +251,7 @@
             </div>
             <div class="col-md-12">
                 <div class="list-group">
-                    <a href="index.html" class="list-group-item media">
+                    <a href="index.php" class="list-group-item media">
                         <div class="pull-left">
                             <i class="fa fa-file-word-o fa-2x"></i>
                         </div>
@@ -260,7 +260,7 @@
                             <small>(українською, *. pdf, ~37 K)</small>
                         </div>
                     </a>
-                    <a href="index.html" class="list-group-item media mg-tp">
+                    <a href="index.php" class="list-group-item media mg-tp">
                         <div class="pull-left">
                             <i class="fa fa-file-pdf-o fa-2x"></i>
                         </div>
@@ -269,7 +269,7 @@
                             <small>(українською, *. pdf, ~37 K)</small>
                         </div>
                     </a>
-                    <a href="index.html" class="list-group-item media mg-tp">
+                    <a href="index.php" class="list-group-item media mg-tp">
                         <div class="pull-left">
                             <i class="fa fa-file-pdf-o fa-2x"></i>
                         </div>
@@ -278,7 +278,7 @@
                             <small>(українською, *. pdf, ~37 K)</small>
                         </div>
                     </a>
-                    <a href="index.html" class="list-group-item media mg-tp">
+                    <a href="index.php" class="list-group-item media mg-tp">
                         <div class="pull-left">
                             <i class="fa fa-file-word-o fa-2x"></i>
                         </div>
