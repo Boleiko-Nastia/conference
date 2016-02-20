@@ -436,9 +436,23 @@ footer {
         height: 70%;
     }
 }
+/*Virtualizator flash*/
 
-embed {
-    width: 850px;
-    height: 459px;
+@media(min-width:1200px) {
+    embed {
+        width: 850px;
+        height: 459px;
+    }
 }
-
+@media(max-width:1199px) {
+    embed {
+        width: 697px;
+        height: 377px;
+    }
+}
+@media(max-width:991px) {
+    embed {
+        width: 532px;
+        height: 288px;
+    }
+}
