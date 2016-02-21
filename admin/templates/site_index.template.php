@@ -58,41 +58,41 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a href="sections.php">Секции</a>
+                    <a href="sections.php"><?=$lang['CONFERENCE_AREA']?></a>
                 </li>
                 <li>
-                    <a href="rules.php">Условия</a>
+                    <a href="rules.php"><?=$lang['CONDITIONS']?></a>
                 </li>
                 <li>
-                    <a href="calendar.php">Календарь</a>
+                    <a href="calendar.php"><?=$lang['NEWS']?></a>
                 </li>
                 <li>
-                    <a href="news.php">Новости</a>
+                    <a href="news.php"><?=$lang['NEWS']?></a>
                 </li>
                 <!--<li>
                     <a href="commission.html">Комитет</a>
                 </li>-->
                 <li>
-                    <a href="commission.php">Огранизаторы</a>
+                    <a href="commission.php"><?=$lang['ORGANISERS']?></a>
                 </li>
                 <li>
-                    <a href="participants.php">Участники</a>
+                    <a href="participants.php"><?=$lang['SPEAKERS']?></a>
                 </li>
                 <li>
-                    <a href="archive.php">Архив</a>
+                    <a href="archive.php"><?=$lang['ARCHIVE']?></a>
                 </li>
                 <li>
-                    <a href="contact.php">Контакты</a>
+                    <a href="contact.php"><?=$lang['CONTACTS']?></a>
                 </li>
                 <li class="li-language">
                     <div class="btn-group group-language">
                         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            RU <span class="caret"></span>
+                            <?=$lang['LANG']?> <span class="caret"></span>
                         </button>
                         <ul class="dropdown-menu">
-                            <li><a href="#">RU</a></li>
-                            <li><a href="#">UA</a></li>
-                            <li><a href="#">EN</a></li>
+                            <li><a  href="javascript:set_lang('ru')">RU</a></li>
+                            <li><a  href="javascript:set_lang('ua')">UA</a></li>
+                            <li><a  href="javascript:set_lang('eng')">EN</a></li>
                         </ul>
                     </div>
                 </li>
@@ -153,59 +153,58 @@
         <div class="col-sm-9 del-pad-x">
             <div class="col-sm-12">
                 <h2 class="page-header">
-                    I Международная научно-техническая конференция <br>
-                    «Полиграфические, мультимедийные и web-технологии»<br>
+                    <?=$lang['MAINTEXT']['TITLE'][0]?><br>
+                    <?=$lang['MAINTEXT']['TITLE'][1]?><br>
                 </h2>
-                <h3>16-20 мая 2015 года г. Харьков, Украина
+                <h3><?=$lang['MAINTEXT']['DATE']?>
                 </h3>
             </div>
             <div class="col-sm-12">
-                <p>С 16 по 20 мая 2016  г. в Харьковском национальном университете радиоэлектроники будет проходить І Международная научно-техническая конференция «Полиграфические,  мультимедийные и web-технологии».</p>
-                <p>Для участия в конференции приглашаются преподаватели, ученые, бизнесмены, издатели, специалисты издательско-полиграфической и рекламной области, разработчики мультимедийных продуктов, аспиранты, студенты.<p>
-                <p>В рамках  конференции планируется проведение молодежной школы семинара, мастер-классов по трехмерному моделированию и рекламе, выставки студенческих работ.
-                    Для участников конференции запланированы экскурсии на полиграфические предприятия г.Харькова и в «НИИ Лазерных технологий».</p>
-                <p>Предполагается также заочное участие в форме видеоконференции.<br>
-                    Рабочие языки конференции: украинский, русский, английский.</p>
+                <p><?=$lang['MAINTEXT'][0]?></p>
+                <p><?=$lang['MAINTEXT'][1]?><p>
+                <p><?=$lang['MAINTEXT'][2]?></p>
+                <p><?=$lang['MAINTEXT'][3]?><br>
+                   <?=$lang['MAINTEXT'][4]?></p>
                 <hr>
-                <p>Цель проведения конференции – расширение международного сотрудничества и углубление совместной деятельности в научной, исследовательской, преподавательской, и других областях в отрасли издательского дела и полиграфии, мультимедийных технологий, экономики полиграфических производств. </p>
-                <p>Результаты научного сотрудничества могут быть использованы для повышения эффективности учебного процесса подготовки профессиональных кадров для полиграфической отрасли, внедрения в учебный процесс инновационных форм и методов обучения. </p>
-                <p>Организатор проведения международной научно-технической конференции – кафедра «Медиасистемы и технологии». </P>
-                <p>Основные научные направления кафедры:
+                <p><?=$lang['MAINTEXT'][5]?></p>
+                <p><?=$lang['MAINTEXT'][6]?></p>
+                <p><?=$lang['MAINTEXT'][7]?></p>
+                <p><?=$lang['MAINTEXT'][8]?>
                 <ul>
-                    <li>технологии разработки электронных и печатных изданий;
-                    <li>системы автоматизации управления полиграфическим производством;
-                    <li>проблемы обработки цифровых изображений и воспроизведение цвета в полиграфии.</li>
+                    <li><?=$lang['MAINTEXT'][9]?></li>
+                    <li><?=$lang['MAINTEXT'][10]?></li>
+                    <li><?=$lang['MAINTEXT'][11]?></li>
                 </ul>
                 </p>
                 <hr>
                 <p> <i class="fa fa-exclamation-circle"></i>
-                    <strong> Перед началом конференции будут изданы сборник тезисов конференции  и материалы докладов школы-семинара. </strong></p>
+                    <strong><?=$lang['MAINTEXT'][12]?></strong></p>
                 <hr>
                 <p> <i class="fa fa-exclamation-circle"></i>
-                    <strong>По результатам конференции планируется издание лучших докладов в журнале «Бионика интеллекта», который внесен в перечень ВАК Украины.  Наилучшие статьи молодых ученых, рекомендованные Оргкомитетом конференции, будут опубликованя бесплатно.   </strong></p>
+                    <strong><?=$lang['MAINTEXT'][13]?></strong></p>
             </div>
 
             <div class="col-sm-12">
-                <h2 class="page-header">Организаторы</h2>
+                <h2 class="page-header"><?=$lang['MAINTEXT'][14]?></h2>
                 <big class="plus-pad-y">
                     <p>
-                        Министерство образования и науки Украины
+                        <?=$lang['MAINTEXT'][15]?>
                     <p>
-                        Харьковский национальный университет радиоэлектроники (Украина)
+                        <?=$lang['MAINTEXT'][16]?>
                     <p>
-                        Украинская академия печати (Украина)
+                        <?=$lang['MAINTEXT'][17]?>
                     <p>
-                        Национальный технический университет Украины «Киевский политехнический институт» (Украина)
+                        <?=$lang['MAINTEXT'][18]?>
                     <p>
-                        Университет штата Гуанахуато (Мексика)
+                        <?=$lang['MAINTEXT'][19]?>
                     <p>
-                        Ташкентский институт текстильной и легкой промышленности  (Узбекистан)
+                        <?=$lang['MAINTEXT'][20]?>
                     <p>
-                        Белорусский государственный технологический университет (Белоруссия)
+                        <?=$lang['MAINTEXT'][21]?>
                     <p>
-                        Московский государственный университет печати (РФ)
+                        <?=$lang['MAINTEXT'][22]?>
                     <p>
-                        Санкт-Петербургский  государственный университет технологи и дизайна (РФ)
+                        <?=$lang['MAINTEXT'][23]?>
                     </p>
                 </big>
             </div>
@@ -214,7 +213,7 @@
 
             <!-- Features Section -->
             <div class="col-sm-12">
-                <h2 class="page-header">16 мая 2016</h2>
+                <h2 class="page-header"><?=$lang['MAINTEXT'][24]?></h2>
             </div>
 
 
@@ -223,7 +222,7 @@
                     <p>Если Вы хотите приянть участие в этой конференции и получать новостную рассылку о всех организационных этапах подготовки, нажмите кнопку "Принять участие"</p>
                 </div>
                 <div class="col-md-4 del-pad-x">
-                    <button type="button" class="btn btn-lg btn-default btn-block blue-button" data-toggle="modal" data-target="#myModal">Принять участие</button>
+                    <button type="button" class="btn btn-lg btn-default btn-block blue-button" data-toggle="modal" data-target="#myModal"><?=$lang['MAINTEXT'][25]?></button>
 
 
                     <!-- Modal -->
@@ -409,16 +408,16 @@
             <!-- Sidebar Column -->
             <div class="col-sm-12">
                 <div class="list-group pad-tp-40">
-                    <a href="news.php" class="list-group-item">Новости</a>
-                    <a href="#" class="list-group-item">Программа конференции</a>
-                    <a href="#" class="list-group-item">Сборник работ</a>
-                    <a href="#" class="list-group-item">Решение конференции</a>
+                    <a href="news.php" class="list-group-item"><?=$lang['NEWS']?></a>
+                    <a href="#" class="list-group-item"><?=$lang['PROGRAM']?></a>
+                    <a href="#" class="list-group-item"><?=$lang['COLLECTIONOFARTICLES']?></a>
+                    <a href="#" class="list-group-item"><?=$lang['DECISION']?></a>
                 </div>
             </div>
 
             <!-- Date Column -->
             <div class="col-sm-12">
-                <h3 class="page-header">Даты</h3>
+                <h3 class="page-header"><?=$lang['DATES']?></h3>
             </div>
             <div class="col-sm-12">
                 <div class="media">
@@ -429,8 +428,8 @@
                             </span>
                     </div>
                     <div class="media-body">
-                        <h4 class="media-heading">15 января 2016</h4>
-                        <p>Начало регистрации.</p>
+                        <h4 class="media-heading"><?=$lang['DATE']['START'][0]?></h4>
+                        <p><?=$lang['DATE']['START']['TEXT']?></p>
                     </div>
                 </div>
                 <div class="media">
@@ -441,8 +440,8 @@
                             </span>
                     </div>
                     <div class="media-body">
-                        <h4 class="media-heading">21 февраля 2016</h4>
-                        <p>Окончание принятия/отклонения работ. </p>
+                        <h4 class="media-heading"><?=$lang['DATE']['END'][0]?></h4>
+                        <p><?=$lang['DATE']['END']['TEXT']?></p>
                     </div>
                 </div>
                 <div class="media">
@@ -453,8 +452,8 @@
                             </span>
                     </div>
                     <div class="media-body">
-                        <h4 class="media-heading">10 марта 2016</h4>
-                        <p>Принятие окончательных работю</p>
+                        <h4 class="media-heading"><?=$lang['DATE']['FINAL'][0]?></h4>
+                        <p><?=$lang['DATE']['FINAL']['TEXT']?></p>
                     </div>
                 </div>
             </div>
@@ -565,7 +564,7 @@
         interval: 5000 //changes the speed
     })
 </script>
-
+<script src="../../js/user.js"></script>
 
 
 </body>

@@ -85,9 +85,9 @@
                             RU <span class="caret"></span>
                         </button>
                         <ul class="dropdown-menu">
-                            <li><a href="#">RU</a></li>
-                            <li><a href="#">UA</a></li>
-                            <li><a href="#">EN</a></li>
+                            <li><a onclick="set_lang('ru')" href="">RU</a></li>
+                            <li><a onclick="set_lang('ua')" href="">UA</a></li>
+                            <li><a onclick="set_lang('eng')" href="">EN</a></li>
                         </ul>
                     </div>
                 </li>
@@ -312,7 +312,7 @@
 
 <!-- Bootstrap Core JavaScript -->
 <script src="js/bootstrap.min.js"></script>
-
+<script src="../../js/user.js"></script>
 </body>
 
 </html>
