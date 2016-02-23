@@ -73,13 +73,14 @@ $lang['MAINTEXT'][25] = 'Принять участие';
 
 // site_sections.template.php
 
-$lang['MAINTEXT'][26] = 'Conference Areas';
-$lang['MAINTEXT'][27] = 'Home';
-$lang['MAINTEXT'][28] = 'Conference Areas';
-$lang['MAINTEXT'][29] = 'The main directions of the conference';
-$lang['MAINTEXT'][30] = 'Technical and technological innovation in the production of printed materials and packaging industry.';
-$lang['MAINTEXT'][31] = 'Information systems and technology in the printing industry. Intelligent systems.';
-$lang['MAINTEXT'][32] = 'Multimedia and web-based technologies. Developing applications for mobile devices. UA-UX interface.';
-$lang['MAINTEXT'][33] = '2D and 3D-graphics, graphic design, color management.';
-$lang['MAINTEXT'][34] = 'Marketing and Advertising in printing.';
-$lang['MAINTEXT'][35] = 'The use of new teaching methods in the publishing and printing industry, the relationship of the educational process with production.';
+$lang['MAINTEXT'][26] = 'Секции конференции';
+$lang['MAINTEXT'][27] = 'Главная';
+$lang['MAINTEXT'][28] = 'Секции';
+$lang['MAINTEXT'][29] = 'Основные направления работы конференции';
+$lang['MAINTEXT'][30] = 'Технические и технологические инновации в производстве печатной продукции и упаковочном производстве.';
+$lang['MAINTEXT'][31] = 'Информационные системы и технологии в полиграфии. Интеллектуальные системы.';
+$lang['MAINTEXT'][32] = 'Мультимедийные и web-технологии. Разработка приложений для мобильных устройств. UA-UX интерфейсы.';
+$lang['MAINTEXT'][33] = '2D и 3D-графика, графический дизайн, управление цветом.';
+$lang['MAINTEXT'][34] = 'Маркетинг и реклама в полиграфии.';
+$lang['MAINTEXT'][35] = 'Использование новых методов обучения в издательско-полиграфической отрасли, связь учебного процесса с производством.';
+
