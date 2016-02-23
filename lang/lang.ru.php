@@ -69,3 +69,17 @@ $lang['MAINTEXT'][22] = 'Московский государственный у�
 $lang['MAINTEXT'][23] = 'Санкт-Петербургский государственный университет технологи и дизайна (РФ)';
 $lang['MAINTEXT'][24] = '16 мая 2016';
 $lang['MAINTEXT'][25] = 'Принять участие';
+
+
+// site_sections.template.php
+
+$lang['MAINTEXT'][26] = 'Conference Areas';
+$lang['MAINTEXT'][27] = 'Home';
+$lang['MAINTEXT'][28] = 'Conference Areas';
+$lang['MAINTEXT'][29] = 'The main directions of the conference';
+$lang['MAINTEXT'][30] = 'Technical and technological innovation in the production of printed materials and packaging industry.';
+$lang['MAINTEXT'][31] = 'Information systems and technology in the printing industry. Intelligent systems.';
+$lang['MAINTEXT'][32] = 'Multimedia and web-based technologies. Developing applications for mobile devices. UA-UX interface.';
+$lang['MAINTEXT'][33] = '2D and 3D-graphics, graphic design, color management.';
+$lang['MAINTEXT'][34] = 'Marketing and Advertising in printing.';
+$lang['MAINTEXT'][35] = 'The use of new teaching methods in the publishing and printing industry, the relationship of the educational process with production.';
