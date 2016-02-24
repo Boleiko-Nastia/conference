@@ -53,9 +53,9 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li>
--                    <a href="index.php"><?=$lang['MENU_HOME']?></a>
--                </li>
--                <li class="active">
+                    <a href="index.php"><?=$lang['MENU_HOME']?></a>
+                </li>
+                <li class="active">
                     <a href="sections.php"><?=$lang['CONFERENCE_AREA']?></a>
                 </li>
                 <li>
