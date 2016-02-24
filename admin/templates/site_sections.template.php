@@ -53,32 +53,31 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a href="index.php">Главная</a>
+                    <a href="index.php"><?=$lang['MENU_HOME']?></a>
                 </li>
                 <li class="active">
-                    <a href="sections.php">Секции</a>
+                    <a href="sections.php"><?=$lang['CONFERENCE_AREA']?></a>
                 </li>
                 <li>
-                    <a href="rules.php">Условия</a>
+                    <a href="rules.php"><?=$lang['CONDITIONS']?></a>
                 </li>
                 <li>
-                    <a href="calendar.php">Календарь</a>
+                    <a href="calendar.php"><?=$lang['NEWS']?></a>
                 </li>
                 <li>
-                    <a href="news.php">Новости</a>
-                </li>
-
-                <li>
-                    <a href="commission.php">Огранизаторы</a>
+                    <a href="news.php"><?=$lang['NEWS']?></a>
                 </li>
                 <li>
-                    <a href="participants.php">Участники</a>
+                    <a href="commission.php"><?=$lang['ORGANISERS']?></a>
                 </li>
                 <li>
-                    <a href="archive.php">Архив</a>
+                    <a href="participants.php"><?=$lang['SPEAKERS']?></a>
                 </li>
                 <li>
-                    <a href="contact.php">Контакты</a>
+                    <a href="archive.php"><?=$lang['ARCHIVE']?></a>
+                </li>
+                <li>
+                    <a href="contact.php"><?=$lang['CONTACTS']?></a>
                 </li>
                 <li class="li-language">
                     <div class="btn-group group-language">
@@ -105,12 +104,12 @@
     <!-- Page Heading/Breadcrumbs -->
     <div class="row">
         <div class="col-sm-12">
-            <h1 class="page-header">Секции конференции
+            <h1 class="page-header"><?=$lang['MAINTEXT'][26]?>
             </h1>
             <ol class="breadcrumb">
-                <li><a href="index.php">Главная</a>
+                <li><a href="index.php"><?=$lang['MAINTEXT'][27]?></a>
                 </li>
-                <li class="active">Секции</li>
+                <li class="active"><?=$lang['MAINTEXT'][28]?></li>
             </ol>
         </div>
 
@@ -121,20 +120,16 @@
                 <embed src="img/virtualtour.swf" alt="Виртуальный обзор кафедры">
             </div>
             <div class="col-sm-12">
-                <h2 class="page-header">Основные направления работы конференции</h2>
+                <h2 class="page-header"><?=$lang['MAINTEXT'][29]?></h2>
             </div>
             <div class="col-sm-12 del-pad-x">
                 <ul><big>
-                        <li>Инновации в производстве печатной продукции </li>
-                        <li>Технические и технологические инновации в упаковочном производстве</li>
-                        <li>Информационные системы и технологии в полиграфии </li>
-                        <li>Технологии обработки цифровых изображений и управление цветом</li>
-                        <li>Мультимедийные и web-технологии </li>
-                        <li>Разработка приложений для мобильных устройств </li>
-                        <li>Компьютерная графика, графический дизайн и трехмерное моделирование;</li>
-                        <li>Маркетинг и реклама в полиграфии</li>
-                        <li>Использование новых методов обучения  в издательско-полиграфической отрасли, связь учебного процесса с производством</li>
-                        <li>Интеллектуальные системы и технологии</li>
+                        <li><?=$lang['MAINTEXT'][30]?></li>
+                        <li><?=$lang['MAINTEXT'][31]?></li>
+                        <li><?=$lang['MAINTEXT'][32]?></li>
+                        <li><?=$lang['MAINTEXT'][33]?></li>
+                        <li><?=$lang['MAINTEXT'][34]?></li>
+                        <li><?=$lang['MAINTEXT'][35]?></li>
                     </big>
                 </ul>
             </div>
@@ -148,16 +143,16 @@
             <!-- Sidebar Column -->
             <div class="col-sm-12">
                 <div class="list-group">
-                    <a href="news.php" class="list-group-item">Новости</a>
-                    <a href="#" class="list-group-item">Программа конференции</a>
-                    <a href="#" class="list-group-item">Сборник работ</a>
-                    <a href="#" class="list-group-item">Решение конференции</a>
+                    <a href="news.php" class="list-group-item"><?=$lang['NEWS']?></a>
+                    <a href="#" class="list-group-item"><?=$lang['PROGRAM']?></a>
+                    <a href="#" class="list-group-item"><?=$lang['COLLECTIONOFARTICLES']?></a>
+                    <a href="#" class="list-group-item"><?=$lang['DECISION']?></a>
                 </div>
             </div>
 
             <!-- Date Column -->
             <div class="col-sm-12">
-                <h3 class="page-header">Даты</h3>
+                <h3 class="page-header"><?=$lang['DATES']?></h3>
             </div>
             <div class="col-sm-12">
                 <div class="media">
@@ -168,32 +163,32 @@
                             </span>
                     </div>
                     <div class="media-body">
-                        <h4 class="media-heading">15 января 2016</h4>
-                        <p>Начало регистрации.</p>
+                        <h4 class="media-heading"><?=$lang['DATE']['START'][0]?></h4>
+                        <p><?=$lang['DATE']['START']['TEXT']?></p>
                     </div>
                 </div>
                 <div class="media">
                     <div class="pull-left">
                             <span class="fa-stack fa-lg">
                                 <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                                <i class="fa fa-clock-o fa-stack-1x fa-inverse"></i>
+                                <i class="fa fa-hourglass-start fa-stack-1x fa-inverse"></i>
                             </span>
                     </div>
                     <div class="media-body">
-                        <h4 class="media-heading">21 февраля 2016</h4>
-                        <p>Окончание принятия/отклонения работ. </p>
+                        <h4 class="media-heading"><?=$lang['DATE']['END'][0]?></h4>
+                        <p><?=$lang['DATE']['END']['TEXT']?></p>
                     </div>
                 </div>
                 <div class="media">
                     <div class="pull-left">
                             <span class="fa-stack fa-lg">
                                 <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                                <i class="fa fa-clock-o fa-stack-1x fa-inverse"></i>
+                                <i class="fa fa-hourglass-start fa-stack-1x fa-inverse"></i>
                             </span>
                     </div>
                     <div class="media-body">
-                        <h4 class="media-heading">10 марта 2016</h4>
-                        <p>Принятие окончательных работю</p>
+                        <h4 class="media-heading"><?=$lang['DATE']['FINAL'][0]?></h4>
+                        <p><?=$lang['DATE']['FINAL']['TEXT']?></p>
                     </div>
                 </div>
             </div>
@@ -243,8 +238,6 @@
                     </a>
                 </div>
             </div>
-
-
         </div>
 
     </div>
