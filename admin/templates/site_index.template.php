@@ -219,7 +219,7 @@
 
             <div class="col-sm-12">
                 <div class="col-md-8 del-pad-x">
-                    <p>Если Вы хотите приянть участие в этой конференции и получать новостную рассылку о всех организационных этапах подготовки, нажмите кнопку "Принять участие"</p>
+                    <p><?=$lang['MAINTEXT'][24.1]?></p>
                 </div>
                 <div class="col-md-4 del-pad-x">
                     <button type="button" class="btn btn-lg btn-default btn-block blue-button" data-toggle="modal" data-target="#myModal"><?=$lang['MAINTEXT'][25]?></button>
@@ -233,151 +233,122 @@
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    <h4 class="modal-title">Заявка на участие в конференции / выставке</h4>
+                                    <h4 class="modal-title"><?=$lang['MAINTEXT'][Form1]?></h4>
                                 </div>
                                 <div class="modal-body">
-
-
-
                                     <form class="form-horizontal">
                                         <div class="form-group">
-                                            <label class="col-sm-3 control-label">*Фамилия</label>
+                                            <label class="col-sm-3 control-label">*<?=$lang['MAINTEXT'][Form2]?></label>
                                             <div class="col-sm-8">
-                                                <input class="form-control" id="inputName" placeholder="Иванов">
+                                                <input class="form-control" id="inputName" placeholder="<?=$lang['MAINTEXT'][Form2ph]?>">
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label class="col-sm-3 control-label">*Имя</label>
+                                            <label class="col-sm-3 control-label">*<?=$lang['MAINTEXT'][Form3]?></label>
                                             <div class="col-sm-8">
-                                                <input class="form-control" id="inputSurename" placeholder="Иван">
+                                                <input class="form-control" id="inputSurename" placeholder="<?=$lang['MAINTEXT'][Form3ph]?>">
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label class="col-sm-3 control-label">*Отчество</label>
+                                            <label class="col-sm-3 control-label">*<?=$lang['MAINTEXT'][Form4]?></label>
                                             <div class="col-sm-8">
-                                                <input class="form-control" id="inputFathername" placeholder="Иванович">
+                                                <input class="form-control" id="inputFathername" placeholder="<?=$lang['MAINTEXT'][Form4ph]?>">
                                             </div>
                                         </div>
                                         <hr>
                                         <div class="form-group">
-                                            <label class="col-sm-3 control-label">*Место работы / учебы
-                                                <br> <h6><small>СТУДЕНТАМ указать полное название ВУЗа и группы <br>ПРЕПОДАВАТЕЛЯМ указать полное название ВУЗа и кафедры</small></h6></label>
+                                            <label class="col-sm-3 control-label">*<?=$lang['MAINTEXT'][Form5]?>
+                                                <br> <h6><small><?=$lang['MAINTEXT'][Form5c]?> <br><?=$lang['MAINTEXT'][Form5c2]?> </small></h6></label>
                                             <div class="col-sm-8">
-                                                <textarea class="form-control" id="inputWorkplace" placeholder="Харьковский национальный университет радиоэлетроники, Кафедра Мультимедийных систем и технологий" rows="4" cols="100" style="resize:vertical"></textarea>
+                                                <textarea class="form-control" id="inputWorkplace" placeholder="<?=$lang['MAINTEXT'][Form5ph]?>" rows="4" cols="100" style="resize:vertical"></textarea>
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label for="inputPosition" class="col-sm-3 control-label">*Должность</label>
+                                            <label for="inputPosition" class="col-sm-3 control-label">*<?=$lang['MAINTEXT'][Form6]?></label>
                                             <div class="col-sm-8">
                                                 <div class="dropdown">
                                                     <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                                        Студент
+                                                        <?=$lang['MAINTEXT'][Form6ph]?>
                                                         <span class="caret"></span>
                                                     </button>
                                                     <ul class="dropdown-menu " aria-labelledby="dropdownMenu1">
-                                                        <li><a href="#">Преподаватель</a></li>
-                                                        <li><a href="#">Сотрудник компании</a></li>
-                                                        <li><a href="#">Другое</a></li>
+                                                        <li><a href="#"><?=$lang['MAINTEXT'][Form6ph1]?></a></li>
+                                                        <li><a href="#"><?=$lang['MAINTEXT'][Form6ph2]?></a></li>
+                                                        <li><a href="#"><?=$lang['MAINTEXT'][Form6ph3]?></a></li>
+                                                        <li><a href="#"><?=$lang['MAINTEXT'][Form6ph4]?></a></li>
                                                     </ul>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label class="col-sm-3 control-label">Ученая степень
-                                                <br> <h6><small>для научных сотрудников</small></h6></label>
+                                            <label class="col-sm-3 control-label"><?=$lang['MAINTEXT'][Form7]?>
+                                                <br> <h6><small><?=$lang['MAINTEXT'][Form7c]?></small></h6></label>
                                             <div class="col-sm-8">
-                                                <textarea class="form-control" id="inputWorkplace" placeholder="Доктор Наук" rows="2" cols="100" style="resize:vertical"></textarea>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="col-sm-3 control-label">Ученое звание
-                                                <br> <h6><small>для научных сотрудников</small></h6></label>
-                                            <div class="col-sm-8">
-                                                <textarea class="form-control" id="inputWorkplace" placeholder="Доктор Наук" rows="2" cols="100" style="resize:vertical"></textarea>
+                                                <textarea class="form-control" id="inputWorkplace" placeholder="<?=$lang['MAINTEXT'][Form7ph]?>" rows="2" cols="100" style="resize:vertical"></textarea>
                                             </div>
                                         </div>
                                         <hr>
                                         <div class="form-group">
-                                            <label class="col-sm-3 control-label">*Участие в мероприятии</label>
+                                            <label class="col-sm-3 control-label">*<?=$lang['MAINTEXT'][Form8]?></label>
                                             <div class="col-sm-8">
                                                 <div class="radio">
                                                     <label>
                                                         <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-                                                        Очное
+                                                        <?=$lang['MAINTEXT'][Form8ph]?>
                                                     </label>
                                                 </div>
                                                 <div class="radio">
                                                     <label>
                                                         <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                                                        Заочное
+                                                        <?=$lang['MAINTEXT'][Form8ph1]?>
                                                     </label>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label class="col-sm-3 control-label">*Участие в</label>
+                                            <label class="col-sm-3 control-label">*<?=$lang['MAINTEXT'][Form9]?></label>
                                             <div class="col-sm-8">
                                                 <div class="checkbox">
                                                     <label>
                                                         <input type="checkbox" value="">
-                                                        Конференция
+                                                        <?=$lang['MAINTEXT'][Form9ph1]?>
                                                     </label>
                                                 </div>
                                                 <div class="checkbox">
                                                     <label>
                                                         <input type="checkbox" value="">
-                                                        Школа-семинар
+                                                        <?=$lang['MAINTEXT'][Form9ph2]?>
                                                     </label>
                                                 </div>
                                                 <div class="checkbox">
                                                     <label>
                                                         <input type="checkbox" value="">
-                                                        Выставка студенческих работ
+                                                        <?=$lang['MAINTEXT'][Form9ph3]?>
                                                     </label>
                                                 </div>
                                             </div>
                                         </div>
                                         <hr>
                                         <div class="form-group">
-                                            <label class="col-sm-3 control-label">*Email</label>
+                                            <label class="col-sm-3 control-label">*<?=$lang['MAINTEXT'][Form10]?></label>
                                             <div class="col-sm-8">
-                                                <input type="email" class="form-control" id="inputEmail" placeholder="ivanov_ivan@ukr.net">
+                                                <input type="email" class="form-control" id="inputEmail" placeholder="<?=$lang['MAINTEXT'][Form10ph]?>">
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label class="col-sm-3 control-label">Телефон</label>
+                                            <label class="col-sm-3 control-label"><?=$lang['MAINTEXT'][Form11]?></label>
                                             <div class="col-sm-8">
-                                                <input type="tel" class="form-control" id="inputTel" placeholder="+38(057) 11-22-333">
+                                                <input type="tel" class="form-control" id="inputTel" placeholder="<?=$lang['MAINTEXT'][Form11ph]?>">
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label class="col-sm-3 control-label">Адрес</label>
+                                            <label class="col-sm-3 control-label"><?=$lang['MAINTEXT'][Form12]?></label>
                                             <div class="col-sm-8">
-                                                <input type="text" class="form-control" id="inputPhone" placeholder="Украина, Харьков, пр.Ленина 23, дом 10, индекс: 61000">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="inputEmail3" class="col-sm-3 control-label">Пароль</label>
-                                            <div class="col-sm-8">
-                                                <input type="password" class="form-control" id="inputPassword" placeholder="Password">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="col-sm-offset-3 col-sm-9">
-                                                <div class="checkbox">
-                                                    <label>
-                                                        <input type="checkbox"> Remember me
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="col-sm-offset-3 col-sm-9">
-                                                <button type="submit" class="btn btn-default red-hover">Sign in</button>
+                                                <input type="text" class="form-control" id="inputPhone" placeholder="<?=$lang['MAINTEXT'][Form12ph]?>">
                                             </div>
                                         </div>
                                         <hr>
-                                        <h4>*  -  Поля обязательные для заполнения.</h4>
+                                        <h4>*  -  <?=$lang['MAINTEXT'][Form13]?></h4>
                                     </form>
                                     <!--Show error message for user (before buttons)
                                         <div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> Заполните все поля со звездочкой!</div>
@@ -387,8 +358,8 @@
                                     <!--Show success message for user (instead of buttons)
                                         <div class="alert alert-success text-left" role="alert"><i class="fa fa-check"></i> Ваша заявка успешно отправлена!</div>
                                     END success message-->
-                                    <button type="button" class="btn btn-default blue-button" data-dismiss="modal">Отправить</button>
-                                    <button type="button" class="btn btn-default red-hover" data-dismiss="modal">Отмена</button>
+                                    <button type="button" class="btn btn-default blue-button" data-dismiss="modal"><?=$lang['MAINTEXT'][Form14]?></button>
+                                    <button type="button" class="btn btn-default red-hover" data-dismiss="modal"><?=$lang['MAINTEXT'][Form15]?></button>
                                 </div>
                             </div>
                         </div>
