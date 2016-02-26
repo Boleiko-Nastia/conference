@@ -68,7 +68,45 @@ $lang['MAINTEXT'][21] = 'Belarusian State Technological University (Belarus)';
 $lang['MAINTEXT'][22] = 'Moscow State University of Printing (RF)';
 $lang['MAINTEXT'][23] = 'St. Petersburg State University of Technology and Design (RF)';
 $lang['MAINTEXT'][24] = 'May 16, 2016';
+$lang['MAINTEXT'][beforebtn] = 'If you want to participate in this conference and to receive information about all the organizational stages of preparation, press
+&#34;Participate&#34;';
 $lang['MAINTEXT'][25] = 'Participate';
+$lang['MAINTEXT'][Form1] = 'Participation in the conference / exhibition';
+$lang['MAINTEXT'][Form2] = 'Surname';
+$lang['MAINTEXT'][Form2ph] = 'Johnson';
+$lang['MAINTEXT'][Form3] = 'First Name';
+$lang['MAINTEXT'][Form3ph] = 'Mike';
+$lang['MAINTEXT'][Form4] = 'Last Name (or Father&#39;s Name)';
+$lang['MAINTEXT'][Form4ph] = 'Thomas';
+$lang['MAINTEXT'][Form5] = 'Place of work / study';
+$lang['MAINTEXT'][Form5c] = 'STUDENTS specify the full name of the student and the group';
+$lang['MAINTEXT'][Form5c2] = 'TEACHERS indicate the full name of the university and the department';
+$lang['MAINTEXT'][Form5ph] = 'National Autonomous University of Mexico, Faculty of Accounting and Administration';
+$lang['MAINTEXT'][Form6] = 'Position';
+$lang['MAINTEXT'][Form6ph] = 'Student';
+$lang['MAINTEXT'][Form6ph1] = 'Student';
+$lang['MAINTEXT'][Form6ph2] = 'Teacher';
+$lang['MAINTEXT'][Form6ph3] = 'An employee of the company';
+$lang['MAINTEXT'][Form6ph4] = 'Other';
+$lang['MAINTEXT'][Form7] = 'Academic degree';
+$lang['MAINTEXT'][Form7c] = 'for scientists';
+$lang['MAINTEXT'][Form7ph] = 'Ph.D';
+$lang['MAINTEXT'][Form8] = 'Participation in the event';
+$lang['MAINTEXT'][Form8ph] = 'Full-time';
+$lang['MAINTEXT'][Form8ph1] = 'Distance';
+$lang['MAINTEXT'][Form9] = 'Participation';
+$lang['MAINTEXT'][Form9ph1] = 'Conference';
+$lang['MAINTEXT'][Form9ph2] = 'School-Seminar';
+$lang['MAINTEXT'][Form9ph3] = 'The exhibition of student works';
+$lang['MAINTEXT'][Form10] = 'Email';
+$lang['MAINTEXT'][Form10ph] = 'Mike_Johnson@br.net';
+$lang['MAINTEXT'][Form11] = 'Phone';
+$lang['MAINTEXT'][Form11ph] = '+55 11 22233344';
+$lang['MAINTEXT'][Form12] = 'Address';
+$lang['MAINTEXT'][Form12ph] = 'Rua Visconde de Porto Seguro 1238, Sao Paulo-SP, 04642-000, BRAZIL';
+$lang['MAINTEXT'][Form13] = 'Required fields.';
+$lang['MAINTEXT'][Form14] = 'Send';
+$lang['MAINTEXT'][Form15] = 'Cancel';
 
 
 // site_sections.template.php
