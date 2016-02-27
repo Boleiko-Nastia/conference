@@ -62,10 +62,10 @@
                 <li>
                     <a href="commission.php"><?=$lang['ORGANISERS']?></a>
                 </li>
-                <li class="active">
+                <li>
                     <a href="participants.php"><?=$lang['SPEAKERS']?></a>
                 </li>
-                <li>
+                <li class="active">
                     <a href="archive.php"><?=$lang['ARCHIVE']?></a>
                 </li>
                 <li>
