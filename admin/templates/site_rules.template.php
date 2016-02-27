@@ -54,7 +54,7 @@
                     <a href="rules.php"><?=$lang['CONDITIONS']?></a>
                 </li>
                 <li>
-                    <a href="calendar.php"><?=$lang['NEWS']?></a>
+                    <a href="calendar.php"><?=$lang['CALENDAR']?></a>
                 </li>
                 <li>
                     <a href="news.php"><?=$lang['NEWS']?></a>
