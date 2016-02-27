@@ -24,13 +24,6 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="img/favicon.png">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
 </head>
 
 <body>
@@ -52,32 +45,31 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a href="index.php">Главная</a>
+                    <a href="index.php"><?=$lang['MENU_HOME']?></a>
                 </li>
                 <li>
-                    <a href="sections.php">Секции</a>
+                    <a href="sections.php"><?=$lang['CONFERENCE_AREA']?></a>
                 </li>
                 <li>
-                    <a href="rules.php">Условия</a>
+                    <a href="rules.php"><?=$lang['CONDITIONS']?></a>
                 </li>
                 <li>
-                    <a href="calendar.php">Календарь</a>
+                    <a href="calendar.php"><?=$lang['CALENDAR']?></a>
                 </li>
                 <li>
-                    <a href="news.php">Новости</a>
-                </li>
-
-                <li>
-                    <a href="commission.php">Огранизаторы</a>
+                    <a href="news.php"><?=$lang['NEWS']?></a>
                 </li>
                 <li>
-                    <a href="participants.php">Участники</a>
+                    <a href="commission.php"><?=$lang['ORGANISERS']?></a>
+                </li>
+                <li>
+                    <a href="participants.php"><?=$lang['SPEAKERS']?></a>
                 </li>
                 <li class="active">
-                    <a href="archive.php">Архив</a>
+                    <a href="archive.php"><?=$lang['ARCHIVE']?></a>
                 </li>
                 <li>
-                    <a href="contact.php">Контакты</a>
+                    <a href="contact.php"><?=$lang['CONTACTS']?></a>
                 </li>
                 <li class="li-language">
                     <div class="btn-group group-language">
@@ -100,15 +92,15 @@
 <!-- Page Content -->
 <div class="container">
 
-    <!-- Page Heading/Breadcrumbs -->
+<!-- Page Heading/Breadcrumbs -->
     <div class="row">
         <div class="col-sm-12">
-            <h1 class="page-header">Новости
+            <h1 class="page-header"><?=$lang['MAINTEXT'][125]?>
             </h1>
             <ol class="breadcrumb">
-                <li><a href="index.php">Главная</a>
+                <li><a href="index.php"><?=$lang['MAINTEXT'][126]?></a>
                 </li>
-                <li class="active">Новости</li>
+                <li class="active"><?=$lang['MAINTEXT'][127]?></li>
             </ol>
         </div>
     </div>
@@ -117,7 +109,7 @@
     <div class="row">
 
         <div class="col-sm-9">
-            <h2 class="page-header">Файлы для скачивания</h2>
+            <h2 class="page-header"><?=$lang['MAINTEXT'][128]?></h2>
             <div class="col-lg-3 col-md-4 col-sm-6">
                 <div class="panel panel-default text-center">
                     <div class="panel-heading">
@@ -129,7 +121,7 @@
                     <div class="panel-body">
                         <h4>Информационное сообщение</h4>
                         <p>(українською, *. pdf, ~37 K)</p>
-                        <a href="#" class="btn btn-primary blue-button">Скачать</a>
+                        <a href="#" class="btn btn-primary blue-button"><?=$lang['MAINTEXT'][Download]?></a>
                     </div>
                 </div>
             </div>
@@ -144,7 +136,7 @@
                     <div class="panel-body">
                         <h4>Требования к оформлению тезисов</h4>
                         <p>(українською, *. pdf, ~37 K)</p>
-                        <a href="#" class="btn btn-primary blue-button">Скачать</a>
+                        <a href="#" class="btn btn-primary blue-button"><?=$lang['MAINTEXT'][Download]?></a>
                     </div>
                 </div>
             </div>
@@ -159,7 +151,7 @@
                     <div class="panel-body">
                         <h4>Требования к оформлению статьи в журнале «Бионика интеллекта»</h4>
                         <p>(українською, *. pdf, ~37 K)</p>
-                        <a href="#" class="btn btn-primary blue-button">Скачать</a>
+                        <a href="#" class="btn btn-primary blue-button"><?=$lang['MAINTEXT'][Download]?></a>
                     </div>
                 </div>
             </div>
@@ -174,13 +166,12 @@
                     <div class="panel-body">
                         <h4>Заявка на участие в выставке студенческих работ</h4>
                         <p>(українською, *. pdf, ~37 K)</p>
-                        <a href="#" class="btn btn-primary blue-button">Скачать</a>
+                        <a href="#" class="btn btn-primary blue-button"><?=$lang['MAINTEXT'][Download]?></a>
                     </div>
                 </div>
             </div>
 
             <hr>
-
             <!-- Pager -->
         </div>
 

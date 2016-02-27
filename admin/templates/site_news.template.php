@@ -23,13 +23,6 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="img/favicon.png">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
 </head>
 
 <body>
@@ -51,32 +44,31 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a href="index.php">Главная</a>
+                    <a href="index.php"><?=$lang['MENU_HOME']?></a>
                 </li>
                 <li>
-                    <a href="sections.php">Секции</a>
+                    <a href="sections.php"><?=$lang['CONFERENCE_AREA']?></a>
                 </li>
                 <li>
-                    <a href="rules.php">Условия</a>
+                    <a href="rules.php"><?=$lang['CONDITIONS']?></a>
                 </li>
                 <li>
-                    <a href="calendar.php">Календарь</a>
+                    <a href="calendar.php"><?=$lang['CALENDAR']?></a>
                 </li>
                 <li class="active">
-                    <a href="news.php">Новости</a>
-                </li>
-
-                <li>
-                    <a href="commission.php">Огранизаторы</a>
+                    <a href="news.php"><?=$lang['NEWS']?></a>
                 </li>
                 <li>
-                    <a href="participants.php">Участники</a>
+                    <a href="commission.php"><?=$lang['ORGANISERS']?></a>
                 </li>
                 <li>
-                    <a href="archive.php">Архив</a>
+                    <a href="participants.php"><?=$lang['SPEAKERS']?></a>
                 </li>
                 <li>
-                    <a href="contact.php">Контакты</a>
+                    <a href="archive.php"><?=$lang['ARCHIVE']?></a>
+                </li>
+                <li>
+                    <a href="contact.php"><?=$lang['CONTACTS']?></a>
                 </li>
                 <li class="li-language">
                     <div class="btn-group group-language">
@@ -102,12 +94,12 @@
     <!-- Page Heading/Breadcrumbs -->
     <div class="row">
         <div class="col-sm-12">
-            <h1 class="page-header">Новости
+            <h1 class="page-header"><?=$lang['MAINTEXT'][100]?>
             </h1>
             <ol class="breadcrumb">
-                <li><a href="index.php">Главная</a>
+                <li><a href="index.php"><?=$lang['MAINTEXT'][101]?></a>
                 </li>
-                <li class="active">Новости</li>
+                <li class="active"><?=$lang['MAINTEXT'][102]?></li>
             </ol>
         </div>
     </div>
@@ -119,27 +111,23 @@
             <div class="col-sm-12">
                 <!-- First Blog Post -->
                 <h2>
-                    <a href="post-1.php">Начало приема документов</a>
+                    <a href="post-1.php"></a>
                 </h2>
                 <p class="lead">
-                    Добавлено: Чеботарева И.Б.
+                    <?=$lang['MAINTEXT'][AddBy]?>Чеботарева И.Б.
                 </p>
-                <p><i class="fa fa-clock-o"></i> Опубликовано 16 декабря, 2015 в 10:00</p>
+                <p><i class="fa fa-clock-o"></i> <?=$lang['MAINTEXT'][AddDate]?>16 декабря, 2015 в 10:00</p>
                 <hr>
                 <a href="post-1.php">
                     <img class="img-responsive img-hover" src="img/post/2.png" alt="">
                 </a>
                 <hr>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, veritatis, tempora, necessitatibus inventore nisi quam quia repellat ut tempore laborum possimus eum dicta id animi corrupti debitis ipsum officiis rerum.</p>
-                <a class="btn btn-primary blue-button" href="post-1.php">Подробнее <i class="fa fa-angle-right"></i></a>
-
+                <a class="btn btn-primary blue-button" href="post-1.php"><?=$lang['MAINTEXT'][More]?><i class="fa fa-angle-right"></i></a>
                 <hr>
-
+                <!-- END First Blog Post -->
+                
             </div>
-            <hr>
-
-            <!-- Pager -->
-
 
         </div>
 
@@ -151,16 +139,16 @@
             <!-- Sidebar Column -->
             <div class="col-sm-12">
                 <div class="list-group">
-                    <a href="news.php" class="list-group-item">Новости</a>
-                    <a href="#" class="list-group-item">Программа конференции</a>
-                    <a href="#" class="list-group-item">Сборник работ</a>
-                    <a href="#" class="list-group-item">Решение конференции</a>
+                    <a href="news.php" class="list-group-item"><?=$lang['NEWS']?></a>
+                    <a href="#" class="list-group-item"><?=$lang['PROGRAM']?></a>
+                    <a href="#" class="list-group-item"><?=$lang['COLLECTIONOFARTICLES']?></a>
+                    <a href="#" class="list-group-item"><?=$lang['DECISION']?></a>
                 </div>
             </div>
 
             <!-- Date Column -->
             <div class="col-sm-12">
-                <h3 class="page-header">Даты</h3>
+                <h3 class="page-header"><?=$lang['DATES']?></h3>
             </div>
             <div class="col-sm-12">
                 <div class="media">
@@ -171,32 +159,32 @@
                             </span>
                     </div>
                     <div class="media-body">
-                        <h4 class="media-heading">15 января 2016</h4>
-                        <p>Начало регистрации.</p>
+                        <h4 class="media-heading"><?=$lang['DATE']['START'][0]?></h4>
+                        <p><?=$lang['DATE']['START']['TEXT']?></p>
                     </div>
                 </div>
                 <div class="media">
                     <div class="pull-left">
                             <span class="fa-stack fa-lg">
                                 <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                                <i class="fa fa-clock-o fa-stack-1x fa-inverse"></i>
+                                <i class="fa fa-hourglass-start fa-stack-1x fa-inverse"></i>
                             </span>
                     </div>
                     <div class="media-body">
-                        <h4 class="media-heading">21 февраля 2016</h4>
-                        <p>Окончание принятия/отклонения работ. </p>
+                        <h4 class="media-heading"><?=$lang['DATE']['END'][0]?></h4>
+                        <p><?=$lang['DATE']['END']['TEXT']?></p>
                     </div>
                 </div>
                 <div class="media">
                     <div class="pull-left">
                             <span class="fa-stack fa-lg">
                                 <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                                <i class="fa fa-clock-o fa-stack-1x fa-inverse"></i>
+                                <i class="fa fa-hourglass-start fa-stack-1x fa-inverse"></i>
                             </span>
                     </div>
                     <div class="media-body">
-                        <h4 class="media-heading">10 марта 2016</h4>
-                        <p>Принятие окончательных работю</p>
+                        <h4 class="media-heading"><?=$lang['DATE']['FINAL'][0]?></h4>
+                        <p><?=$lang['DATE']['FINAL']['TEXT']?></p>
                     </div>
                 </div>
             </div>
