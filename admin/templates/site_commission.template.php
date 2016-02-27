@@ -23,13 +23,6 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="img/favicon.png">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
 </head>
 
 <body>
@@ -50,33 +43,32 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a href="index.php">Главная</a>
+                                <li>
+                    <a href="index.php"><?=$lang['MENU_HOME']?></a>
                 </li>
                 <li>
-                    <a href="sections.php">Секции</a>
+                    <a href="sections.php"><?=$lang['CONFERENCE_AREA']?></a>
                 </li>
                 <li>
-                    <a href="rules.php">Условия</a>
+                    <a href="rules.php"><?=$lang['CONDITIONS']?></a>
                 </li>
                 <li>
-                    <a href="calendar.php">Календарь</a>
+                    <a href="calendar.php"><?=$lang['CALENDAR']?></a>
                 </li>
                 <li>
-                    <a href="news.php">Новости</a>
+                    <a href="news.php"><?=$lang['NEWS']?></a>
                 </li>
-
                 <li class="active">
-                    <a href="commission.php">Огранизаторы</a>
+                    <a href="commission.php"><?=$lang['ORGANISERS']?></a>
                 </li>
                 <li>
-                    <a href="participants.php">Участники</a>
+                    <a href="participants.php"><?=$lang['SPEAKERS']?></a>
                 </li>
                 <li>
-                    <a href="archive.php">Архив</a>
+                    <a href="archive.php"><?=$lang['ARCHIVE']?></a>
                 </li>
                 <li>
-                    <a href="contact.php">Контакты</a>
+                    <a href="contact.php"><?=$lang['CONTACTS']?></a>
                 </li>
                 <li class="li-language">
                     <div class="btn-group group-language">
@@ -103,12 +95,12 @@
     <!-- Page Heading/Breadcrumbs -->
     <div class="row">
         <div class="col-sm-12">
-            <h1 class="page-header">Программный комитет конференции
+            <h1 class="page-header"><?=$lang['MAINTEXT'][103]?>
             </h1>
             <ol class="breadcrumb">
-                <li><a href="index.php">Главная</a>
+                <li><a href="index.php"><?=$lang['MAINTEXT'][104]?></a>
                 </li>
-                <li class="active">Огранизаторы</li>
+                <li class="active"><?=$lang['MAINTEXT'][105]?></li>
             </ol>
         </div>
 
@@ -118,7 +110,7 @@
         <div class="col-sm-9 del-pad-x">
 
             <div class="col-sm-12">
-                <h2 class="page-header">Спонсоры и партнеры конференции</h2>
+                <h2 class="page-header"><?=$lang['MAINTEXT'][106]?></h2>
             </div>
             <div class="col-sm-12 del-pad-x">
                 <div class="col-lg-3 col-md-4 col-sm-6">
@@ -179,17 +171,17 @@
                 </div>
             </div>
             <div class="col-sm-12">
-                <h2 class="page-header">Сопредседатели программного комитета</h2>
+                <h2 class="page-header"><?=$lang['MAINTEXT'][107]?></h2>
             </div>
             <div class="col-sm-12 del-pad-x">
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="thumbnail">
                         <img class="img-responsive" src="img/teachers/tkachenko2.png" alt="">
                         <div class="caption">
-                            <h3>Ткаченко Владимир Филиппович<br>
-                                <small>заведующий кафедры МСТ</small>
+                            <h3><?=$lang['MAINTEXT'][Name1]?><br>
+                                <small><?=$lang['MAINTEXT'][Position1]?></small>
                             </h3>
-                            <p>Кандидат технических наук</p>
+                            <p><?=$lang['MAINTEXT'][Title1]?></p>
                         </div>
                     </div>
                 </div>
@@ -197,10 +189,10 @@
                     <div class="thumbnail">
                         <img class="img-responsive" src="img/teachers/chebotareva2.png" alt="">
                         <div class="caption">
-                            <h3>Чеботарева Ирина Борисовна<br>
-                                <small>доцент кафедры</small>
+                            <h3><?=$lang['MAINTEXT'][Name2]?><br>
+                                <small><?=$lang['MAINTEXT'][Position2]?></small>
                             </h3>
-                            <p>старший преподаватель</p>
+                            <p><?=$lang['MAINTEXT'][Title2]?></p>
                         </div>
                     </div>
                 </div>
@@ -208,10 +200,10 @@
                     <div class="thumbnail">
                         <img class="img-responsive" src="http://placehold.it/300x300" alt="">
                         <div class="caption">
-                            <h3>Татьяна Иванова<br>
-                                <small>заведующая кафедры</small>
+                            <h3><?=$lang['MAINTEXT'][Name3]?><br>
+                                <small><?=$lang['MAINTEXT'][Position3]?></small>
                             </h3>
-                            <p>старший преподаватель</p>
+                            <p><?=$lang['MAINTEXT'][Title3]?></p>
                         </div>
                     </div>
                 </div>
@@ -219,10 +211,10 @@
                     <div class="thumbnail">
                         <img class="img-responsive" src="http://placehold.it/300x300" alt="">
                         <div class="caption">
-                            <h3>Татьяна Иванова<br>
-                                <small>заведующая кафедры</small>
+                            <h3><?=$lang['MAINTEXT'][Name4]?><br>
+                                <small><?=$lang['MAINTEXT'][Position4]?></small>
                             </h3>
-                            <p>старший преподаватель</p>
+                            <p><?=$lang['MAINTEXT'][Title4]?></p>
                         </div>
                     </div>
                 </div>
@@ -230,32 +222,32 @@
 
 
             <div class="col-sm-12">
-                <h2 class="page-header">Члени оргкомитета</h2>
+                <h2 class="page-header"><?=$lang['MAINTEXT'][108]?></h2>
             </div>
             <div class="col-sm-12 del-pad-x">
                 <ul class="pad-bot-10">
                     <li>
-                        проф. Слипченко Н.И., ХНУРЭ, Украина
+                        <?=$lang['MAINTEXT'][109]?>
                     <li>
-                        проф. Кулишова Н.Е., ХНУРЭ, Украина
+                        <?=$lang['MAINTEXT'][110]?>
                     <li>
-                        проф. Филатов В.А., ХНУРЭ, Украина
+                        <?=$lang['MAINTEXT'][111]?>
                     <li>
-                        проф. Гребенник И.В., ХНУРЭ, Украина
+                        <?=$lang['MAINTEXT'][112]?>
                     <li>
-                        проф. Четвериков Г.Г., ХНУРЭ, Украина
+                        <?=$lang['MAINTEXT'][113]?>
                     <li>
-                        проф. Бодянский Е.В., ХНУРЭ, Украина
+                        <?=$lang['MAINTEXT'][114]?>
                     <li>
-                        проф. Соколова Л.В., ХНУРЭ, Украина
+                        <?=$lang['MAINTEXT'][115]?>
                     <li>
-                        проф. Циганенко А.М., Академия медиаиндустрии, Россия
+                        <?=$lang['MAINTEXT'][116]?>
                     <li>
-                        проф. Кузнецов Ю.В., Санкт-Петербургский государственый университет технологии и дизайна
+                        <?=$lang['MAINTEXT'][117]?>
                     <li>
-                        проф. Гурьева Н.С., Университет штата Гуанахуато, Мексика
+                        <?=$lang['MAINTEXT'][118]?>
                     <li>
-                        доц. Неофитный М.В., «НИИ Лазерных технологий», Україна
+                        <?=$lang['MAINTEXT'][119]?>
                     </li>
                 </ul>
             </div>
@@ -266,16 +258,16 @@
         <div class="col-sm-3 del-pad-x">
             <div class="col-sm-12">
                 <div class="list-group">
-                    <a href="news.php" class="list-group-item">Новости</a>
-                    <a href="#" class="list-group-item">Программа конференции</a>
-                    <a href="#" class="list-group-item">Сборник работ</a>
-                    <a href="#" class="list-group-item">Решение конференции</a>
+                    <a href="news.php" class="list-group-item"><?=$lang['NEWS']?></a>
+                    <a href="#" class="list-group-item"><?=$lang['PROGRAM']?></a>
+                    <a href="#" class="list-group-item"><?=$lang['COLLECTIONOFARTICLES']?></a>
+                    <a href="#" class="list-group-item"><?=$lang['DECISION']?></a>
                 </div>
             </div>
 
             <!-- Date Column -->
             <div class="col-sm-12">
-                <h3 class="page-header">Даты</h3>
+                <h3 class="page-header"><?=$lang['DATES']?></h3>
             </div>
             <div class="col-sm-12">
                 <div class="media">
@@ -286,32 +278,32 @@
                             </span>
                     </div>
                     <div class="media-body">
-                        <h4 class="media-heading">15 января 2016</h4>
-                        <p>Начало регистрации.</p>
+                        <h4 class="media-heading"><?=$lang['DATE']['START'][0]?></h4>
+                        <p><?=$lang['DATE']['START']['TEXT']?></p>
                     </div>
                 </div>
                 <div class="media">
                     <div class="pull-left">
                             <span class="fa-stack fa-lg">
                                 <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                                <i class="fa fa-clock-o fa-stack-1x fa-inverse"></i>
+                                <i class="fa fa-hourglass-start fa-stack-1x fa-inverse"></i>
                             </span>
                     </div>
                     <div class="media-body">
-                        <h4 class="media-heading">21 февраля 2016</h4>
-                        <p>Окончание принятия/отклонения работ. </p>
+                        <h4 class="media-heading"><?=$lang['DATE']['END'][0]?></h4>
+                        <p><?=$lang['DATE']['END']['TEXT']?></p>
                     </div>
                 </div>
                 <div class="media">
                     <div class="pull-left">
                             <span class="fa-stack fa-lg">
                                 <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                                <i class="fa fa-clock-o fa-stack-1x fa-inverse"></i>
+                                <i class="fa fa-hourglass-start fa-stack-1x fa-inverse"></i>
                             </span>
                     </div>
                     <div class="media-body">
-                        <h4 class="media-heading">10 марта 2016</h4>
-                        <p>Принятие окончательных работю</p>
+                        <h4 class="media-heading"><?=$lang['DATE']['FINAL'][0]?></h4>
+                        <p><?=$lang['DATE']['FINAL']['TEXT']?></p>
                     </div>
                 </div>
             </div>
