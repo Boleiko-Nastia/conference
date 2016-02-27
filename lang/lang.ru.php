@@ -256,3 +256,12 @@ $lang['MAINTEXT'][Univercity] = 'ВУЗ';
 $lang['MAINTEXT'][Report] = 'Название доклада';
 $lang['MAINTEXT'][Leader] = 'Руководитель';
 $lang['MAINTEXT'][124] = 'Участники молодежной школы-семинара';
+
+
+// site_archive.template.php
+
+$lang['MAINTEXT'][125] = 'Архив';
+$lang['MAINTEXT'][126] = 'Главная';
+$lang['MAINTEXT'][127] = 'Архив';
+$lang['MAINTEXT'][128] = 'Файлы для скачивания';
+$lang['MAINTEXT'][Download] = 'Скачать';
