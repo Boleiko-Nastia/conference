@@ -258,3 +258,12 @@ $lang['MAINTEXT'][Univercity] = 'ВНЗ';
 $lang['MAINTEXT'][Report] = 'Назва доповіді';
 $lang['MAINTEXT'][Leader] = 'Керівник';
 $lang['MAINTEXT'][124] = 'Учасники молодіжної школи-семінару';
+
+
+// site_archive.template.php
+
+$lang['MAINTEXT'][125] = 'Архів';
+$lang['MAINTEXT'][126] = 'Головна';
+$lang['MAINTEXT'][127] = 'Архів';
+$lang['MAINTEXT'][128] = 'Файли для скачування';
+$lang['MAINTEXT'][Download] = 'Завантажити';
