@@ -23,14 +23,6 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="img/favicon.png">
 
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
 </head>
 
 
@@ -53,32 +45,31 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a href="index.php">Главная</a>
+                    <a href="index.php"><?=$lang['MENU_HOME']?></a>
                 </li>
                 <li>
-                    <a href="sections.php">Секции</a>
+                    <a href="sections.php"><?=$lang['CONFERENCE_AREA']?></a>
                 </li>
                 <li class="active">
-                    <a href="rules.php">Условия</a>
+                    <a href="rules.php"><?=$lang['CONDITIONS']?></a>
                 </li>
                 <li>
-                    <a href="calendar.php">Календарь</a>
+                    <a href="calendar.php"><?=$lang['NEWS']?></a>
                 </li>
                 <li>
-                    <a href="news.php">Новости</a>
-                </li>
-
-                <li>
-                    <a href="commission.php">Огранизаторы</a>
+                    <a href="news.php"><?=$lang['NEWS']?></a>
                 </li>
                 <li>
-                    <a href="participants.php">Участники</a>
+                    <a href="commission.php"><?=$lang['ORGANISERS']?></a>
                 </li>
                 <li>
-                    <a href="archive.php">Архив</a>
+                    <a href="participants.php"><?=$lang['SPEAKERS']?></a>
                 </li>
                 <li>
-                    <a href="contact.php">Контакты</a>
+                    <a href="archive.php"><?=$lang['ARCHIVE']?></a>
+                </li>
+                <li>
+                    <a href="contact.php"><?=$lang['CONTACTS']?></a>
                 </li>
                 <li class="li-language">
                     <div class="btn-group group-language">
@@ -105,76 +96,62 @@
     <!-- Page Heading/Breadcrumbs -->
     <div class="row">
         <div class="col-sm-12">
-            <h1 class="page-header">Условия участия в конференции
+            <h1 class="page-header"><?=$lang['MAINTEXT'][36]?>
             </h1>
             <ol class="breadcrumb">
-                <li><a href="index.php">Главная</a>
+                <li><a href="index.php"><?=$lang['MAINTEXT'][37]?></a>
                 </li>
-                <li class="active">Условия</li>
+                <li class="active"><?=$lang['MAINTEXT'][38]?></li>
             </ol>
         </div>
 
 
         <div class="col-sm-9 del-pad-x">
             <div class="col-sm-12">
-                <h2 class="page-header">Подача материалов</h2>
+                <h2 class="page-header"><?=$lang['MAINTEXT'][39]?></h2>
             </div>
             <div class="col-sm-12 del-pad-x">
-                <ol class="pad-bot-10"><li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, et temporibus, facere perferendis veniam beatae non debitis, numquam blanditiis necessitatibus vel mollitia dolorum laudantium, voluptate dolores iure maxime ducimus fugit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque.</li>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, et temporibus, facere perferendis veniam beatae non debitis, numquam blanditiis necessitatibus vel mollitia dolorum laudantium, voluptate dolores iure maxime ducimus fugit.
-                        <ul><li>Lorem ipsum dolor sit amet;</li>
-                            <li>Lorem ipsum dolor sit amet;</li>
-                            <li>Lorem ipsum dolor sit amet;</li>
-                            <li>Lorem ipsum dolor sit amet;</li>
+                <ol class="pad-bot-10">
+                    <li><?=$lang['MAINTEXT'][40]?></li>
+                    <li><?=$lang['MAINTEXT'][41]?>
+                        <ul><li><?=$lang['MAINTEXT'][42]?></li>
+                            <li><?=$lang['MAINTEXT'][43]?></li>
                         </ul>
-                    </li>
-                    <li>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque.</li>
-                    <li>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</li>
-                    <li>Unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque.
                     </li>
                 </ol>
             </div>
 
             <div class="col-sm-12">
-                <h2 class="page-header">Рабочие языки конференции</h2>
+                <h2 class="page-header"><?=$lang['MAINTEXT'][44]?></h2>
             </div>
             <div class="col-sm-12 del-pad-x">
-                <ul><li>Lorem ipsum dolor sit amet;</li>
-                    <li>Lorem ipsum dolor sit amet;</li>
-                    <li>Lorem ipsum dolor sit amet;</li>
-                    <li>Lorem ipsum dolor sit amet;</li>
-                    <li>Lorem ipsum dolor sit amet;</li>
-                    <li>Lorem ipsum dolor sit amet;</li>
-                    <li>Lorem ipsum dolor sit amet;</li>
+                <ul>
+                    <li><?=$lang['MAINTEXT'][45]?></li>
+                    <li><?=$lang['MAINTEXT'][46]?></li>
+                    <li><?=$lang['MAINTEXT'][47]?></li>
                 </ul>
             </div>
 
-
             <div class="col-sm-12">
-                <h2 class="page-header">Оформление материалов</h2>
+                <h2 class="page-header"><?=$lang['MAINTEXT'][48]?></h2>
             </div>
             <div class="col-sm-12 del-pad-x">
-                <ol class="pad-bot-10"><li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, et temporibus, facere perferendis veniam beatae non debitis, numquam blanditiis necessitatibus vel mollitia dolorum laudantium, voluptate dolores iure maxime ducimus fugit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque.</li>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, et temporibus, facere perferendis veniam beatae non debitis, numquam blanditiis necessitatibus vel mollitia dolorum laudantium, voluptate dolores iure maxime ducimus fugit. </li>
-                    <li>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque.</li>
-                    <li>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</li>
+                <ol class="pad-bot-10">
+                    <li><?=$lang['MAINTEXT'][49]?></li>
+                    <li><?=$lang['MAINTEXT'][50]?></li>
                 </ol>
             </div>
 
-
-
             <div class="col-sm-12">
-                <h2 class="page-header">Рецензирование материалов</h2>
+                <h2 class="page-header"><?=$lang['MAINTEXT'][51]?></h2>
             </div>
             <div class="col-sm-12 del-pad-x">
                 <ul class="pad-bot-10">
-                    <li>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque.</li>
-                    <li>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</li>
-                    <li>Unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque.
-                    </li>
+                    <li><?=$lang['MAINTEXT'][52]?></li>
+                    <li><?=$lang['MAINTEXT'][53]?></li>
+                    <li><?=$lang['MAINTEXT'][54]?></li>
                 </ul>
             </div>
-
 
         </div>
 
@@ -187,16 +164,16 @@
             <!-- Sidebar Column -->
             <div class="col-sm-12">
                 <div class="list-group">
-                    <a href="news.php" class="list-group-item">Новости</a>
-                    <a href="#" class="list-group-item">Программа конференции</a>
-                    <a href="#" class="list-group-item">Сборник работ</a>
-                    <a href="#" class="list-group-item">Решение конференции</a>
+                    <a href="news.php" class="list-group-item"><?=$lang['NEWS']?></a>
+                    <a href="#" class="list-group-item"><?=$lang['PROGRAM']?></a>
+                    <a href="#" class="list-group-item"><?=$lang['COLLECTIONOFARTICLES']?></a>
+                    <a href="#" class="list-group-item"><?=$lang['DECISION']?></a>
                 </div>
             </div>
 
             <!-- Date Column -->
             <div class="col-sm-12">
-                <h3 class="page-header">Даты</h3>
+                <h3 class="page-header"><?=$lang['DATES']?></h3>
             </div>
             <div class="col-sm-12">
                 <div class="media">
@@ -207,32 +184,32 @@
                             </span>
                     </div>
                     <div class="media-body">
-                        <h4 class="media-heading">15 января 2016</h4>
-                        <p>Начало регистрации.</p>
+                        <h4 class="media-heading"><?=$lang['DATE']['START'][0]?></h4>
+                        <p><?=$lang['DATE']['START']['TEXT']?></p>
                     </div>
                 </div>
                 <div class="media">
                     <div class="pull-left">
                             <span class="fa-stack fa-lg">
                                 <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                                <i class="fa fa-clock-o fa-stack-1x fa-inverse"></i>
+                                <i class="fa fa-hourglass-start fa-stack-1x fa-inverse"></i>
                             </span>
                     </div>
                     <div class="media-body">
-                        <h4 class="media-heading">21 февраля 2016</h4>
-                        <p>Окончание принятия/отклонения работ. </p>
+                        <h4 class="media-heading"><?=$lang['DATE']['END'][0]?></h4>
+                        <p><?=$lang['DATE']['END']['TEXT']?></p>
                     </div>
                 </div>
                 <div class="media">
                     <div class="pull-left">
                             <span class="fa-stack fa-lg">
                                 <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                                <i class="fa fa-clock-o fa-stack-1x fa-inverse"></i>
+                                <i class="fa fa-hourglass-start fa-stack-1x fa-inverse"></i>
                             </span>
                     </div>
                     <div class="media-body">
-                        <h4 class="media-heading">10 марта 2016</h4>
-                        <p>Принятие окончательных работю</p>
+                        <h4 class="media-heading"><?=$lang['DATE']['FINAL'][0]?></h4>
+                        <p><?=$lang['DATE']['FINAL']['TEXT']?></p>
                     </div>
                 </div>
             </div>
