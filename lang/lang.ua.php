@@ -200,3 +200,13 @@ $lang['MAINTEXT'][97] = 'Від&#39;їзд до Харкова';
 
 $lang['MAINTEXT'][98] = '20 травня 2016 ';
 $lang['MAINTEXT'][99] = 'Офіційне закриття конференції';
+
+
+// site_news.template.php
+
+$lang['MAINTEXT'][100] = 'Новини';
+$lang['MAINTEXT'][101] = 'Главная';
+$lang['MAINTEXT'][102] = 'Новини';
+$lang['MAINTEXT'][AddBy] = 'Добавлено: ';
+$lang['MAINTEXT'][AddDate] = 'Опубликовано ';
+$lang['MAINTEXT'][More] = 'Подробнее ';
