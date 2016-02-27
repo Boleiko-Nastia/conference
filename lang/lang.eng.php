@@ -257,3 +257,12 @@ $lang['MAINTEXT'][Univercity] = 'Institution';
 $lang['MAINTEXT'][Report] = 'Title of the report';
 $lang['MAINTEXT'][Leader] = 'Leader';
 $lang['MAINTEXT'][124] = 'Members of the Youth Training Seminar';
+
+
+// site_archive.template.php
+
+$lang['MAINTEXT'][125] = 'Archive';
+$lang['MAINTEXT'][126] = 'Home';
+$lang['MAINTEXT'][127] = 'Archive';
+$lang['MAINTEXT'][128] = 'Files to download';
+$lang['MAINTEXT'][Download] = 'Download';
