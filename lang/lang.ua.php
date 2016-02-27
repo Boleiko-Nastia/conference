@@ -243,3 +243,18 @@ $lang['MAINTEXT'][116] = 'проф. Циганенко А.М., Академія 
 $lang['MAINTEXT'][117] = 'проф. Кузнєцов Ю.В., Санкт-Петербурзький державний університет технології та дизайну ';
 $lang['MAINTEXT'][118] = 'проф. Гур&#39;єва Н.С., Університет штату Гуанахуато, Мексика ';
 $lang['MAINTEXT'][119] = 'доц. Неофітний М.В., «НДІ Лазерних технологій», Україна ';
+
+
+// site_participants.template.php
+
+$lang['MAINTEXT'][120] = 'Учасники конференції і школи-семінару';
+$lang['MAINTEXT'][121] = 'Головна';
+$lang['MAINTEXT'][122] = 'Учасники';
+$lang['MAINTEXT'][123] = 'Учасники конференції';
+$lang['MAINTEXT'][Section] = 'Секція';
+$lang['MAINTEXT'][Participant] = 'Користувач';
+$lang['MAINTEXT'][Place] = 'Місце роботи';
+$lang['MAINTEXT'][Univercity] = 'ВНЗ';
+$lang['MAINTEXT'][Report] = 'Назва доповіді';
+$lang['MAINTEXT'][Leader] = 'Керівник';
+$lang['MAINTEXT'][124] = 'Учасники молодіжної школи-семінару';
