@@ -23,14 +23,6 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="img/favicon.png">
 
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
 </head>
 
 
@@ -52,33 +44,32 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a href="index.php">Главная</a>
+                                <li>
+                    <a href="index.php"><?=$lang['MENU_HOME']?></a>
                 </li>
                 <li>
-                    <a href="sections.php">Секции</a>
+                    <a href="sections.php"><?=$lang['CONFERENCE_AREA']?></a>
                 </li>
                 <li>
-                    <a href="rules.php">Условия</a>
+                    <a href="rules.php"><?=$lang['CONDITIONS']?></a>
                 </li>
                 <li>
-                    <a href="calendar.php">Календарь</a>
+                    <a href="calendar.php"><?=$lang['CALENDAR']?></a>
                 </li>
                 <li>
-                    <a href="news.php">Новости</a>
+                    <a href="news.php"><?=$lang['NEWS']?></a>
                 </li>
-
                 <li>
-                    <a href="commission.php">Огранизаторы</a>
+                    <a href="commission.php"><?=$lang['ORGANISERS']?></a>
                 </li>
                 <li class="active">
-                    <a href="participants.php">Участники</a>
+                    <a href="participants.php"><?=$lang['SPEAKERS']?></a>
                 </li>
                 <li>
-                    <a href="archive.php">Архив</a>
+                    <a href="archive.php"><?=$lang['ARCHIVE']?></a>
                 </li>
                 <li>
-                    <a href="contact.php">Контакты</a>
+                    <a href="contact.php"><?=$lang['CONTACTS']?></a>
                 </li>
                 <li class="li-language">
                     <div class="btn-group group-language">
@@ -100,25 +91,24 @@
 </nav>
 
 <!-- Page Content -->
-<!-- Page Content -->
 <div class="container">
 
     <!-- Page Heading/Breadcrumbs -->
     <div class="row">
         <div class="col-sm-12">
-            <h1 class="page-header">Участники конференции
+            <h1 class="page-header"><?=$lang['MAINTEXT'][120]?>
             </h1>
             <ol class="breadcrumb">
-                <li><a href="index.php">Главная</a>
+                <li><a href="index.php"><?=$lang['MAINTEXT'][121]?></a>
                 </li>
-                <li class="active">Участники</li>
+                <li class="active"><?=$lang['MAINTEXT'][122]?></li>
             </ol>
         </div>
 
 
         <div class="col-sm-9 del-pad-x">
             <div class="col-sm-12">
-                <h2 class="page-header">Участники конференции</h2>
+                <h2 class="page-header"><?=$lang['MAINTEXT'][123]?></h2>
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <div class="media">
@@ -129,16 +119,16 @@
                                 </span>
                             </div>
                             <div class="media-body calendar-head">
-                                <h3 class="media-heading">Секция <strong>Инновации в производстве печатной продукции</strong></h3>
+                                <h3 class="media-heading"><?=$lang['MAINTEXT'][Section]?><strong><?=$lang['MAINTEXT'][Section1]?></strong></h3>
                             </div>
                         </div>
                     </div>
                     <div class="panel-body">
                         <table class="table table-striped del-mar-bot">
                             <tr>
-                                <th class="col-sm-2">Участник</th>
-                                <th class="col-sm-2">Место работы</th>
-                                <th class="col-sm-6">Название доклада</th>
+                                <th class="col-sm-2"><?=$lang['MAINTEXT'][Participant]?></th>
+                                <th class="col-sm-2"><?=$lang['MAINTEXT'][Place]?></th>
+                                <th class="col-sm-6"><?=$lang['MAINTEXT'][Report]?></th>
                             <tr>
                                 <td class="col-sm-2">Иванов Иван Иванович</td>
                                 <td class="col-sm-2">Харьковский начиональный университет радиоэлектроники</td>
@@ -157,51 +147,6 @@
                             <tr>
                                 <td class="col-sm-2">Иванов Иван Иванович</td>
                                 <td class="col-sm-2">Харьковский начиональный университет радиоэлектроники</td>
-                                <td class="col-sm-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, veritatis, tempora, necessitatibus inventore nisi quam quia</td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-
-
-                <div class="panel panel-default mg-tp-40">
-                    <div class="panel-heading">
-                        <div class="media">
-                            <div class="pull-left">
-                                <span class="fa-stack fa-lg">
-                                      <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                                      <i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </div>
-                            <div class="media-body calendar-head">
-                                <h3 class="media-heading">Секция <strong>Технические и технологические инновации в упаковочном производстве</strong></h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel-body">
-                        <table class="table table-striped del-mar-bot">
-                            <tr>
-                                <th class="col-sm-3">Участник</th>
-                                <th class="col-sm-3">Место работы</th>
-                                <th class="col-sm-6">Название доклада</th>
-                            <tr>
-                                <td class="col-sm-2">Иванов Иван Иванович</td>
-                                <td class="col-sm-3">Харьковский начиональный университет радиоэлектроники</td>
-                                <td class="col-sm-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, veritatis, tempora, necessitatibus inventore nisi quam quia</td>
-                            </tr>
-                            <tr>
-                                <td class="col-sm-3">Иванов Иван Иванович</td>
-                                <td class="col-sm-3">Харьковский начиональный университет радиоэлектроники</td>
-                                <td class="col-sm-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, veritatis, tempora, necessitatibus inventore nisi quam quia</td>
-                            </tr>
-                            <tr>
-                                <td class="col-sm-3">Иванов Иван Иванович</td>
-                                <td class="col-sm-3">Харьковский начиональный университет радиоэлектроники</td>
-                                <td class="col-sm-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, veritatis, tempora, necessitatibus inventore nisi quam quia</td>
-                            </tr>
-                            <tr>
-                                <td class="col-sm-3">Иванов Иван Иванович</td>
-                                <td class="col-sm-3">Харьковский начиональный университет радиоэлектроники</td>
                                 <td class="col-sm-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, veritatis, tempora, necessitatibus inventore nisi quam quia</td>
                             </tr>
                         </table>
@@ -210,28 +155,15 @@
 
                 <hr>
 
-                <h2 class="page-header">Участники молодежной школы-семинара</h2>
+                <h2 class="page-header"><?=$lang['MAINTEXT'][124]?></h2>
                 <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <div class="media">
-                            <div class="pull-left">
-                                <span class="fa-stack fa-lg">
-                                      <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                                      <i class="fa fa-newspaper-o fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </div>
-                            <div class="media-body calendar-head">
-                                <h3 class="media-heading">Секция <strong>Инновации в производстве печатной продукции</strong></h3>
-                            </div>
-                        </div>
-                    </div>
                     <div class="panel-body">
                         <table class="table table-striped del-mar-bot">
                             <tr>
-                                <th class="col-sm-2">Участник</th>
-                                <th class="col-sm-2">Руководитель</th>
-                                <th class="col-sm-2">ВУЗ</th>
-                                <th class="col-sm-6">Название доклада</th>
+                                <th class="col-sm-2"><?=$lang['MAINTEXT'][Participant]?></th>
+                                <th class="col-sm-2"><?=$lang['MAINTEXT'][Leader]?></th>
+                                <th class="col-sm-2"><?=$lang['MAINTEXT'][Univercity]?></th>
+                                <th class="col-sm-6"><?=$lang['MAINTEXT'][Report]?></th>
                             </tr>
                             <tr>
                                 <td class="col-sm-2">Иванов Иван Иванович</td>
@@ -271,55 +203,56 @@
             <!-- Sidebar Column -->
             <div class="col-sm-12">
                 <div class="list-group">
-                    <a href="news.php" class="list-group-item">Новости</a>
-                    <a href="#" class="list-group-item">Программа конференции</a>
-                    <a href="#" class="list-group-item">Сборник работ</a>
-                    <a href="#" class="list-group-item">Решение конференции</a>
+                    <a href="news.php" class="list-group-item"><?=$lang['NEWS']?></a>
+                    <a href="#" class="list-group-item"><?=$lang['PROGRAM']?></a>
+                    <a href="#" class="list-group-item"><?=$lang['COLLECTIONOFARTICLES']?></a>
+                    <a href="#" class="list-group-item"><?=$lang['DECISION']?></a>
                 </div>
             </div>
 
             <!-- Date Column -->
             <div class="col-sm-12">
-                <h3 class="page-header">Даты</h3>
+                <h3 class="page-header"><?=$lang['DATES']?></h3>
             </div>
             <div class="col-sm-12">
                 <div class="media">
                     <div class="pull-left">
-                                <span class="fa-stack fa-lg">
-                                      <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                                      <i class="fa fa-check fa-stack-1x fa-inverse"></i>
-                                </span>
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                <i class="fa fa-check fa-stack-1x fa-inverse"></i>
+                            </span>
                     </div>
                     <div class="media-body">
-                        <h4 class="media-heading">15 января 2016</h4>
-                        <p>Начало регистрации.</p>
+                        <h4 class="media-heading"><?=$lang['DATE']['START'][0]?></h4>
+                        <p><?=$lang['DATE']['START']['TEXT']?></p>
                     </div>
                 </div>
                 <div class="media">
                     <div class="pull-left">
-                                <span class="fa-stack fa-lg">
-                                      <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                                      <i class="fa fa-hourglass-start fa-stack-1x fa-inverse"></i>
-                                </span>
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                <i class="fa fa-hourglass-start fa-stack-1x fa-inverse"></i>
+                            </span>
                     </div>
                     <div class="media-body">
-                        <h4 class="media-heading">21 февраля 2016</h4>
-                        <p>Окончание принятия/отклонения работ. </p>
+                        <h4 class="media-heading"><?=$lang['DATE']['END'][0]?></h4>
+                        <p><?=$lang['DATE']['END']['TEXT']?></p>
                     </div>
                 </div>
                 <div class="media">
                     <div class="pull-left">
-                                <span class="fa-stack fa-lg">
-                                      <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                                      <i class="fa fa fa-hourglass-start fa-stack-1x fa-inverse"></i>
-                                </span>
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                <i class="fa fa-hourglass-start fa-stack-1x fa-inverse"></i>
+                            </span>
                     </div>
                     <div class="media-body">
-                        <h4 class="media-heading">10 марта 2016</h4>
-                        <p>Принятие окончательных работю</p>
+                        <h4 class="media-heading"><?=$lang['DATE']['FINAL'][0]?></h4>
+                        <p><?=$lang['DATE']['FINAL']['TEXT']?></p>
                     </div>
                 </div>
             </div>
+
 
             <!-- Download Column -->
             <div class="col-sm-12">
