@@ -20,6 +20,7 @@ $lang['MENU_HOME'] = 'Home';
 $lang['CONFERENCE_AREA'] = 'Conference Areas';
 $lang['CONDITIONS'] = 'Conditions';
 $lang['NEWS'] = 'News';
+$lang['CALENDAR'] = 'Calendar';
 $lang['ORGANISERS'] = 'Organisers';
 $lang['SPEAKERS'] = 'Speakers';
 $lang['ARCHIVE'] = 'Archive';
