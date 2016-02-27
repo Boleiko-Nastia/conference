@@ -81,7 +81,7 @@
                 <li class="li-language">
                     <div class="btn-group group-language">
                         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            RU <span class="caret"></span>
+                            <?=$lang['LANG']?> <span class="caret"></span>
                         </button>
                         <ul class="dropdown-menu">
                             <li><a onclick="set_lang('ru')" href="">RU</a></li>
