@@ -19,6 +19,7 @@ $lang['LANG'] = 'RU';
 $lang['MENU_HOME'] = 'Главная';
 $lang['CONFERENCE_AREA'] = 'Секции';
 $lang['CONDITIONS'] = 'Условия';
+$lang['CALENDAR'] = 'Календарь';
 $lang['NEWS'] = 'Новости';
 $lang['ORGANISERS'] = 'Огранизаторы';
 $lang['SPEAKERS'] = 'Участники';
