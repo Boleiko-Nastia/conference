@@ -50,10 +50,10 @@
                 <li>
                     <a href="sections.php"><?=$lang['CONFERENCE_AREA']?></a>
                 </li>
-                <li class="active">
+                <li>
                     <a href="rules.php"><?=$lang['CONDITIONS']?></a>
                 </li>
-                <li>
+                <li class="active">
                     <a href="calendar.php"><?=$lang['CALENDAR']?></a>
                 </li>
                 <li>
