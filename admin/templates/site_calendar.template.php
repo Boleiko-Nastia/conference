@@ -23,14 +23,6 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="img/favicon.png">
 
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
 </head>
 
 
@@ -52,33 +44,32 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a href="index.php">Главная</a>
+                                <li>
+                    <a href="index.php"><?=$lang['MENU_HOME']?></a>
                 </li>
                 <li>
-                    <a href="sections.php">Секции</a>
-                </li>
-                <li>
-                    <a href="rules.php">Условия</a>
+                    <a href="sections.php"><?=$lang['CONFERENCE_AREA']?></a>
                 </li>
                 <li class="active">
-                    <a href="calendar.php">Календарь</a>
+                    <a href="rules.php"><?=$lang['CONDITIONS']?></a>
                 </li>
                 <li>
-                    <a href="news.php">Новости</a>
-                </li>
-
-                <li>
-                    <a href="commission.php">Огранизаторы</a>
+                    <a href="calendar.php"><?=$lang['CALENDAR']?></a>
                 </li>
                 <li>
-                    <a href="participants.php">Участники</a>
+                    <a href="news.php"><?=$lang['NEWS']?></a>
                 </li>
                 <li>
-                    <a href="archive.php">Архив</a>
+                    <a href="commission.php"><?=$lang['ORGANISERS']?></a>
                 </li>
                 <li>
-                    <a href="contact.php">Контакты</a>
+                    <a href="participants.php"><?=$lang['SPEAKERS']?></a>
+                </li>
+                <li>
+                    <a href="archive.php"><?=$lang['ARCHIVE']?></a>
+                </li>
+                <li>
+                    <a href="contact.php"><?=$lang['CONTACTS']?></a>
                 </li>
                 <li class="li-language">
                     <div class="btn-group group-language">
@@ -106,12 +97,12 @@
     <!-- Page Heading/Breadcrumbs -->
     <div class="row">
         <div class="col-sm-12">
-            <h1 class="page-header">Календарь конференции
+                        <h1 class="page-header"><?=$lang['MAINTEXT'][55]?>
             </h1>
             <ol class="breadcrumb">
-                <li><a href="index.php">Главная</a>
+                <li><a href="index.php"><?=$lang['MAINTEXT'][56]?></a>
                 </li>
-                <li class="active">Календарь</li>
+                <li class="active"><?=$lang['MAINTEXT'][57]?></li>
             </ol>
         </div>
 
@@ -128,54 +119,54 @@
                                 </span>
                             </div>
                             <div class="media-body calendar-head">
-                                <h3 class="media-heading">16 мая 2016</h3>
+                                <h3 class="media-heading"><?=$lang['MAINTEXT'][58]?></h3>
                             </div>
                         </div>
                     </div>
                     <div class="panel-body">
-                        <h2>Пленарное заседание
+                        <h2><?=$lang['MAINTEXT'][59]?>
                         </h2>
 
                         <table class="table table-striped del-mar-bot">
                             <tr>
                                 <td class="col-sm-2"><i class="fa fa-clock-o"></i> 9:00 - 12:00</td>
-                                <td class="col-sm-8">Регистрация, поселение иногородних</td>
+                                <td class="col-sm-8"><?=$lang['MAINTEXT'][60]?></td>
                             </tr>
                             <tr>
                                 <td class="col-sm-2"><i class="fa fa-clock-o"></i> 11:00 - 12:00</td>
-                                <td class="col-sm-8">Регистрация харьковчан</td>
+                                <td class="col-sm-8"><?=$lang['MAINTEXT'][61]?></td>
                             </tr>
                             <tr>
                                 <td class="col-sm-2"><i class="fa fa-clock-o"></i> 12:00 - 14:00</td>
-                                <td class="col-sm-8">Открытие конференции. Пленарное заседание</td>
+                                <td class="col-sm-8"><?=$lang['MAINTEXT'][62]?></td>
                             </tr>
                             <tr>
                                 <td class="col-sm-2"><i class="fa fa-clock-o"></i> 14:00</td>
-                                <td class="col-sm-8">Экскурсия НИИ "Лазерных технологий" </td>
+                                <td class="col-sm-8"><?=$lang['MAINTEXT'][63]?></td>
                             </tr>
                             <tr>
                                 <td class="col-sm-2"><i class="fa fa-clock-o"></i> 14:30</td>
-                                <td class="col-sm-8">Обед</td>
+                                <td class="col-sm-8"><?=$lang['MAINTEXT'][64]?></td>
                             </tr>
                             <tr>
                                 <td class="col-sm-2"><i class="fa fa-clock-o"></i> 15:30 - 17:30</td>
-                                <td class="col-sm-8">Заседание секций. Мастер-классы</td>
+                                <td class="col-sm-8"><?=$lang['MAINTEXT'][65]?></td>
                             </tr>
                             <tr>
                                 <td class="col-sm-2"><i class="fa fa-clock-o"></i> 17:30 - 18:00</td>
-                                <td class="col-sm-8">Кофе-брейк</td>
+                                <td class="col-sm-8"><?=$lang['MAINTEXT'][66]?></td>
                             </tr>
                             <tr>
                                 <td class="col-sm-2"><i class="fa fa-clock-o"></i> 18:00</td>
-                                <td class="col-sm-8">Концерт</td>
+                                <td class="col-sm-8"><?=$lang['MAINTEXT'][67]?></td>
                             </tr>
                             <tr>
                                 <td class="col-sm-2"><i class="fa fa-clock-o"></i> 19:00</td>
-                                <td class="col-sm-8">Ужин</td>
+                                <td class="col-sm-8"><?=$lang['MAINTEXT'][68]?></td>
                             </tr>
                             <tr>
                                 <td class="col-sm-2"><i class="fa fa-clock-o"></i> 20:00</td>
-                                <td class="col-sm-8">Культурная программа</td>
+                                <td class="col-sm-8"><?=$lang['MAINTEXT'][69]?></td>
                             </tr>
                         </table>
                     </div>
@@ -192,41 +183,39 @@
                                 </span>
                             </div>
                             <div class="media-body calendar-head">
-                                <h3 class="media-heading">17 мая 2016</h3>
+                                <h3 class="media-heading"><?=$lang['MAINTEXT'][70]?></h3>
                             </div>
                         </div>
                     </div>
                     <div class="panel-body">
 
-                        <h2>Молодежная школа-семинар
+                        <h2><?=$lang['MAINTEXT'][71]?>
                         </h2>
-                        <hr>
-
                         <!-- Date/Time -->
                         <table class="table table-striped del-mar-bot">
                             <tr>
                                 <td class="col-sm-2"><i class="fa fa-clock-o"></i> 9:00</td>
-                                <td class="col-sm-8">Завтрак </td>
+                                <td class="col-sm-8"><?=$lang['MAINTEXT'][72]?></td>
                             </tr>
                             <tr>
                                 <td class="col-sm-2"><i class="fa fa-clock-o"></i> 10:00 - 12:00</td>
-                                <td class="col-sm-8">Выступления </td>
+                                <td class="col-sm-8"><?=$lang['MAINTEXT'][73]?></td>
                             </tr>
                             <tr>
                                 <td class="col-sm-2"><i class="fa fa-clock-o"></i> 12:00 - 12:30</td>
-                                <td class="col-sm-8">Кофе-брейк </td>
+                                <td class="col-sm-8"><?=$lang['MAINTEXT'][74]?></td>
                             </tr>
                             <tr>
                                 <td class="col-sm-2"><i class="fa fa-clock-o"></i> 13:30 - 15:00</td>
-                                <td class="col-sm-8">Выступления </td>
+                                <td class="col-sm-8"><?=$lang['MAINTEXT'][75]?></td>
                             </tr>
                             <tr>
                                 <td class="col-sm-2"><i class="fa fa-clock-o"></i> 15:00 - 16:00</td>
-                                <td class="col-sm-8">Обед </td>
+                                <td class="col-sm-8"><?=$lang['MAINTEXT'][76]?></td>
                             </tr>
                             <tr>
                                 <td class="col-sm-2"><i class="fa fa-clock-o"></i> 16:00 - 18:00</td>
-                                <td class="col-sm-8">Мастер-классы </td>
+                                <td class="col-sm-8"><?=$lang['MAINTEXT'][77]?></td>
                             </tr>
                         </table>
                     </div>
@@ -243,49 +232,48 @@
                                 </span>
                             </div>
                             <div class="media-body calendar-head">
-                                <h3 class="media-heading">18 мая 2016</h3>
+                                <h3 class="media-heading"><?=$lang['MAINTEXT'][78]?></h3>
                             </div>
                         </div>
                     </div>
                     <div class="panel-body">
 
-                        <h2>Заседание секций ХНУРЭ
+                        <h2><?=$lang['MAINTEXT'][79]?>
                         </h2>
-
 
                         <!-- Date/Time -->
                         <table class="table table-striped del-mar-bot">
                             <tr>
                                 <td class="col-sm-2"><i class="fa fa-clock-o"></i> 9:00</td>
-                                <td class="col-sm-8">Завтрак </td>
+                                <td class="col-sm-8"><?=$lang['MAINTEXT'][80]?></td>
                             </tr>
                             <tr>
                                 <td class="col-sm-2"><i class="fa fa-clock-o"></i> 10:00 - 13:00</td>
-                                <td class="col-sm-8">Заседание секций </td>
+                                <td class="col-sm-8"><?=$lang['MAINTEXT'][81]?></td>
                             </tr>
                             <tr>
                                 <td class="col-sm-2"><i class="fa fa-clock-o"></i> 13:00 - 13:30</td>
-                                <td class="col-sm-8">Кофе-брейк </td>
+                                <td class="col-sm-8"><?=$lang['MAINTEXT'][82]?></td>
                             </tr>
                             <tr>
                                 <td class="col-sm-2"><i class="fa fa-clock-o"></i> 13:30 - 15:00</td>
-                                <td class="col-sm-8">Заседание секций </td>
+                                <td class="col-sm-8"><?=$lang['MAINTEXT'][83]?></td>
                             </tr>
                             <tr>
                                 <td class="col-sm-2"><i class="fa fa-clock-o"></i> 15:00 - 16:00</td>
-                                <td class="col-sm-8">Обед </td>
+                                <td class="col-sm-8"><?=$lang['MAINTEXT'][84]?></td>
                             </tr>
                             <tr>
                                 <td class="col-sm-2"><i class="fa fa-clock-o"></i> 16:00 - 18:00</td>
-                                <td class="col-sm-8">Заседание секций</td>
+                                <td class="col-sm-8"><?=$lang['MAINTEXT'][85]?></td>
                             </tr>
                             <tr>
                                 <td class="col-sm-2"><i class="fa fa-clock-o"></i> 19:00</td>
-                                <td class="col-sm-8">Ужин</td>
+                                <td class="col-sm-8"><?=$lang['MAINTEXT'][86]?></td>
                             </tr>
                             <tr>
-                                <td class="col-sm-2"><i class="fa fa-clock-o"></i> 20:00<</td>
-                                <td class="col-sm-8">Культурная программа</td>
+                                <td class="col-sm-2"><i class="fa fa-clock-o"></i> 20:00</td>
+                                <td class="col-sm-8"><?=$lang['MAINTEXT'][87]?></td>
                             </tr>
                         </table>
                     </div>
@@ -302,49 +290,48 @@
                                 </span>
                             </div>
                             <div class="media-body calendar-head">
-                                <h3 class="media-heading">19 мая 2016</h3>
+                                <h3 class="media-heading"><?=$lang['MAINTEXT'][88]?></h3>
                             </div>
                         </div>
                     </div>
                     <div class="panel-body">
 
-                        <h2>Выездное заседание секций (Опошня)
+                        <h2><?=$lang['MAINTEXT'][89]?>
                         </h2>
-                        <hr>
 
                         <!-- Date/Time -->
                         <table class="table table-striped del-mar-bot">
                             <tr>
                                 <td class="col-sm-2"><i class="fa fa-clock-o"></i> 7:00</td>
-                                <td class="col-sm-8">Завтрак </td>
+                                <td class="col-sm-8"><?=$lang['MAINTEXT'][90]?></td>
                             </tr>
                             <tr>
                                 <td class="col-sm-2"><i class="fa fa-clock-o"></i> 8:00</td>
-                                <td class="col-sm-8">Выезд</td>
+                                <td class="col-sm-8"><?=$lang['MAINTEXT'][91]?></td>
                             </tr>
                             <tr>
                                 <td class="col-sm-2"><i class="fa fa-clock-o"></i> 11:00 - 13:00</td>
-                                <td class="col-sm-8">Заседание секций </td>
+                                <td class="col-sm-8"><?=$lang['MAINTEXT'][92]?></td>
                             </tr>
                             <tr>
                                 <td class="col-sm-2"><i class="fa fa-clock-o"></i> 14:00 - 15:00</td>
-                                <td class="col-sm-8">Экскурсия </td>
+                                <td class="col-sm-8"><?=$lang['MAINTEXT'][93]?></td>
                             </tr>
                             <tr>
                                 <td class="col-sm-2"><i class="fa fa-clock-o"></i> 15:00 - 16:00</td>
-                                <td class="col-sm-8">Подведение итогов </td>
+                                <td class="col-sm-8"><?=$lang['MAINTEXT'][94]?></td>
                             </tr>
                             <tr>
                                 <td class="col-sm-2"><i class="fa fa-clock-o"></i> 16:00 - 18:00</td>
-                                <td class="col-sm-8">Обед-Банкет</td>
+                                <td class="col-sm-8"><?=$lang['MAINTEXT'][95]?></td>
                             </tr>
                             <tr>
                                 <td class="col-sm-2"><i class="fa fa-clock-o"></i> 19:00</td>
-                                <td class="col-sm-8">Ужин</td>
+                                <td class="col-sm-8"><?=$lang['MAINTEXT'][96]?></td>
                             </tr>
                             <tr>
                                 <td class="col-sm-2"><i class="fa fa-clock-o"></i> 18:00</td>
-                                <td class="col-sm-8">Отъезд в Харьков</td>
+                                <td class="col-sm-8"><?=$lang['MAINTEXT'][97]?></td>
                             </tr>
                         </table>
                     </div>
@@ -361,13 +348,13 @@
                                 </span>
                             </div>
                             <div class="media-body calendar-head">
-                                <h3 class="media-heading">20 мая 2016</h3>
+                                <h3 class="media-heading"><?=$lang['MAINTEXT'][98]?></h3>
                             </div>
                         </div>
                     </div>
                     <div class="panel-body">
 
-                        <h2>Официальное закрытие конференции
+                        <h2><?=$lang['MAINTEXT'][99]?>
                         </h2>
 
                     </div>
@@ -381,52 +368,52 @@
             <!-- Sidebar Column -->
             <div class="col-sm-12">
                 <div class="list-group">
-                    <a href="news.php" class="list-group-item">Новости</a>
-                    <a href="#" class="list-group-item">Программа конференции</a>
-                    <a href="#" class="list-group-item">Сборник работ</a>
-                    <a href="#" class="list-group-item">Решение конференции</a>
+                    <a href="news.php" class="list-group-item"><?=$lang['NEWS']?></a>
+                    <a href="#" class="list-group-item"><?=$lang['PROGRAM']?></a>
+                    <a href="#" class="list-group-item"><?=$lang['COLLECTIONOFARTICLES']?></a>
+                    <a href="#" class="list-group-item"><?=$lang['DECISION']?></a>
                 </div>
             </div>
 
             <!-- Date Column -->
             <div class="col-sm-12">
-                <h3 class="page-header">Даты</h3>
+                <h3 class="page-header"><?=$lang['DATES']?></h3>
             </div>
             <div class="col-sm-12">
                 <div class="media">
                     <div class="pull-left">
-                                <span class="fa-stack fa-lg">
-                                      <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                                      <i class="fa fa-check fa-stack-1x fa-inverse"></i>
-                                </span>
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                <i class="fa fa-check fa-stack-1x fa-inverse"></i>
+                            </span>
                     </div>
                     <div class="media-body">
-                        <h4 class="media-heading">15 января 2016</h4>
-                        <p>Начало регистрации.</p>
+                        <h4 class="media-heading"><?=$lang['DATE']['START'][0]?></h4>
+                        <p><?=$lang['DATE']['START']['TEXT']?></p>
                     </div>
                 </div>
                 <div class="media">
                     <div class="pull-left">
-                                <span class="fa-stack fa-lg">
-                                      <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                                      <i class="fa fa-hourglass-start fa-stack-1x fa-inverse"></i>
-                                </span>
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                <i class="fa fa-hourglass-start fa-stack-1x fa-inverse"></i>
+                            </span>
                     </div>
                     <div class="media-body">
-                        <h4 class="media-heading">21 февраля 2016</h4>
-                        <p>Окончание принятия/отклонения работ. </p>
+                        <h4 class="media-heading"><?=$lang['DATE']['END'][0]?></h4>
+                        <p><?=$lang['DATE']['END']['TEXT']?></p>
                     </div>
                 </div>
                 <div class="media">
                     <div class="pull-left">
-                                <span class="fa-stack fa-lg">
-                                      <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                                      <i class="fa fa fa-hourglass-start fa-stack-1x fa-inverse"></i>
-                                </span>
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                <i class="fa fa-hourglass-start fa-stack-1x fa-inverse"></i>
+                            </span>
                     </div>
                     <div class="media-body">
-                        <h4 class="media-heading">10 марта 2016</h4>
-                        <p>Принятие окончательных работю</p>
+                        <h4 class="media-heading"><?=$lang['DATE']['FINAL'][0]?></h4>
+                        <p><?=$lang['DATE']['FINAL']['TEXT']?></p>
                     </div>
                 </div>
             </div>
