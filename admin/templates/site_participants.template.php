@@ -265,7 +265,7 @@
                             <i class="fa fa-file-word-o fa-2x"></i>
                         </div>
                         <div class="media-body">
-                            <h4 class="media-heading">Форма регистрации</h4>
+                            <h4 class="media-heading">Информационное сообщение</h4>
                             <small>(українською, *. pdf, ~37 K)</small>
                         </div>
                     </a>
@@ -274,7 +274,7 @@
                             <i class="fa fa-file-pdf-o fa-2x"></i>
                         </div>
                         <div class="media-body">
-                            <h4 class="media-heading">Форма регистрации</h4>
+                            <h4 class="media-heading">Требования к оформлению тезисов</h4>
                             <small>(українською, *. pdf, ~37 K)</small>
                         </div>
                     </a>
@@ -283,7 +283,7 @@
                             <i class="fa fa-file-pdf-o fa-2x"></i>
                         </div>
                         <div class="media-body">
-                            <h4 class="media-heading">Форма регистрации</h4>
+                            <h4 class="media-heading">Требования к оформлению статьи в журнале «Бионика интеллекта»</h4>
                             <small>(українською, *. pdf, ~37 K)</small>
                         </div>
                     </a>
@@ -292,7 +292,7 @@
                             <i class="fa fa-file-word-o fa-2x"></i>
                         </div>
                         <div class="media-body">
-                            <h4 class="media-heading">Форма регистрации</h4>
+                            <h4 class="media-heading">Заявка на участие в выставке студенческих рабо</h4>
                             <small>(українською, *. pdf, ~37 K)</small>
                         </div>
                     </a>
