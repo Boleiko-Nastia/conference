@@ -199,3 +199,15 @@ $lang['MAINTEXT'][97] = 'Departure to Kharkiv';
 
 $lang['MAINTEXT'][98] = '20 May 2016 ';
 $lang['MAINTEXT'][99] = 'Official closing of the conference';
+
+
+// site_news.template.php
+
+$lang['MAINTEXT'][100] = 'News';
+$lang['MAINTEXT'][101] = 'Home';
+$lang['MAINTEXT'][102] = 'News';
+$lang['MAINTEXT'][AddBy] = 'Added by: ';
+$lang['MAINTEXT'][AddDate] = 'Published ';
+$lang['MAINTEXT'][More] = 'View ';
+
+
