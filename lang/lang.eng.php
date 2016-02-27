@@ -211,3 +211,34 @@ $lang['MAINTEXT'][AddDate] = 'Published ';
 $lang['MAINTEXT'][More] = 'View ';
 
 
+// site_commission.template.php
+
+$lang['MAINTEXT'][103] = 'The program committee of the conference';
+$lang['MAINTEXT'][104] = 'Home';
+$lang['MAINTEXT'][105] = 'Organisers';
+$lang['MAINTEXT'][106] = 'Conference Sponsors and Partners';
+$lang['MAINTEXT'][107] = 'The Co-Chairs of the program committee';
+$lang['MAINTEXT'][Name1] = 'Tkachenko Vladimir F.';
+$lang['MAINTEXT'][Position1] = 'Head of the Department of MST';
+$lang['MAINTEXT'][Title1] = 'Candidate of Science';
+$lang['MAINTEXT'][Name2] = 'Chebotareva Irina';
+$lang['MAINTEXT'][Position2] = 'Associate Professor of the Department';
+$lang['MAINTEXT'][Title2] = 'Senior teacher';
+$lang['MAINTEXT'][Name3] = 'Tatiana Ivanova';
+$lang['MAINTEXT'][Position3] = 'Head of department';
+$lang['MAINTEXT'][Title3] = 'Senior teacher';
+$lang['MAINTEXT'][Name4] = 'Tatiana Ivanova';
+$lang['MAINTEXT'][Position4] = 'Head of department';
+$lang['MAINTEXT'][Title4] = 'Senior teacher';
+$lang['MAINTEXT'][108] = 'The members of the organizing committee';
+$lang['MAINTEXT'][109] = 'Prof. Slipchenko NI KNURE, Ukraine ';
+$lang['MAINTEXT'][110] = 'Prof. Kulishova NE, KNURE, Ukraine ';
+$lang['MAINTEXT'][111] = 'Prof. Filatov VA, KNURE, Ukraine ';
+$lang['MAINTEXT'][112] = 'Prof. Grebennik IV, KNURE, Ukraine ';
+$lang['MAINTEXT'][113] = 'Prof. Chetverikov GG KNURE, Ukraine ';
+$lang['MAINTEXT'][114] = 'Prof. Bodyansky EV KNURE, Ukraine ';
+$lang['MAINTEXT'][115] = 'Prof. Sokolova LV, KNURE, Ukraine ';
+$lang['MAINTEXT'][116] = 'Prof. Tsiganenko AM, Academy of the media industry, Russia ';
+$lang['MAINTEXT'][117] = 'Prof. Kuznetsov YV, St. Petersburg State University of Technology and Design ';
+$lang['MAINTEXT'][118] = 'Prof. Guriev, NS, Guanajuato State University, Mexico ';
+$lang['MAINTEXT'][119] = 'Assoc. Neofitny MV, "Research Institute of Laser Technologies", Ukraine ';
