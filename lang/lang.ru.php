@@ -198,3 +198,13 @@ $lang['MAINTEXT'][97] = 'Отъезд в Харьков';
 
 $lang['MAINTEXT'][98] = '20 мая 2016';
 $lang['MAINTEXT'][99] = 'Официальное закрытие конференции';
+
+
+// site_news.template.php
+
+$lang['MAINTEXT'][100] = 'Новости';
+$lang['MAINTEXT'][101] = 'Главная';
+$lang['MAINTEXT'][102] = 'Новости';
+$lang['MAINTEXT'][AddBy] = 'Добавлено: ';
+$lang['MAINTEXT'][AddDate] = 'Опубликовано ';
+$lang['MAINTEXT'][More] = 'Подробнее ';
