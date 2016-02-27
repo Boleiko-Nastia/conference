@@ -124,12 +124,12 @@
             </div>
             <div class="col-sm-12 del-pad-x">
                 <ul><big>
-                        <li><?=$lang['MAINTEXT'][30]?></li>
-                        <li><?=$lang['MAINTEXT'][31]?></li>
-                        <li><?=$lang['MAINTEXT'][32]?></li>
-                        <li><?=$lang['MAINTEXT'][33]?></li>
-                        <li><?=$lang['MAINTEXT'][34]?></li>
-                        <li><?=$lang['MAINTEXT'][35]?></li>
+                        <li><?=$lang['MAINTEXT'][Section1]?></li>
+                        <li><?=$lang['MAINTEXT'][Section2]?></li>
+                        <li><?=$lang['MAINTEXT'][Section3]?></li>
+                        <li><?=$lang['MAINTEXT'][Section4]?></li>
+                        <li><?=$lang['MAINTEXT'][Section5]?></li>
+                        <li><?=$lang['MAINTEXT'][Section6]?></li>
                     </big>
                 </ul>
             </div>
