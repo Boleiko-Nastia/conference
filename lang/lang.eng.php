@@ -121,3 +121,26 @@ $lang['MAINTEXT'][32] = 'Multimedia and web-based technologies. Developing appli
 $lang['MAINTEXT'][33] = '2D and 3D-graphics, graphic design, color management.';
 $lang['MAINTEXT'][34] = 'Marketing and Advertising in printing.';
 $lang['MAINTEXT'][35] = 'The use of new teaching methods in the publishing and printing industry, the relationship of the educational process with production.';
+
+
+// site_rules.template.php
+
+$lang['MAINTEXT'][36] = 'Terms and conditions of participation in the conference';
+$lang['MAINTEXT'][37] = 'Home';
+$lang['MAINTEXT'][38] = 'Conditions';
+$lang['MAINTEXT'][39] = 'Feed materials';
+$lang['MAINTEXT'][40] = 'Feed materials-1';
+$lang['MAINTEXT'][41] = 'Feed materials-2';
+$lang['MAINTEXT'][42] = 'Item 2.1;';
+$lang['MAINTEXT'][43] = 'Item 2.2.';
+$lang['MAINTEXT'][44] = 'Conference languages';
+$lang['MAINTEXT'][45] = 'Ukrainian;';
+$lang['MAINTEXT'][46] = 'Russian;';
+$lang['MAINTEXT'][47] = 'English.';
+$lang['MAINTEXT'][48] = 'Registration materials';
+$lang['MAINTEXT'][49] = 'Registration materials - Item 1';
+$lang['MAINTEXT'][50] = 'Registration materials - Item 2';
+$lang['MAINTEXT'][51] = 'Review of materials';
+$lang['MAINTEXT'][52] = 'Review of materials - Item 1.';
+$lang['MAINTEXT'][53] = 'Review of materials - Item 2.';
+$lang['MAINTEXT'][54] = 'Review of materials - Item 3.';
