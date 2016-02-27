@@ -246,7 +246,7 @@ $lang['MAINTEXT'][119] = 'Assoc. Neofitny MV, "Research Institute of Laser Techn
 
 // site_participants.template.php
 
-$lang['MAINTEXT'][120] = 'The participants of the conference and school seminar';
+$lang['MAINTEXT'][120] = 'The participants of the conference and Youth Training Seminar';
 $lang['MAINTEXT'][121] = 'Home';
 $lang['MAINTEXT'][122] = 'Speakers';
 $lang['MAINTEXT'][123] = 'Conference participants';
