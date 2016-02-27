@@ -144,3 +144,58 @@ $lang['MAINTEXT'][51] = 'Review of materials';
 $lang['MAINTEXT'][52] = 'Review of materials - Item 1.';
 $lang['MAINTEXT'][53] = 'Review of materials - Item 2.';
 $lang['MAINTEXT'][54] = 'Review of materials - Item 3.';
+
+
+
+// site_calendar.template.php
+
+$lang['MAINTEXT'][55] = 'Conference Schedule';
+$lang['MAINTEXT'][56] = 'Home';
+$lang['MAINTEXT'][57] = 'Calendar';
+
+$lang['MAINTEXT'][58] = '16 May 2016 ';
+$lang['MAINTEXT'][59] = 'Plenary session';
+$lang['MAINTEXT'][60] = 'Register, the settlement of nonresident';
+$lang['MAINTEXT'][61] = 'Register of Kharkiv';
+$lang['MAINTEXT'][62] = 'Opening of the conference. Plenary session';
+$lang['MAINTEXT'][63] = 'SRI Tour "Laser Technology"';
+$lang['MAINTEXT'][64] = 'Lunch';
+$lang['MAINTEXT'][65] = 'Session sections. Masterclasses';
+$lang['MAINTEXT'][66] = 'Coffee Break';
+$lang['MAINTEXT'][67] = 'Concert';
+$lang['MAINTEXT'][68] = 'Dinner';
+$lang['MAINTEXT'][69] = 'Cultural program';
+
+$lang['MAINTEXT'][70] = '17 May 2016 ';
+$lang['MAINTEXT'][71] = 'Youth Workshop';
+$lang['MAINTEXT'][72] = 'Breakfast';
+$lang['MAINTEXT'][73] = 'Statements';
+$lang['MAINTEXT'][74] = 'Coffee Break';
+$lang['MAINTEXT'][75] = 'Statements';
+$lang['MAINTEXT'][76] = 'Lunch';
+$lang['MAINTEXT'][77] = 'Master Classes';
+
+$lang['MAINTEXT'][78] = '18 May 2016 ';
+$lang['MAINTEXT'][79] = 'Meeting section KNURE';
+$lang['MAINTEXT'][80] = 'Breakfast';
+$lang['MAINTEXT'][81] = 'Meeting section';
+$lang['MAINTEXT'][82] = 'Coffee Break';
+$lang['MAINTEXT'][83] = 'Meeting section';
+$lang['MAINTEXT'][84] = 'Lunch';
+$lang['MAINTEXT'][85] = 'Meeting section';
+$lang['MAINTEXT'][86] = 'Dinner';
+$lang['MAINTEXT'][87] = 'Cultural program';
+
+$lang['MAINTEXT'][88] = '19 May 2016 ';
+$lang['MAINTEXT'][89] = 'Guest Session (Oposhnya)';
+$lang['MAINTEXT'][90] = 'breakfast';
+$lang['MAINTEXT'][91] = 'Check';
+$lang['MAINTEXT'][92] = 'Meeting section';
+$lang['MAINTEXT'][93] = 'tour';
+$lang['MAINTEXT'][94] = 'Summary';
+$lang['MAINTEXT'][95] = 'The dinner-banquet';
+$lang['MAINTEXT'][96] = 'Dinner';
+$lang['MAINTEXT'][97] = 'Departure to Kharkiv';
+
+$lang['MAINTEXT'][98] = '20 May 2016 ';
+$lang['MAINTEXT'][99] = 'Official closing of the conference';
