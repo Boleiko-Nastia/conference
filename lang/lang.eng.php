@@ -242,3 +242,18 @@ $lang['MAINTEXT'][116] = 'Prof. Tsiganenko AM, Academy of the media industry, Ru
 $lang['MAINTEXT'][117] = 'Prof. Kuznetsov YV, St. Petersburg State University of Technology and Design ';
 $lang['MAINTEXT'][118] = 'Prof. Guriev, NS, Guanajuato State University, Mexico ';
 $lang['MAINTEXT'][119] = 'Assoc. Neofitny MV, "Research Institute of Laser Technologies", Ukraine ';
+
+
+// site_participants.template.php
+
+$lang['MAINTEXT'][120] = 'The participants of the conference and school seminar';
+$lang['MAINTEXT'][121] = 'Home';
+$lang['MAINTEXT'][122] = 'Speakers';
+$lang['MAINTEXT'][123] = 'Conference participants';
+$lang['MAINTEXT'][Section] = 'Section';
+$lang['MAINTEXT'][Participant] = 'User';
+$lang['MAINTEXT'][Place] = 'Place of work';
+$lang['MAINTEXT'][Univercity] = 'Institution';
+$lang['MAINTEXT'][Report] = 'Title of the report';
+$lang['MAINTEXT'][Leader] = 'Leader';
+$lang['MAINTEXT'][124] = 'Members of the Youth Training Seminar';
