@@ -12,8 +12,13 @@ if($article_id && $lang_id && $_POST){
     $lang = get_lang_by_name($lang_id);
 
     $data = array('title' => $title, 'full_text'=> $full_text, 'article_id' => $article_id, 'lang_id' => $lang);
+    $present = check_article($data);
 
-    set_article($data);
+    if($present) {
+        update_article($data);
+    } else {
+        set_article($data);
+    }
 }
 
 require_once('templates/edit_news_translation.php');

@@ -24,7 +24,6 @@ switch ($_COOKIE['lang']) {
 
 include_once('lang/'.$lang_file);
 
-//if($_POST['lang']) {
-//    unset($_POST['lang']);
-//    header("Location:" . $_SERVER['PHP_SELF']);
-//}
+require_once('admin/config.php');
+require_once('db/MysqliDb.php');
+$db = new Mysqlidb ('localhost', 'root', '', 'conference');

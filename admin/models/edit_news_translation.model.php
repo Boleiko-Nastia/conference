@@ -20,3 +20,18 @@ function get_lang_by_name($name){
     $lang = $db->get('conference_lang');
     return $lang[0]['id'];
 }
+
+function update_article($data) {
+    global $db;
+    $db->where('lang_id', $data['lang_id']);
+    $db->where('article_id', $data['article_id']);
+    $id = $db->update('conference_article_translation',$data);
+    return $id;
+}
+
+function check_article($data) {
+    global $db;
+    $db->where('lang_id', $data['lang_id']);
+    $db->where('article_id', $data['article_id']);
+    return $db->get('conference_article_translation')?true:false;
+}

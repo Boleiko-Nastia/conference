@@ -108,27 +108,30 @@
     <div class="row">
 
         <div class="col-sm-9 del-pad-x">
+            <?php foreach($public_articles as $id => $article): ?>
             <div class="col-sm-12">
                 <!-- First Blog Post -->
                 <h2>
-                    <a href="post-1.php"></a>
+                    <a href="?id=<?=$id?>"></a>
                 </h2>
                 <p class="lead">
-                    <?=$lang['MAINTEXT'][AddBy]?>Чеботарева И.Б.
+                    <?=$lang['MAINTEXT'][AddBy]?><?=$article['addedby']?>
                 </p>
-                <p><i class="fa fa-clock-o"></i> <?=$lang['MAINTEXT'][AddDate]?>16 декабря, 2015 в 10:00</p>
+                <p><i class="fa fa-clock-o"></i> <?=$lang['MAINTEXT'][AddDate]?><?=$article['date_create']?></p>
                 <hr>
-                <a href="post-1.php">
-                    <img class="img-responsive img-hover" src="img/post/2.png" alt="">
+                <a href="?id=<?=$id?>">
+                    <img class="img-responsive img-hover" src="img/news-img/<?=$article['image_id'].'.'.$article['image_type']?>" alt="">
                 </a>
                 <hr>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, veritatis, tempora, necessitatibus inventore nisi quam quia repellat ut tempore laborum possimus eum dicta id animi corrupti debitis ipsum officiis rerum.</p>
-                <a class="btn btn-primary blue-button" href="post-1.php"><?=$lang['MAINTEXT'][More]?><i class="fa fa-angle-right"></i></a>
+                <p><?=$article['full_text']?></p>
+                <?php if(!$_GET['id']):?>
+                <a class="btn btn-primary blue-button" href="?id=<?=$id?>"><?=$lang['MAINTEXT'][More]?><i class="fa fa-angle-right"></i></a>
+                <?php endif; ?>
                 <hr>
                 <!-- END First Blog Post -->
                 
             </div>
-
+            <?php endforeach; ?>
         </div>
 
         <!-- Blog Sidebar Widgets Column -->
