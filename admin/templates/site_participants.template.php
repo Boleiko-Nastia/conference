@@ -51,9 +51,6 @@
                     <a href="sections.php"><?=$lang['CONFERENCE_AREA']?></a>
                 </li>
                 <li>
-                    <a href="rules.php"><?=$lang['CONDITIONS']?></a>
-                </li>
-                <li>
                     <a href="calendar.php"><?=$lang['CALENDAR']?></a>
                 </li>
                 <li>
@@ -200,17 +197,7 @@
 
         <div class="col-sm-3 del-pad-x">
 
-            <!-- Sidebar Column -->
-            <div class="col-sm-12">
-                <div class="list-group">
-                    <a href="news.php" class="list-group-item"><?=$lang['NEWS']?></a>
-                    <a href="#" class="list-group-item"><?=$lang['PROGRAM']?></a>
-                    <a href="#" class="list-group-item"><?=$lang['COLLECTIONOFARTICLES']?></a>
-                    <a href="#" class="list-group-item"><?=$lang['DECISION']?></a>
-                </div>
-            </div>
-
-            <!-- Date Column -->
+<!-- Date Column -->
             <div class="col-sm-12">
                 <h3 class="page-header"><?=$lang['DATES']?></h3>
             </div>
@@ -219,36 +206,60 @@
                     <div class="pull-left">
                             <span class="fa-stack fa-lg">
                                 <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                                <i class="fa fa-check fa-stack-1x fa-inverse"></i>
+                                <i class="fa fa-calendar fa-stack-1x fa-inverse"></i>
                             </span>
                     </div>
                     <div class="media-body">
-                        <h4 class="media-heading"><?=$lang['DATE']['START'][0]?></h4>
-                        <p><?=$lang['DATE']['START']['TEXT']?></p>
+                        <h4 class="media-heading"><?=$lang['DATE']['Date1'][0]?></h4>
+                        <p><?=$lang['DATE']['Date1']['TEXT']?></p>
                     </div>
                 </div>
                 <div class="media">
                     <div class="pull-left">
                             <span class="fa-stack fa-lg">
                                 <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                                <i class="fa fa-hourglass-start fa-stack-1x fa-inverse"></i>
+                                <i class="fa fa-calendar fa-stack-1x fa-inverse"></i>
                             </span>
                     </div>
                     <div class="media-body">
-                        <h4 class="media-heading"><?=$lang['DATE']['END'][0]?></h4>
-                        <p><?=$lang['DATE']['END']['TEXT']?></p>
+                        <h4 class="media-heading"><?=$lang['DATE']['Date2'][0]?></h4>
+                        <p><?=$lang['DATE']['Date2']['TEXT']?></p>
                     </div>
                 </div>
                 <div class="media">
                     <div class="pull-left">
                             <span class="fa-stack fa-lg">
                                 <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                                <i class="fa fa-hourglass-start fa-stack-1x fa-inverse"></i>
+                                <i class="fa fa-calendar fa-stack-1x fa-inverse"></i>
                             </span>
                     </div>
                     <div class="media-body">
-                        <h4 class="media-heading"><?=$lang['DATE']['FINAL'][0]?></h4>
-                        <p><?=$lang['DATE']['FINAL']['TEXT']?></p>
+                        <h4 class="media-heading"><?=$lang['DATE']['Date3'][0]?></h4>
+                        <p><?=$lang['DATE']['Date3']['TEXT']?></p>
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="pull-left">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                <i class="fa fa-calendar fa-stack-1x fa-inverse"></i>
+                            </span>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading"><?=$lang['DATE']['Date4'][0]?></h4>
+                        <p><?=$lang['DATE']['Date4']['TEXT']?></p>
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="pull-left">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                <i class="fa fa-calendar fa-stack-1x fa-inverse"></i>
+                            </span>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading"><?=$lang['DATE']['Date5'][0]?></h4>
+                        <p><?=$lang['DATE']['Date5']['TEXT']?></p>
                     </div>
                 </div>
             </div>
@@ -256,7 +267,7 @@
 
             <!-- Download Column -->
             <div class="col-sm-12">
-                <h3 class="page-header">Файлы</h3>
+                <h3 class="page-header"><?=$lang['FILES']?></h3>
             </div>
             <div class="col-sm-12">
                 <div class="list-group">
