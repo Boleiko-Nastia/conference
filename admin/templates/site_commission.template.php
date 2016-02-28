@@ -370,7 +370,7 @@
 <!-- Footer -->
 <footer>
     <div class="col-sm-12">
-        <center>&copy; 2015 PMW </center>
+        <center>&copy; <?php echo date('Y');?> PMW </center>
     </div>
 </footer>
 
