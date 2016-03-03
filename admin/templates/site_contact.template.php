@@ -23,13 +23,6 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="img/favicon.png">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
 </head>
 
 <body>
@@ -51,32 +44,28 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a href="index.php">Главная</a>
+                    <a href="index.php"><?=$lang['MENU_HOME']?></a>
                 </li>
                 <li>
-                    <a href="sections.php">Секции</a>
+                    <a href="sections.php"><?=$lang['CONFERENCE_AREA']?></a>
                 </li>
                 <li>
-                    <a href="rules.php">Условия</a>
+                    <a href="calendar.php"><?=$lang['CALENDAR']?></a>
                 </li>
                 <li>
-                    <a href="calendar.php">Календарь</a>
+                    <a href="news.php"><?=$lang['NEWS']?></a>
                 </li>
                 <li>
-                    <a href="news.php">Новости</a>
-                </li>
-
-                <li>
-                    <a href="commission.php">Огранизаторы</a>
+                    <a href="commission.php"><?=$lang['ORGANISERS']?></a>
                 </li>
                 <li>
-                    <a href="participants.php">Участники</a>
+                    <a href="participants.php"><?=$lang['SPEAKERS']?></a>
                 </li>
                 <li>
-                    <a href="archive.php">Архив</a>
+                    <a href="archive.php"><?=$lang['ARCHIVE']?></a>
                 </li>
                 <li class="active">
-                    <a href="contact.php">Контакты</a>
+                    <a href="contact.php"><?=$lang['CONTACTS']?></a>
                 </li>
                 <li class="li-language">
                     <div class="btn-group group-language">
@@ -103,12 +92,12 @@
     <!-- Page Heading/Breadcrumbs -->
     <div class="row">
         <div class="col-sm-12">
-            <h1 class="page-header">Контакты
+            <h1 class="page-header"><?=$lang['MAINTEXT'][129]?>
             </h1>
             <ol class="breadcrumb">
-                <li><a href="index.php">Главная</a>
+                <li><a href="index.php"><?=$lang['MAINTEXT'][130]?></a>
                 </li>
-                <li class="active">Контакты</li>
+                <li class="active"><?=$lang['MAINTEXT'][131]?></li>
             </ol>
         </div>
     </div>
@@ -121,47 +110,46 @@
             <!-- Contact Details Column -->
             <big>
                 <p><i class="fa fa-map-marker fa-2x"></i>
-                    <abbr title="Адрес ВУЗа"> Адрес</abbr>: Проспект Ленина 14, Харьков, Украина</p>
-
+                    <abbr title="<?=$lang['MAINTEXT'][132]?>"> <?=$lang['MAINTEXT'][133]?></abbr>: <?=$lang['MAINTEXT'][134]?></p>
                 <p class="mg-tp-20"><i class="fa fa-phone fa-2x"></i>
-                    <abbr title="Телефон приемной кафедры"> Тел.</abbr>: (057) 111-22-33</p>
+                    <abbr title="<?=$lang['MAINTEXT'][135]?>"> <?=$lang['MAINTEXT'][136]?></abbr>: <?=$lang['MAINTEXT'][137]?></p>
                 <p class="mg-tp-20"><i class="fa fa-envelope-o fa-2x"></i>
-                    <abbr title="Электронная почта кафедры"> Email</abbr>: <a href="mailto:name@example.com">mst@nure.ua</a>
+                    <abbr title="<?=$lang['MAINTEXT'][138]?>"> <?=$lang['MAINTEXT'][139]?></abbr>: <a href="mailto:pmw.nure.ua"><?=$lang['MAINTEXT'][140]?></a>
                 </p>
             </big>
             <hr>
             <div class="col-sm-10 del-pad-x">
-                <h3>Напишите нам:</h3>
+                <h3><?=$lang['MAINTEXT'][141]?></h3>
                 <br>
                 <form name="sentMessage" id="contactForm" novalidate>
                     <div class="control-group form-group">
                         <div class="controls">
-                            <label>ФИО:</label>
-                            <input type="text" class="form-control" id="name" required data-validation-required-message="Введите Ваше полное имя, фамилию и отчество!" placeholder="Иванов Иван Иванович">
+                            <label><?=$lang['MAINTEXT'][142]?></label>
+                            <input type="text" class="form-control" id="name" required data-validation-required-message="<?=$lang['MAINTEXT'][143]?>" placeholder="<?=$lang['MAINTEXT'][144]?>">
                             <p class="help-block"></p>
                         </div>
                     </div>
                     <div class="control-group form-group">
                         <div class="controls">
-                            <label>Номер телефона:</label>
-                            <input type="tel" class="form-control" id="phone" required data-validation-required-message="Введите Ваш номер телефона!" placeholder="+38(057) 11-22-333">
+                            <label><?=$lang['MAINTEXT'][145]?></label>
+                            <input type="tel" class="form-control" id="phone" required data-validation-required-message="<?=$lang['MAINTEXT'][146]?>" placeholder="<?=$lang['MAINTEXT'][147]?>">
                         </div>
                     </div>
                     <div class="control-group form-group">
                         <div class="controls">
-                            <label>Email:</label>
-                            <input type="email" class="form-control" id="email" required data-validation-required-message="Введите Ваш адрес электронной почты!" placeholder="ivanov_ivan@ukr.net">
+                            <label><?=$lang['MAINTEXT'][148]?></label>
+                            <input type="email" class="form-control" id="email" required data-validation-required-message="<?=$lang['MAINTEXT'][149]?>" placeholder="<?=$lang['MAINTEXT'][150]?>">
                         </div>
                     </div>
                     <div class="control-group form-group">
                         <div class="controls">
-                            <label>Сообщение:</label>
-                            <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Введите текстовое сообщение, которое Вы хотите отправить!" placeholder="Введите сообщение..." maxlength="999" style="resize:none"></textarea>
+                            <label><?=$lang['MAINTEXT'][151]?></label>
+                            <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="<?=$lang['MAINTEXT'][152]?>" placeholder="<?=$lang['MAINTEXT'][153]?>" maxlength="999" style="resize:none"></textarea>
                         </div>
                     </div>
                     <div id="success"></div>
                     <!-- For success/fail messages -->
-                    <button type="submit" class="btn btn-primary blue-button">Отправить</button>
+                    <button type="submit" class="btn btn-primary blue-button"><?=$lang['MAINTEXT'][154]?></button>
                 </form>
             </div>
             <hr>
@@ -172,55 +160,79 @@
 
         <div class="col-sm-3 del-pad-x">
 
-            <!-- Sidebar Column -->
+             <!-- Sidebar Column -->
             <div class="col-sm-12">
                 <div class="list-group">
-                    <a href="news.php" class="list-group-item">Новости</a>
-                    <a href="#" class="list-group-item">Программа конференции</a>
-                    <a href="#" class="list-group-item">Сборник работ</a>
-                    <a href="#" class="list-group-item">Решение конференции</a>
+                    <a href="news.php" class="list-group-item"><?=$lang['NEWS']?></a>
+                    <a href="#" class="list-group-item"><?=$lang['PROGRAM']?></a>
+                    <a href="#" class="list-group-item"><?=$lang['COLLECTIONOFARTICLES']?></a>
+                    <a href="#" class="list-group-item"><?=$lang['DECISION']?></a>
                 </div>
             </div>
 
-            <!-- Date Column -->
+                        <!-- Date Column -->
             <div class="col-sm-12">
-                <h3 class="page-header">Даты</h3>
+                <h3 class="page-header"><?=$lang['DATES']?></h3>
             </div>
             <div class="col-sm-12">
                 <div class="media">
                     <div class="pull-left">
                             <span class="fa-stack fa-lg">
                                 <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                                <i class="fa fa-check fa-stack-1x fa-inverse"></i>
+                                <i class="fa fa-calendar fa-stack-1x fa-inverse"></i>
                             </span>
                     </div>
                     <div class="media-body">
-                        <h4 class="media-heading">15 января 2016</h4>
-                        <p>Начало регистрации.</p>
+                        <h4 class="media-heading"><?=$lang['DATE']['Date1'][0]?></h4>
+                        <p><?=$lang['DATE']['Date1']['TEXT']?></p>
                     </div>
                 </div>
                 <div class="media">
                     <div class="pull-left">
                             <span class="fa-stack fa-lg">
                                 <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                                <i class="fa fa-clock-o fa-stack-1x fa-inverse"></i>
+                                <i class="fa fa-calendar fa-stack-1x fa-inverse"></i>
                             </span>
                     </div>
                     <div class="media-body">
-                        <h4 class="media-heading">21 февраля 2016</h4>
-                        <p>Окончание принятия/отклонения работ. </p>
+                        <h4 class="media-heading"><?=$lang['DATE']['Date2'][0]?></h4>
+                        <p><?=$lang['DATE']['Date2']['TEXT']?></p>
                     </div>
                 </div>
                 <div class="media">
                     <div class="pull-left">
                             <span class="fa-stack fa-lg">
                                 <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                                <i class="fa fa-clock-o fa-stack-1x fa-inverse"></i>
+                                <i class="fa fa-calendar fa-stack-1x fa-inverse"></i>
                             </span>
                     </div>
                     <div class="media-body">
-                        <h4 class="media-heading">10 марта 2016</h4>
-                        <p>Принятие окончательных работю</p>
+                        <h4 class="media-heading"><?=$lang['DATE']['Date3'][0]?></h4>
+                        <p><?=$lang['DATE']['Date3']['TEXT']?></p>
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="pull-left">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                <i class="fa fa-calendar fa-stack-1x fa-inverse"></i>
+                            </span>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading"><?=$lang['DATE']['Date4'][0]?></h4>
+                        <p><?=$lang['DATE']['Date4']['TEXT']?></p>
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="pull-left">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                <i class="fa fa-calendar fa-stack-1x fa-inverse"></i>
+                            </span>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading"><?=$lang['DATE']['Date5'][0]?></h4>
+                        <p><?=$lang['DATE']['Date5']['TEXT']?></p>
                     </div>
                 </div>
             </div>
@@ -228,7 +240,7 @@
 
             <!-- Download Column -->
             <div class="col-sm-12">
-                <h3 class="page-header">Файлы</h3>
+                <h3 class="page-header"><?=$lang['FILES']?></h3>
             </div>
             <div class="col-sm-12">
                 <div class="list-group">

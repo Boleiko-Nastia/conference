@@ -20,22 +20,8 @@
     <!-- Custom Fonts -->
     <link href="font-awesome-4.4.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
-
-    <!-- Bootstrap remake CSS
-    <link href="css/bootstrap-theme.min" rel="stylesheet">-->
-
-    <!-- Bootstrap remake2 CSS -
-    <link href="css/bootstrap-theme" rel="stylesheet">->
-
     <!-- Favicon -->
     <link rel="shortcut icon" href="img/favicon.png">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
 
 </head>
 
@@ -60,18 +46,15 @@
                 <li>
                     <a href="sections.php"><?=$lang['CONFERENCE_AREA']?></a>
                 </li>
-                <li>
+                <!--<li>
                     <a href="rules.php"><?=$lang['CONDITIONS']?></a>
-                </li>
+                </li>-->
                 <li>
                     <a href="calendar.php"><?=$lang['CALENDAR']?></a>
                 </li>
                 <li>
                     <a href="news.php"><?=$lang['NEWS']?></a>
                 </li>
-                <!--<li>
-                    <a href="commission.html">Комитет</a>
-                </li>-->
                 <li>
                     <a href="commission.php"><?=$lang['ORGANISERS']?></a>
                 </li>
@@ -167,15 +150,7 @@
                    <?=$lang['MAINTEXT'][4]?></p>
                 <hr>
                 <p><?=$lang['MAINTEXT'][5]?></p>
-                <p><?=$lang['MAINTEXT'][6]?></p>
                 <p><?=$lang['MAINTEXT'][7]?></p>
-                <p><?=$lang['MAINTEXT'][8]?>
-                <ul>
-                    <li><?=$lang['MAINTEXT'][9]?></li>
-                    <li><?=$lang['MAINTEXT'][10]?></li>
-                    <li><?=$lang['MAINTEXT'][11]?></li>
-                </ul>
-                </p>
                 <hr>
                 <p> <i class="fa fa-exclamation-circle"></i>
                     <strong><?=$lang['MAINTEXT'][12]?></strong></p>
@@ -205,6 +180,8 @@
                         <?=$lang['MAINTEXT'][22]?>
                     <p>
                         <?=$lang['MAINTEXT'][23]?>
+                    <p>
+                        <?=$lang['MAINTEXT'][new8]?>
                     </p>
                 </big>
             </div>
@@ -397,36 +374,60 @@
                     <div class="pull-left">
                             <span class="fa-stack fa-lg">
                                 <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                                <i class="fa fa-check fa-stack-1x fa-inverse"></i>
+                                <i class="fa fa-calendar fa-stack-1x fa-inverse"></i>
                             </span>
                     </div>
                     <div class="media-body">
-                        <h4 class="media-heading"><?=$lang['DATE']['START'][0]?></h4>
-                        <p><?=$lang['DATE']['START']['TEXT']?></p>
+                        <h4 class="media-heading"><?=$lang['DATE']['Date1'][0]?></h4>
+                        <p><?=$lang['DATE']['Date1']['TEXT']?></p>
                     </div>
                 </div>
                 <div class="media">
                     <div class="pull-left">
                             <span class="fa-stack fa-lg">
                                 <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                                <i class="fa fa-hourglass-start fa-stack-1x fa-inverse"></i>
+                                <i class="fa fa-calendar fa-stack-1x fa-inverse"></i>
                             </span>
                     </div>
                     <div class="media-body">
-                        <h4 class="media-heading"><?=$lang['DATE']['END'][0]?></h4>
-                        <p><?=$lang['DATE']['END']['TEXT']?></p>
+                        <h4 class="media-heading"><?=$lang['DATE']['Date2'][0]?></h4>
+                        <p><?=$lang['DATE']['Date2']['TEXT']?></p>
                     </div>
                 </div>
                 <div class="media">
                     <div class="pull-left">
                             <span class="fa-stack fa-lg">
                                 <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                                <i class="fa fa-hourglass-start fa-stack-1x fa-inverse"></i>
+                                <i class="fa fa-calendar fa-stack-1x fa-inverse"></i>
                             </span>
                     </div>
                     <div class="media-body">
-                        <h4 class="media-heading"><?=$lang['DATE']['FINAL'][0]?></h4>
-                        <p><?=$lang['DATE']['FINAL']['TEXT']?></p>
+                        <h4 class="media-heading"><?=$lang['DATE']['Date3'][0]?></h4>
+                        <p><?=$lang['DATE']['Date3']['TEXT']?></p>
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="pull-left">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                <i class="fa fa-calendar fa-stack-1x fa-inverse"></i>
+                            </span>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading"><?=$lang['DATE']['Date4'][0]?></h4>
+                        <p><?=$lang['DATE']['Date4']['TEXT']?></p>
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="pull-left">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                <i class="fa fa-calendar fa-stack-1x fa-inverse"></i>
+                            </span>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading"><?=$lang['DATE']['Date5'][0]?></h4>
+                        <p><?=$lang['DATE']['Date5']['TEXT']?></p>
                     </div>
                 </div>
             </div>
@@ -434,7 +435,7 @@
 
             <!-- Download Column -->
             <div class="col-sm-12">
-                <h3 class="page-header">Файлы</h3>
+                <h3 class="page-header"><?=$lang['FILES']?></h3>
             </div>
             <div class="col-sm-12">
                 <div class="list-group">

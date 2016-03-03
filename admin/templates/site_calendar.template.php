@@ -50,9 +50,6 @@
                 <li>
                     <a href="sections.php"><?=$lang['CONFERENCE_AREA']?></a>
                 </li>
-                <li>
-                    <a href="rules.php"><?=$lang['CONDITIONS']?></a>
-                </li>
                 <li class="active">
                     <a href="calendar.php"><?=$lang['CALENDAR']?></a>
                 </li>
@@ -384,52 +381,86 @@
                     <div class="pull-left">
                             <span class="fa-stack fa-lg">
                                 <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                                <i class="fa fa-check fa-stack-1x fa-inverse"></i>
+                                <i class="fa fa-calendar fa-stack-1x fa-inverse"></i>
                             </span>
                     </div>
                     <div class="media-body">
-                        <h4 class="media-heading"><?=$lang['DATE']['START'][0]?></h4>
-                        <p><?=$lang['DATE']['START']['TEXT']?></p>
+                        <h4 class="media-heading"><?=$lang['DATE']['Date1'][0]?></h4>
+                        <p><?=$lang['DATE']['Date1']['TEXT']?></p>
                     </div>
                 </div>
                 <div class="media">
                     <div class="pull-left">
                             <span class="fa-stack fa-lg">
                                 <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                                <i class="fa fa-hourglass-start fa-stack-1x fa-inverse"></i>
+                                <i class="fa fa-calendar fa-stack-1x fa-inverse"></i>
                             </span>
                     </div>
                     <div class="media-body">
-                        <h4 class="media-heading"><?=$lang['DATE']['END'][0]?></h4>
-                        <p><?=$lang['DATE']['END']['TEXT']?></p>
+                        <h4 class="media-heading"><?=$lang['DATE']['Date2'][0]?></h4>
+                        <p><?=$lang['DATE']['Date2']['TEXT']?></p>
                     </div>
                 </div>
                 <div class="media">
                     <div class="pull-left">
                             <span class="fa-stack fa-lg">
                                 <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                                <i class="fa fa-hourglass-start fa-stack-1x fa-inverse"></i>
+                                <i class="fa fa-calendar fa-stack-1x fa-inverse"></i>
                             </span>
                     </div>
                     <div class="media-body">
-                        <h4 class="media-heading"><?=$lang['DATE']['FINAL'][0]?></h4>
-                        <p><?=$lang['DATE']['FINAL']['TEXT']?></p>
+                        <h4 class="media-heading"><?=$lang['DATE']['Date3'][0]?></h4>
+                        <p><?=$lang['DATE']['Date3']['TEXT']?></p>
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="pull-left">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                <i class="fa fa-calendar fa-stack-1x fa-inverse"></i>
+                            </span>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading"><?=$lang['DATE']['Date4'][0]?></h4>
+                        <p><?=$lang['DATE']['Date4']['TEXT']?></p>
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="pull-left">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                <i class="fa fa-calendar fa-stack-1x fa-inverse"></i>
+                            </span>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading"><?=$lang['DATE']['Date5'][0]?></h4>
+                        <p><?=$lang['DATE']['Date5']['TEXT']?></p>
                     </div>
                 </div>
             </div>
 
+
             <!-- Download Column -->
             <div class="col-sm-12">
-                <h3 class="page-header">Файлы</h3>
+                <h3 class="page-header"><?=$lang['FILES']?></h3>
             </div>
             <div class="col-sm-12">
                 <div class="list-group">
-                    <a href="index.php" class="list-group-item media">
+                    <a href="download/doc-1.doc" target="_blank" class="list-group-item media">
                         <div class="pull-left">
                             <i class="fa fa-file-word-o fa-2x"></i>
                         </div>
                         <div class="media-body">
-                            <h4 class="media-heading">Форма регистрации</h4>
+                            <h4 class="media-heading">Информационное сообщение</h4>
+                            <small>(українською, *. pdf, ~37 K)</small>
+                        </div>
+                    </a>
+                    <a href="download/doc-2.pdf" target="_blank" class="list-group-item media mg-tp">
+                        <div class="pull-left">
+                            <i class="fa fa-file-pdf-o fa-2x"></i>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">Требования к оформлению тезисов</h4>
                             <small>(українською, *. pdf, ~37 K)</small>
                         </div>
                     </a>
@@ -438,16 +469,7 @@
                             <i class="fa fa-file-pdf-o fa-2x"></i>
                         </div>
                         <div class="media-body">
-                            <h4 class="media-heading">Форма регистрации</h4>
-                            <small>(українською, *. pdf, ~37 K)</small>
-                        </div>
-                    </a>
-                    <a href="index.php" class="list-group-item media mg-tp">
-                        <div class="pull-left">
-                            <i class="fa fa-file-pdf-o fa-2x"></i>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">Форма регистрации</h4>
+                            <h4 class="media-heading">Требования к оформлению статьи в журнале «Бионика интеллекта»</h4>
                             <small>(українською, *. pdf, ~37 K)</small>
                         </div>
                     </a>
@@ -456,7 +478,7 @@
                             <i class="fa fa-file-word-o fa-2x"></i>
                         </div>
                         <div class="media-body">
-                            <h4 class="media-heading">Форма регистрации</h4>
+                            <h4 class="media-heading">Заявка на участие в выставке студенческих рабо</h4>
                             <small>(українською, *. pdf, ~37 K)</small>
                         </div>
                     </a>

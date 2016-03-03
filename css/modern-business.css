@@ -140,8 +140,31 @@ a,
 .navbar-inverse .navbar-toggle:focus {
     background-color: #CE2039;
 }
+/* sections*/
+.sections .btn {
+    padding: 6px 40px;
+    margin-left: 20px;
+}
 
-/*Mobile menu*/
+.icon-section {
+    height: 50px;
+    width: 50px;
+}
+
+.sections .fa-stack{
+    width: 2.2em;
+    height: 2.2em;
+    font-size: 24px!important;
+}
+
+.sections p {
+    font-size: 18px;
+}
+
+.sections .media {
+    margin-bottom: 20px;
+}
+/*Mobile menu
 @media (max-width: 1200px) {
     .navbar-header {
         float: none;
@@ -167,7 +190,7 @@ a,
         padding-top: 10px;
         padding-bottom: 10px;
     }
-}
+}*/
 
 
 /*  Language */
