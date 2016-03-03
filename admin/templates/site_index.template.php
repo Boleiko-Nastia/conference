@@ -236,23 +236,23 @@
                                     <h4 class="modal-title"><?=$lang['MAINTEXT'][Form1]?></h4>
                                 </div>
                                 <div class="modal-body">
-                                    <form class="form-horizontal">
+                                    <form class="form-horizontal" id="user" method="post" name="user" method="get" action="../../index.php" role="form">
                                         <div class="form-group">
                                             <label class="col-sm-3 control-label">*<?=$lang['MAINTEXT'][Form2]?></label>
                                             <div class="col-sm-8">
-                                                <input class="form-control" id="inputName" placeholder="<?=$lang['MAINTEXT'][Form2ph]?>">
+                                                <input class="form-control" required name="name" id="inputName" placeholder="<?=$lang['MAINTEXT'][Form2ph]?>">
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <label class="col-sm-3 control-label">*<?=$lang['MAINTEXT'][Form3]?></label>
                                             <div class="col-sm-8">
-                                                <input class="form-control" id="inputSurename" placeholder="<?=$lang['MAINTEXT'][Form3ph]?>">
+                                                <input class="form-control" required name="surename" id="inputSurename" placeholder="<?=$lang['MAINTEXT'][Form3ph]?>">
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <label class="col-sm-3 control-label">*<?=$lang['MAINTEXT'][Form4]?></label>
                                             <div class="col-sm-8">
-                                                <input class="form-control" id="inputFathername" placeholder="<?=$lang['MAINTEXT'][Form4ph]?>">
+                                                <input class="form-control" required name="lastname" id="inputFathername" placeholder="<?=$lang['MAINTEXT'][Form4ph]?>">
                                             </div>
                                         </div>
                                         <hr>
@@ -260,18 +260,18 @@
                                             <label class="col-sm-3 control-label">*<?=$lang['MAINTEXT'][Form5]?>
                                                 <br> <h6><small><?=$lang['MAINTEXT'][Form5c]?> <br><?=$lang['MAINTEXT'][Form5c2]?> </small></h6></label>
                                             <div class="col-sm-8">
-                                                <textarea class="form-control" id="inputWorkplace" placeholder="<?=$lang['MAINTEXT'][Form5ph]?>" rows="4" cols="100" style="resize:vertical"></textarea>
+                                                <textarea class="form-control" name="study" id="inputWorkplace" placeholder="<?=$lang['MAINTEXT'][Form5ph]?>" rows="4" cols="100" style="resize:vertical"></textarea>
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <label for="inputPosition" class="col-sm-3 control-label">*<?=$lang['MAINTEXT'][Form6]?></label>
                                             <div class="col-sm-8">
                                                 <div class="dropdown">
-                                                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                    <button class="btn position btn-default dropdown-toggle" name="position" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                                                         <?=$lang['MAINTEXT'][Form6ph]?>
                                                         <span class="caret"></span>
                                                     </button>
-                                                    <ul class="dropdown-menu " aria-labelledby="dropdownMenu1">
+                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                                                         <li><a href="#"><?=$lang['MAINTEXT'][Form6ph1]?></a></li>
                                                         <li><a href="#"><?=$lang['MAINTEXT'][Form6ph2]?></a></li>
                                                         <li><a href="#"><?=$lang['MAINTEXT'][Form6ph3]?></a></li>
@@ -284,7 +284,7 @@
                                             <label class="col-sm-3 control-label"><?=$lang['MAINTEXT'][Form7]?>
                                                 <br> <h6><small><?=$lang['MAINTEXT'][Form7c]?></small></h6></label>
                                             <div class="col-sm-8">
-                                                <textarea class="form-control" id="inputWorkplace" placeholder="<?=$lang['MAINTEXT'][Form7ph]?>" rows="2" cols="100" style="resize:vertical"></textarea>
+                                                <textarea class="form-control" name="degree" id="inputWorkplace" placeholder="<?=$lang['MAINTEXT'][Form7ph]?>" rows="2" cols="100" style="resize:vertical"></textarea>
                                             </div>
                                         </div>
                                         <hr>
@@ -293,13 +293,13 @@
                                             <div class="col-sm-8">
                                                 <div class="radio">
                                                     <label>
-                                                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                                        <input type="radio" name="event" id="optionsRadios1" value="on" checked>
                                                         <?=$lang['MAINTEXT'][Form8ph]?>
                                                     </label>
                                                 </div>
                                                 <div class="radio">
                                                     <label>
-                                                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                                        <input type="radio" name="event" id="optionsRadios2" value="off">
                                                         <?=$lang['MAINTEXT'][Form8ph1]?>
                                                     </label>
                                                 </div>
@@ -310,19 +310,19 @@
                                             <div class="col-sm-8">
                                                 <div class="checkbox">
                                                     <label>
-                                                        <input type="checkbox" value="">
+                                                        <input type="checkbox" name="participation_1" value="<?=$lang['MAINTEXT'][Form9ph1]?>">
                                                         <?=$lang['MAINTEXT'][Form9ph1]?>
                                                     </label>
                                                 </div>
                                                 <div class="checkbox">
                                                     <label>
-                                                        <input type="checkbox" value="">
+                                                        <input type="checkbox" name="participation_2" value="<?=$lang['MAINTEXT'][Form9ph2]?>">
                                                         <?=$lang['MAINTEXT'][Form9ph2]?>
                                                     </label>
                                                 </div>
                                                 <div class="checkbox">
                                                     <label>
-                                                        <input type="checkbox" value="">
+                                                        <input type="checkbox" name="participation_3" value="<?=$lang['MAINTEXT'][Form9ph3]?>">
                                                         <?=$lang['MAINTEXT'][Form9ph3]?>
                                                     </label>
                                                 </div>
@@ -332,34 +332,36 @@
                                         <div class="form-group">
                                             <label class="col-sm-3 control-label">*<?=$lang['MAINTEXT'][Form10]?></label>
                                             <div class="col-sm-8">
-                                                <input type="email" class="form-control" id="inputEmail" placeholder="<?=$lang['MAINTEXT'][Form10ph]?>">
+                                                <input type="email" name="email" required class="form-control" id="inputEmail" placeholder="<?=$lang['MAINTEXT'][Form10ph]?>">
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <label class="col-sm-3 control-label"><?=$lang['MAINTEXT'][Form11]?></label>
                                             <div class="col-sm-8">
-                                                <input type="tel" class="form-control" id="inputTel" placeholder="<?=$lang['MAINTEXT'][Form11ph]?>">
+                                                <input type="tel" name="tel" class="form-control" id="inputTel" placeholder="<?=$lang['MAINTEXT'][Form11ph]?>">
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <label class="col-sm-3 control-label"><?=$lang['MAINTEXT'][Form12]?></label>
                                             <div class="col-sm-8">
-                                                <input type="text" class="form-control" id="inputPhone" placeholder="<?=$lang['MAINTEXT'][Form12ph]?>">
+                                                <input type="text" name="address" class="form-control" id="inputPhone" placeholder="<?=$lang['MAINTEXT'][Form12ph]?>">
                                             </div>
                                         </div>
                                         <hr>
                                         <h4>*  -  <?=$lang['MAINTEXT'][Form13]?></h4>
+                                        <div class="modal-footer">
+                                            <button type="submit" class="btn btn-default blue-button"><?=$lang['MAINTEXT'][Form14]?></button>
+                                            <button type="submit" class="btn btn-default red-hover" data-dismiss="modal"><?=$lang['MAINTEXT'][Form15]?></button>
+                                        </div>
                                     </form>
                                     <!--Show error message for user (before buttons)
-                                        <div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> Заполните все поля со звездочкой!</div>
+
                                     END error message-->
-                                </div>
-                                <div class="modal-footer">
+                                    <div style="display: none" id="danger" class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> Этот email уже есть в базе</div>
+                                    <div style="display: none" id="success" class="alert alert-success text-left" role="alert"><i class="fa fa-check"></i> Ваша заявка успешно отправлена!</div>
                                     <!--Show success message for user (instead of buttons)
-                                        <div class="alert alert-success text-left" role="alert"><i class="fa fa-check"></i> Ваша заявка успешно отправлена!</div>
+
                                     END success message-->
-                                    <button type="button" class="btn btn-default blue-button" data-dismiss="modal"><?=$lang['MAINTEXT'][Form14]?></button>
-                                    <button type="button" class="btn btn-default red-hover" data-dismiss="modal"><?=$lang['MAINTEXT'][Form15]?></button>
                                 </div>
                             </div>
                         </div>
