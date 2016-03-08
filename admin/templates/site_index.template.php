@@ -491,40 +491,13 @@
 <!-- Footer -->
 <footer>
     <div class="col-sm-12">
-        <center>&copy; 2016 PMW </center>
+        <center>&copy; <?php 
+            $thisYear = (int)date('Y'); 
+            echo $thisYear?> PMW 
+        </center>
     </div>
 </footer>
 
-<!-- script <script>
-    $(document).ready(function() {
-        $('#bootstrapSelectForm')
-            .find('[name="language"]')
-                .selectpicker()
-                .change(function(e) {
-                    // revalidate the language when it is changed
-                    $('#bootstrapSelectForm').formValidation('language');
-                })
-                .end()
-            .formValidation({
-                framework: 'bootstrap',
-                excluded: ':disabled',
-                icon: {
-                    valid: 'glyphicon glyphicon-ok',
-                    invalid: 'glyphicon glyphicon-remove',
-                    validating: 'glyphicon glyphicon-refresh'
-                },
-                fields: {
-                    language: {
-                        validators: {
-                            notEmpty: {
-                                message: 'Please select your native language.'
-                            }
-                        }
-                    }
-                }
-            });
-    });
-</script> -->
 
 <!-- jQuery Version 1.11.0 -->
 <script src="js/jquery-1.11.0.js"></script>
