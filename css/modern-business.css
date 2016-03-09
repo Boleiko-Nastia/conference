@@ -151,6 +151,11 @@ a,
     width: 50px;
 }
 
+.icon-section-part {
+    height: 50px;
+    width: 60px;
+}
+
 .sections .fa-stack{
     width: 2.2em;
     height: 2.2em;
@@ -163,6 +168,12 @@ a,
 
 .sections .media {
     margin-bottom: 20px;
+}
+.comment {
+    font-size: 12px;
+    line-height: 14px;
+    padding-top: 10px;
+    color: #777;
 }
 /*Mobile menu
 @media (max-width: 1200px) {
