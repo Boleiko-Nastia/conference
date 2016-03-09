@@ -106,112 +106,62 @@
         <!-- Team Members -->
         <div class="col-sm-9 del-pad-x">
 
-            <div class="col-sm-12">
-                <h2 class="page-header"><?=$lang['MAINTEXT'][106]?></h2>
-            </div>
-            <div class="col-sm-12 del-pad-x">
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="thumbnail">
-                        <img class="img-responsive" src="img/partners/cguenl.png" alt="">
-                        <div class="caption">
-                            <!--<p class="text-center">Санкт-Петербургский государственный университет промышленных технологий и дизайна</p>-->
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="thumbnail">
-                        <img class="img-responsive" src="img/partners/sutd.png" alt="">
-                        <div class="caption">
-                            <!--<p class="text-center">Санкт-Петербургский государственный университет промышленных технологий и дизайна</p>-->
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="thumbnail">
-                        <img class="img-responsive" src="img/partners/mgup.png" alt="">
-                        <div class="caption">
-                            <!--<p class="text-center">Московский государственный университет печати (РФ)</p>-->
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="thumbnail">
-                        <img class="img-responsive" src="img/partners/min.png" alt="">
-                        <div class="caption">
-                            <!--<p class="text-center">Министерство образования и науки Украины</p>-->
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="thumbnail">
-                        <img class="img-responsive" src="img/partners/bgty.png" alt="">
-                        <div class="caption">
-                            <!--<p class="text-center">Белорусский государственный технологический университет (Белоруссия)</p>-->
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="thumbnail">
-                        <img class="img-responsive" src="img/partners/kpi.png" alt="">
-                        <div class="caption">
-                            <!--<p class="text-center">Национальный технический университет Украины «Киевский политехнический институт</p>-->
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="thumbnail">
-                        <img class="img-responsive" src="img/partners/yad.png" alt="">
-                        <div class="caption">
-                            <!--<p class="text-center"></p>-->
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-12">
+                        <div class="col-sm-12">
                 <h2 class="page-header"><?=$lang['MAINTEXT'][107]?></h2>
             </div>
             <div class="col-sm-12 del-pad-x">
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="thumbnail">
-                        <img class="img-responsive" src="img/teachers/tkachenko2.png" alt="">
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="thumbnail org">
+                        <img class="img-responsive" src="img/teachers/hahanov.png" alt="">
                         <div class="caption">
                             <h3><?=$lang['MAINTEXT'][Name1]?><br>
-                                <small><?=$lang['MAINTEXT'][Position1]?></small>
+                                <p class="comment"><?=$lang['MAINTEXT'][Position1]?></p>
                             </h3>
                             <p><?=$lang['MAINTEXT'][Title1]?></p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="thumbnail">
-                        <img class="img-responsive" src="img/teachers/chebotareva2.png" alt="">
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="thumbnail org">
+                        <img class="img-responsive" src="img/teachers/kirichok.png" alt="">
                         <div class="caption">
                             <h3><?=$lang['MAINTEXT'][Name2]?><br>
-                                <small><?=$lang['MAINTEXT'][Position2]?></small>
+                                <p class="comment"><?=$lang['MAINTEXT'][Position2]?></p>
                             </h3>
                             <p><?=$lang['MAINTEXT'][Title2]?></p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="thumbnail">
-                        <img class="img-responsive" src="http://placehold.it/300x300" alt="">
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="thumbnail org">
+                        <img class="img-responsive" src="img/teachers/tkachenko.png" alt="">
                         <div class="caption">
                             <h3><?=$lang['MAINTEXT'][Name3]?><br>
-                                <small><?=$lang['MAINTEXT'][Position3]?></small>
+                                <p class="comment"><?=$lang['MAINTEXT'][Position3]?></p>
                             </h3>
                             <p><?=$lang['MAINTEXT'][Title3]?></p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="thumbnail">
-                        <img class="img-responsive" src="http://placehold.it/300x300" alt="">
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="thumbnail org">
+                        <img class="img-responsive" src="img/teachers/maik.png" alt="">
                         <div class="caption">
                             <h3><?=$lang['MAINTEXT'][Name4]?><br>
-                                <small><?=$lang['MAINTEXT'][Position4]?></small>
+                                <p class="comment"><?=$lang['MAINTEXT'][Position4]?></p>
                             </h3>
                             <p><?=$lang['MAINTEXT'][Title4]?></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="thumbnail org">
+                        <img class="img-responsive" src="img/teachers/chebotareva.png" alt="">
+                        <div class="caption">
+                            <h3><?=$lang['MAINTEXT'][Name5]?><br>
+                                <p class="comment"><?=$lang['MAINTEXT'][Position5]?></p>
+                            </h3>
+                            <p><?=$lang['MAINTEXT'][Title5]?></p>
                         </div>
                     </div>
                 </div>
@@ -245,8 +195,58 @@
                         <?=$lang['MAINTEXT'][118]?>
                     <li>
                         <?=$lang['MAINTEXT'][119]?>
+                    <li>
+                        <?=$lang['MAINTEXT'][add119new1]?>
+                    <li>
+                        <?=$lang['MAINTEXT'][add119new2]?>
+                    <li>
+                        <?=$lang['MAINTEXT'][add119new3]?>
+                    <li>
+                        <?=$lang['MAINTEXT'][add119new4]?>
+                    <li>
+                        <?=$lang['MAINTEXT'][add119new5]?>
+                    <li>
+                        <?=$lang['MAINTEXT'][add119new6]?>
                     </li>
                 </ul>
+            </div>
+
+            <div class="col-sm-12">
+                <h2 class="page-header"><?=$lang['MAINTEXT'][106]?></h2>
+            </div>
+            <div class="col-sm-12 del-pad-x">
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="thumbnail">
+                        <img class="img-responsive" src="img/partners/min.png" alt="">
+                        <div class="caption">
+                            <!--<p class="text-center">Министерство образования и науки Украины</p>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="thumbnail">
+                        <img class="img-responsive" src="img/partners/bgty.png" alt="">
+                        <div class="caption">
+                            <!--<p class="text-center">Белорусский государственный технологический университет (Белоруссия)</p>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="thumbnail">
+                        <img class="img-responsive" src="img/partners/kpi.png" alt="">
+                        <div class="caption">
+                            <!--<p class="text-center">Национальный технический университет Украины «Киевский политехнический институт</p>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="thumbnail">
+                        <img class="img-responsive" src="img/partners/yad.png" alt="">
+                        <div class="caption">
+                            <!--<p class="text-center"></p>-->
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -336,13 +336,22 @@
             </div>
             <div class="col-sm-12">
                 <div class="list-group">
-                    <a href="index.php" class="list-group-item media">
+                    <a href="download/doc-1.doc" target="_blank" class="list-group-item media">
                         <div class="pull-left">
                             <i class="fa fa-file-word-o fa-2x"></i>
                         </div>
                         <div class="media-body">
-                            <h4 class="media-heading">Информационное сообщение</h4>
-                            <small>(українською, *. pdf, ~37 K)</small>
+                            <h4 class="media-heading"><?=$lang['MAINTEXT'][File1]?></h4>
+                            <small><?=$lang['MAINTEXT'][File1d]?></small>
+                        </div>
+                    </a>
+                    <a href="download/doc-2.pdf" target="_blank" class="list-group-item media mg-tp">
+                        <div class="pull-left">
+                            <i class="fa fa-file-pdf-o fa-2x"></i>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading"><?=$lang['MAINTEXT'][File2]?></h4>
+                            <small><?=$lang['MAINTEXT'][File2d]?></small>
                         </div>
                     </a>
                     <a href="index.php" class="list-group-item media mg-tp">
@@ -350,17 +359,8 @@
                             <i class="fa fa-file-pdf-o fa-2x"></i>
                         </div>
                         <div class="media-body">
-                            <h4 class="media-heading">Требования к оформлению тезисов</h4>
-                            <small>(українською, *. pdf, ~37 K)</small>
-                        </div>
-                    </a>
-                    <a href="index.php" class="list-group-item media mg-tp">
-                        <div class="pull-left">
-                            <i class="fa fa-file-pdf-o fa-2x"></i>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">Требования к оформлению статьи в журнале «Бионика интеллекта»</h4>
-                            <small>(українською, *. pdf, ~37 K)</small>
+                            <h4 class="media-heading"><?=$lang['MAINTEXT'][File3]?></h4>
+                            <small><?=$lang['MAINTEXT'][File3d]?></small>
                         </div>
                     </a>
                     <a href="index.php" class="list-group-item media mg-tp">
@@ -368,22 +368,16 @@
                             <i class="fa fa-file-word-o fa-2x"></i>
                         </div>
                         <div class="media-body">
-                            <h4 class="media-heading">Заявка на участие в выставке студенческих рабо</h4>
-                            <small>(українською, *. pdf, ~37 K)</small>
+                            <h4 class="media-heading"><?=$lang['MAINTEXT'][File4]?></h4>
+                            <small><?=$lang['MAINTEXT'][File4d]?></small>
                         </div>
                     </a>
                 </div>
             </div>
-
-
         </div>
-
     </div>
 
-
-
     <!-- /.row -->
-
     <hr>
 
 </div>
@@ -391,7 +385,10 @@
 <!-- Footer -->
 <footer>
     <div class="col-sm-12">
-        <center>&copy; 2015 PMW </center>
+        <center>&copy; <?php 
+            $thisYear = (int)date('Y'); 
+            echo $thisYear?> PMW 
+        </center>
     </div>
 </footer>
 
