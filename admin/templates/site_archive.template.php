@@ -116,8 +116,8 @@
                         </span>
                     </div>
                     <div class="panel-body">
-                        <h4>Информационное сообщение</h4>
-                        <p>(українською, *. pdf, ~37 K)</p>
+                        <h4><?=$lang['MAINTEXT'][File1]?></h4>
+                        <p><?=$lang['MAINTEXT'][File1d]?></p>
                         <a href="#" class="btn btn-primary blue-button"><?=$lang['MAINTEXT'][Download]?></a>
                     </div>
                 </div>
@@ -131,8 +131,8 @@
                         </span>
                     </div>
                     <div class="panel-body">
-                        <h4>Требования к оформлению тезисов</h4>
-                        <p>(українською, *. pdf, ~37 K)</p>
+                        <h4><?=$lang['MAINTEXT'][File2]?></h4>
+                        <p><?=$lang['MAINTEXT'][File2d]?></p>
                         <a href="#" class="btn btn-primary blue-button"><?=$lang['MAINTEXT'][Download]?></a>
                     </div>
                 </div>
@@ -146,8 +146,8 @@
                         </span>
                     </div>
                     <div class="panel-body">
-                        <h4>Требования к оформлению статьи в журнале «Бионика интеллекта»</h4>
-                        <p>(українською, *. pdf, ~37 K)</p>
+                        <h4><?=$lang['MAINTEXT'][File3]?></h4>
+                        <p><?=$lang['MAINTEXT'][File3d]?></p>
                         <a href="#" class="btn btn-primary blue-button"><?=$lang['MAINTEXT'][Download]?></a>
                     </div>
                 </div>
@@ -161,8 +161,8 @@
                         </span>
                     </div>
                     <div class="panel-body">
-                        <h4>Заявка на участие в выставке студенческих работ</h4>
-                        <p>(українською, *. pdf, ~37 K)</p>
+                        <h4><?=$lang['MAINTEXT'][File4]?></h4>
+                        <p><?=$lang['MAINTEXT'][File4d]?></p>
                         <a href="#" class="btn btn-primary blue-button"><?=$lang['MAINTEXT'][Download]?></a>
                     </div>
                 </div>
@@ -263,13 +263,22 @@
             </div>
             <div class="col-md-12">
                 <div class="list-group">
-                    <a href="index.php" class="list-group-item media">
+                    <a href="download/doc-1.doc" target="_blank" class="list-group-item media">
                         <div class="pull-left">
                             <i class="fa fa-file-word-o fa-2x"></i>
                         </div>
                         <div class="media-body">
-                            <h4 class="media-heading">Информационное сообщение</h4>
-                            <small>(українською, *. pdf, ~37 K)</small>
+                            <h4 class="media-heading"><?=$lang['MAINTEXT'][File1]?></h4>
+                            <small><?=$lang['MAINTEXT'][File1d]?></small>
+                        </div>
+                    </a>
+                    <a href="download/doc-2.pdf" target="_blank" class="list-group-item media mg-tp">
+                        <div class="pull-left">
+                            <i class="fa fa-file-pdf-o fa-2x"></i>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading"><?=$lang['MAINTEXT'][File2]?></h4>
+                            <small><?=$lang['MAINTEXT'][File2d]?></small>
                         </div>
                     </a>
                     <a href="index.php" class="list-group-item media mg-tp">
@@ -277,17 +286,8 @@
                             <i class="fa fa-file-pdf-o fa-2x"></i>
                         </div>
                         <div class="media-body">
-                            <h4 class="media-heading">Требования к оформлению тезисов</h4>
-                            <small>(українською, *. pdf, ~37 K)</small>
-                        </div>
-                    </a>
-                    <a href="index.php" class="list-group-item media mg-tp">
-                        <div class="pull-left">
-                            <i class="fa fa-file-pdf-o fa-2x"></i>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">Требования к оформлению статьи в журнале «Бионика интеллекта»</h4>
-                            <small>(українською, *. pdf, ~37 K)</small>
+                            <h4 class="media-heading"><?=$lang['MAINTEXT'][File3]?></h4>
+                            <small><?=$lang['MAINTEXT'][File3d]?></small>
                         </div>
                     </a>
                     <a href="index.php" class="list-group-item media mg-tp">
@@ -295,8 +295,8 @@
                             <i class="fa fa-file-word-o fa-2x"></i>
                         </div>
                         <div class="media-body">
-                            <h4 class="media-heading">Заявка на участие в выставке студенческих рабо</h4>
-                            <small>(українською, *. pdf, ~37 K)</small>
+                            <h4 class="media-heading"><?=$lang['MAINTEXT'][File4]?></h4>
+                            <small><?=$lang['MAINTEXT'][File4d]?></small>
                         </div>
                     </a>
                 </div>
@@ -314,7 +314,10 @@
 <!-- Footer -->
 <footer>
     <div class="col-sm-12">
-        <center>&copy; 2015 PMW </center>
+        <center>&copy; <?php 
+            $thisYear = (int)date('Y'); 
+            echo $thisYear?> PMW 
+        </center>
     </div>
 </footer>
 
