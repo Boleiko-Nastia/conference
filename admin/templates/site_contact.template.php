@@ -108,6 +108,8 @@
 
         <div class="col-sm-9 mg-tp-40">
             <!-- Contact Details Column -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2563.8096103573266!2d36.22589751586513!3d50.01492362653113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a1243f9e69d1%3A0x6daed05394f03251!2z0KXQndCj0KDQrQ!5e0!3m2!1sru!2sua!4v1457488515665" width="100%" height="400px" frameborder="0" style="border:0" allowfullscreen></iframe>
+
             <big>
                 <p><i class="fa fa-map-marker fa-2x"></i>
                     <abbr title="<?=$lang['MAINTEXT'][132]?>"> <?=$lang['MAINTEXT'][133]?></abbr>: <?=$lang['MAINTEXT'][134]?></p>
@@ -244,13 +246,22 @@
             </div>
             <div class="col-sm-12">
                 <div class="list-group">
-                    <a href="index.php" class="list-group-item media">
+                    <a href="download/doc-1.doc" target="_blank" class="list-group-item media">
                         <div class="pull-left">
                             <i class="fa fa-file-word-o fa-2x"></i>
                         </div>
                         <div class="media-body">
-                            <h4 class="media-heading">Информационное сообщение</h4>
-                            <small>(українською, *. pdf, ~37 K)</small>
+                            <h4 class="media-heading"><?=$lang['MAINTEXT'][File1]?></h4>
+                            <small><?=$lang['MAINTEXT'][File1d]?></small>
+                        </div>
+                    </a>
+                    <a href="download/doc-2.pdf" target="_blank" class="list-group-item media mg-tp">
+                        <div class="pull-left">
+                            <i class="fa fa-file-pdf-o fa-2x"></i>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading"><?=$lang['MAINTEXT'][File2]?></h4>
+                            <small><?=$lang['MAINTEXT'][File2d]?></small>
                         </div>
                     </a>
                     <a href="index.php" class="list-group-item media mg-tp">
@@ -258,17 +269,8 @@
                             <i class="fa fa-file-pdf-o fa-2x"></i>
                         </div>
                         <div class="media-body">
-                            <h4 class="media-heading">Требования к оформлению тезисов</h4>
-                            <small>(українською, *. pdf, ~37 K)</small>
-                        </div>
-                    </a>
-                    <a href="index.php" class="list-group-item media mg-tp">
-                        <div class="pull-left">
-                            <i class="fa fa-file-pdf-o fa-2x"></i>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">Требования к оформлению статьи в журнале «Бионика интеллекта»</h4>
-                            <small>(українською, *. pdf, ~37 K)</small>
+                            <h4 class="media-heading"><?=$lang['MAINTEXT'][File3]?></h4>
+                            <small><?=$lang['MAINTEXT'][File3d]?></small>
                         </div>
                     </a>
                     <a href="index.php" class="list-group-item media mg-tp">
@@ -276,8 +278,8 @@
                             <i class="fa fa-file-word-o fa-2x"></i>
                         </div>
                         <div class="media-body">
-                            <h4 class="media-heading">Заявка на участие в выставке студенческих рабо</h4>
-                            <small>(українською, *. pdf, ~37 K)</small>
+                            <h4 class="media-heading"><?=$lang['MAINTEXT'][File4]?></h4>
+                            <small><?=$lang['MAINTEXT'][File4d]?></small>
                         </div>
                     </a>
                 </div>

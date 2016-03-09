@@ -109,14 +109,17 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <div class="media">
-                            <div class="pull-left">
-                                <span class="fa-stack fa-lg">
+                            <div class="pull-left icon-section-part">
+                                <!--<span class="fa-stack fa-lg">
                                       <i class="fa fa-circle fa-stack-2x text-primary"></i>
                                       <i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i>
+                                </span>-->
+                                <span class="fa-stack fa-lg">
+                                    <image class="icon-section" src="img/icon_sections/icon-1.svg">
                                 </span>
                             </div>
                             <div class="media-body calendar-head">
-                                <h3 class="media-heading"><?=$lang['MAINTEXT'][Section]?><strong><?=$lang['MAINTEXT'][Section1]?></strong></h3>
+                                <h3 class="media-heading"><?=$lang['MAINTEXT'][Section]?> <strong>"<?=$lang['MAINTEXT'][Section1]?>"</strong></h3>
                             </div>
                         </div>
                     </div>
@@ -271,13 +274,22 @@
             </div>
             <div class="col-sm-12">
                 <div class="list-group">
-                    <a href="index.php" class="list-group-item media">
+                    <a href="download/doc-1.doc" target="_blank" class="list-group-item media">
                         <div class="pull-left">
                             <i class="fa fa-file-word-o fa-2x"></i>
                         </div>
                         <div class="media-body">
-                            <h4 class="media-heading">Информационное сообщение</h4>
-                            <small>(українською, *. pdf, ~37 K)</small>
+                            <h4 class="media-heading"><?=$lang['MAINTEXT'][File1]?></h4>
+                            <small><?=$lang['MAINTEXT'][File1d]?></small>
+                        </div>
+                    </a>
+                    <a href="download/doc-2.pdf" target="_blank" class="list-group-item media mg-tp">
+                        <div class="pull-left">
+                            <i class="fa fa-file-pdf-o fa-2x"></i>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading"><?=$lang['MAINTEXT'][File2]?></h4>
+                            <small><?=$lang['MAINTEXT'][File2d]?></small>
                         </div>
                     </a>
                     <a href="index.php" class="list-group-item media mg-tp">
@@ -285,17 +297,8 @@
                             <i class="fa fa-file-pdf-o fa-2x"></i>
                         </div>
                         <div class="media-body">
-                            <h4 class="media-heading">Требования к оформлению тезисов</h4>
-                            <small>(українською, *. pdf, ~37 K)</small>
-                        </div>
-                    </a>
-                    <a href="index.php" class="list-group-item media mg-tp">
-                        <div class="pull-left">
-                            <i class="fa fa-file-pdf-o fa-2x"></i>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">Требования к оформлению статьи в журнале «Бионика интеллекта»</h4>
-                            <small>(українською, *. pdf, ~37 K)</small>
+                            <h4 class="media-heading"><?=$lang['MAINTEXT'][File3]?></h4>
+                            <small><?=$lang['MAINTEXT'][File3d]?></small>
                         </div>
                     </a>
                     <a href="index.php" class="list-group-item media mg-tp">
@@ -303,8 +306,8 @@
                             <i class="fa fa-file-word-o fa-2x"></i>
                         </div>
                         <div class="media-body">
-                            <h4 class="media-heading">Заявка на участие в выставке студенческих рабо</h4>
-                            <small>(українською, *. pdf, ~37 K)</small>
+                            <h4 class="media-heading"><?=$lang['MAINTEXT'][File4]?></h4>
+                            <small><?=$lang['MAINTEXT'][File4d]?></small>
                         </div>
                     </a>
                 </div>

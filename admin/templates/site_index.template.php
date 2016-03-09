@@ -182,6 +182,8 @@
                         <?=$lang['MAINTEXT'][23]?>
                     <p>
                         <?=$lang['MAINTEXT'][new8]?>
+                    <p>
+                        <?=$lang['MAINTEXT'][new6]?>
                     </p>
                 </big>
             </div>
@@ -297,12 +299,12 @@
                                                         <?=$lang['MAINTEXT'][Form9ph2]?>
                                                     </label>
                                                 </div>
-                                                <div class="checkbox">
+                                                <!--<div class="checkbox">
                                                     <label>
                                                         <input type="checkbox" name="participation_3" value="<?=$lang['MAINTEXT'][Form9ph3]?>">
                                                         <?=$lang['MAINTEXT'][Form9ph3]?>
                                                     </label>
-                                                </div>
+                                                </div>-->
                                             </div>
                                         </div>
                                         <hr>
@@ -444,8 +446,8 @@
                             <i class="fa fa-file-word-o fa-2x"></i>
                         </div>
                         <div class="media-body">
-                            <h4 class="media-heading">Информационное сообщение</h4>
-                            <small>(українською, *. pdf, ~37 K)</small>
+                            <h4 class="media-heading"><?=$lang['MAINTEXT'][File1]?></h4>
+                            <small><?=$lang['MAINTEXT'][File1d]?></small>
                         </div>
                     </a>
                     <a href="download/doc-2.pdf" target="_blank" class="list-group-item media mg-tp">
@@ -453,8 +455,8 @@
                             <i class="fa fa-file-pdf-o fa-2x"></i>
                         </div>
                         <div class="media-body">
-                            <h4 class="media-heading">Требования к оформлению тезисов</h4>
-                            <small>(українською, *. pdf, ~37 K)</small>
+                            <h4 class="media-heading"><?=$lang['MAINTEXT'][File2]?></h4>
+                            <small><?=$lang['MAINTEXT'][File2d]?></small>
                         </div>
                     </a>
                     <a href="index.php" class="list-group-item media mg-tp">
@@ -462,8 +464,8 @@
                             <i class="fa fa-file-pdf-o fa-2x"></i>
                         </div>
                         <div class="media-body">
-                            <h4 class="media-heading">Требования к оформлению статьи в журнале «Бионика интеллекта»</h4>
-                            <small>(українською, *. pdf, ~37 K)</small>
+                            <h4 class="media-heading"><?=$lang['MAINTEXT'][File3]?></h4>
+                            <small><?=$lang['MAINTEXT'][File3d]?></small>
                         </div>
                     </a>
                     <a href="index.php" class="list-group-item media mg-tp">
@@ -471,8 +473,8 @@
                             <i class="fa fa-file-word-o fa-2x"></i>
                         </div>
                         <div class="media-body">
-                            <h4 class="media-heading">Заявка на участие в выставке студенческих рабо</h4>
-                            <small>(українською, *. pdf, ~37 K)</small>
+                            <h4 class="media-heading"><?=$lang['MAINTEXT'][File4]?></h4>
+                            <small><?=$lang['MAINTEXT'][File4d]?></small>
                         </div>
                     </a>
                 </div>
