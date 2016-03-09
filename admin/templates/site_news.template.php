@@ -108,18 +108,18 @@
             <div class="col-sm-12">
                 <!-- First Blog Post -->
                 <h2>
-                    <a href="post-1.php"></a>
+                    <a href="post-1.php">Приглашаем принять участие в конференции!</a>
                 </h2>
                 <p class="lead">
-                    <?=$lang['MAINTEXT'][AddBy]?>Чеботарева И.Б.
+                    <?=$lang['MAINTEXT'][AddBy]?>Оргкомитет PMW-2016
                 </p>
-                <p><i class="fa fa-clock-o"></i> <?=$lang['MAINTEXT'][AddDate]?>16 декабря, 2015 в 10:00</p>
+                <p><i class="fa fa-clock-o"></i> <?=$lang['MAINTEXT'][AddDate]?>09 марта, 2016 в 10:00</p>
                 <hr>
                 <a href="post-1.php">
-                    <img class="img-responsive img-hover" src="img/post/2.png" alt="">
+                    <img class="img-responsive img-hover" src="img/news-img/news-1.png" alt="">
                 </a>
                 <hr>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, veritatis, tempora, necessitatibus inventore nisi quam quia repellat ut tempore laborum possimus eum dicta id animi corrupti debitis ipsum officiis rerum.</p>
+                <p>Мы рады Вас приветствовать на сайте конференции «Полиграфические,  мультимедийные и web-технологии». Приглашаем всех желающих принять участие во всех мероприятиях, запланированных в рамках конференции. Мы постарались сделать программу конференции интерсной и познавательной как для самых молодых ее участников, так и для солидных ученых и специалистов. Надеемся на широкую поддержку полиграфического сообщества как в Украине, так и за рубежом!</p>
                 <a class="btn btn-primary blue-button" href="post-1.php"><?=$lang['MAINTEXT'][More]?><i class="fa fa-angle-right"></i></a>
                 <hr>
                 <!-- END First Blog Post -->
@@ -217,13 +217,22 @@
             </div>
             <div class="col-sm-12">
                 <div class="list-group">
-                    <a href="index.php" class="list-group-item media">
+                    <a href="download/doc-1.doc" target="_blank" class="list-group-item media">
                         <div class="pull-left">
                             <i class="fa fa-file-word-o fa-2x"></i>
                         </div>
                         <div class="media-body">
-                            <h4 class="media-heading">Информационное сообщение</h4>
-                            <small>(українською, *. pdf, ~37 K)</small>
+                            <h4 class="media-heading"><?=$lang['MAINTEXT'][File1]?></h4>
+                            <small><?=$lang['MAINTEXT'][File1d]?></small>
+                        </div>
+                    </a>
+                    <a href="download/doc-2.pdf" target="_blank" class="list-group-item media mg-tp">
+                        <div class="pull-left">
+                            <i class="fa fa-file-pdf-o fa-2x"></i>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading"><?=$lang['MAINTEXT'][File2]?></h4>
+                            <small><?=$lang['MAINTEXT'][File2d]?></small>
                         </div>
                     </a>
                     <a href="index.php" class="list-group-item media mg-tp">
@@ -231,17 +240,8 @@
                             <i class="fa fa-file-pdf-o fa-2x"></i>
                         </div>
                         <div class="media-body">
-                            <h4 class="media-heading">Требования к оформлению тезисов</h4>
-                            <small>(українською, *. pdf, ~37 K)</small>
-                        </div>
-                    </a>
-                    <a href="index.php" class="list-group-item media mg-tp">
-                        <div class="pull-left">
-                            <i class="fa fa-file-pdf-o fa-2x"></i>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">Требования к оформлению статьи в журнале «Бионика интеллекта»</h4>
-                            <small>(українською, *. pdf, ~37 K)</small>
+                            <h4 class="media-heading"><?=$lang['MAINTEXT'][File3]?></h4>
+                            <small><?=$lang['MAINTEXT'][File3d]?></small>
                         </div>
                     </a>
                     <a href="index.php" class="list-group-item media mg-tp">
@@ -249,8 +249,8 @@
                             <i class="fa fa-file-word-o fa-2x"></i>
                         </div>
                         <div class="media-body">
-                            <h4 class="media-heading">Заявка на участие в выставке студенческих рабо</h4>
-                            <small>(українською, *. pdf, ~37 K)</small>
+                            <h4 class="media-heading"><?=$lang['MAINTEXT'][File4]?></h4>
+                            <small><?=$lang['MAINTEXT'][File4d]?></small>
                         </div>
                     </a>
                 </div>
@@ -268,7 +268,10 @@
 <!-- Footer -->
 <footer>
     <div class="col-sm-12">
-        <center>&copy; 2015 PMW </center>
+        <center>&copy; <?php 
+            $thisYear = (int)date('Y'); 
+            echo $thisYear?> PMW 
+        </center>
     </div>
 </footer>
 
