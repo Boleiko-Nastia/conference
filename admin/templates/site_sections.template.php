@@ -168,7 +168,7 @@
                 </div>
                 <br>
                 <hr>
-                <h3><?=$lang['MAINTEXT'][29]?> <a target="_blank" href="img/virtualtour.swf"><button type="button" class="btn blue-button red-hover" data-dismiss="modal"><?=$lang['MAINTEXT'][btn29]?></button></a></h3>
+                <h4><?=$lang['MAINTEXT'][29]?> </h4><p><?=$lang['MAINTEXT'][after29]?> <a target="_blank" href="Proba_I1.html"><button type="button" class="btn blue-button red-hover" data-dismiss="modal"><?=$lang['MAINTEXT'][btn29]?></button></a></p>
             </div>
         </div>
 
