@@ -110,58 +110,64 @@
                 <h2 class="page-header"><?=$lang['MAINTEXT'][107]?></h2>
             </div>
             <div class="col-sm-12 del-pad-x">
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="thumbnail org">
-                        <img class="img-responsive" src="img/teachers/hahanov.png" alt="">
-                        <div class="caption">
-                            <h3><?=$lang['MAINTEXT'][Name1]?><br>
-                                <p class="comment"><?=$lang['MAINTEXT'][Position1]?></p>
-                            </h3>
-                            <p><?=$lang['MAINTEXT'][Title1]?></p>
+                                <div class="col-sm-12 del-pad-x">
+                    <div class="col-sm-4">
+                        <div class="thumbnail org">
+                            <img class="img-responsive" src="img/teachers/hahanov.png" alt="">
+                            <div class="caption">
+                                <h3><?=$lang['MAINTEXT'][Name1]?><br>
+                                    <p class="comment"><?=$lang['MAINTEXT'][Position1]?></p>
+                                </h3>
+                                <p><?=$lang['MAINTEXT'][Title1]?></p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="thumbnail org">
-                        <img class="img-responsive" src="img/teachers/kirichok.png" alt="">
-                        <div class="caption">
-                            <h3><?=$lang['MAINTEXT'][Name2]?><br>
-                                <p class="comment"><?=$lang['MAINTEXT'][Position2]?></p>
-                            </h3>
-                            <p><?=$lang['MAINTEXT'][Title2]?></p>
+                <div class="col-sm-12 del-pad-x">
+                    <div class="col-sm-4">
+                        <div class="thumbnail org">
+                            <img class="img-responsive" src="img/teachers/kirichok.png" alt="">
+                            <div class="caption">
+                                <h3><?=$lang['MAINTEXT'][Name2]?><br>
+                                    <p class="comment"><?=$lang['MAINTEXT'][Position2]?></p>
+                                </h3>
+                                <p><?=$lang['MAINTEXT'][Title2]?></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="thumbnail org">
+                            <img class="img-responsive" src="img/teachers/tkachenko.png" alt="">
+                            <div class="caption">
+                                <h3><?=$lang['MAINTEXT'][Name3]?><br>
+                                    <p class="comment"><?=$lang['MAINTEXT'][Position3]?></p>
+                                </h3>
+                                <p><?=$lang['MAINTEXT'][Title3]?></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="thumbnail org">
+                            <img class="img-responsive" src="img/teachers/maik.png" alt="">
+                            <div class="caption">
+                                <h3><?=$lang['MAINTEXT'][Name4]?><br>
+                                    <p class="comment"><?=$lang['MAINTEXT'][Position4]?></p>
+                                </h3>
+                                <p><?=$lang['MAINTEXT'][Title4]?></p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="thumbnail org">
-                        <img class="img-responsive" src="img/teachers/tkachenko.png" alt="">
-                        <div class="caption">
-                            <h3><?=$lang['MAINTEXT'][Name3]?><br>
-                                <p class="comment"><?=$lang['MAINTEXT'][Position3]?></p>
-                            </h3>
-                            <p><?=$lang['MAINTEXT'][Title3]?></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="thumbnail org">
-                        <img class="img-responsive" src="img/teachers/maik.png" alt="">
-                        <div class="caption">
-                            <h3><?=$lang['MAINTEXT'][Name4]?><br>
-                                <p class="comment"><?=$lang['MAINTEXT'][Position4]?></p>
-                            </h3>
-                            <p><?=$lang['MAINTEXT'][Title4]?></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="thumbnail org">
-                        <img class="img-responsive" src="img/teachers/chebotareva.png" alt="">
-                        <div class="caption">
-                            <h3><?=$lang['MAINTEXT'][Name5]?><br>
-                                <p class="comment"><?=$lang['MAINTEXT'][Position5]?></p>
-                            </h3>
-                            <p><?=$lang['MAINTEXT'][Title5]?></p>
+                <div class="col-sm-12 del-pad-x">
+                    <div class="col-sm-4">
+                        <div class="thumbnail org">
+                            <img class="img-responsive" src="img/teachers/chebotareva.png" alt="">
+                            <div class="caption">
+                                <h3><?=$lang['MAINTEXT'][Name5]?><br>
+                                    <p class="comment"><?=$lang['MAINTEXT'][Position5]?></p>
+                                </h3>
+                                <p><?=$lang['MAINTEXT'][Title5]?></p>
+                            </div>
                         </div>
                     </div>
                 </div>
