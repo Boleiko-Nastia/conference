@@ -14,6 +14,6 @@ if($_GET['logout']) {
 if (!$name || $name != $cfg['db_user']->value || $password != $cfg['db_passwd']->value) {
     return false;
 } else {
-    $_SESSION['admin'] = $cfg['login'];
+    $_SESSION['admin'] = $cfg['db_user']->value;
     return true;
 }

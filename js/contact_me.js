@@ -33,6 +33,7 @@ $(function() {
                 cache: false,
                 success: function() {
                     document.location.href = window.location.origin+'/admin/main.php';
+                    console.log(document.location.href);
                     // Success message
                     //$('#success').html("<div class='alert alert-success'>");
                     //$('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
@@ -54,7 +55,7 @@ $(function() {
                     $('#success > .alert-danger').append('</div>');
                     //clear all fields
                     $('#contactForm').trigger("reset");
-                    document.location.href = 'http://www.conference.loc/admin/login.php';
+                    document.location.href = window.location.origin+'/admin/login.php';
                 },
             })
         },
