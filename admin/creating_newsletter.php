@@ -13,8 +13,6 @@ if($_POST['name'] && $_POST['email']){
         echo 'yes';
     }
     exit;
-} else {
-    echo 'false';
 }
 
 $subject = $_POST['object'];

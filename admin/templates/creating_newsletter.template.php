@@ -28,24 +28,23 @@
             $('.modal-body').html('');
             name = $("input[name=nameReceiver]").val();
             email = $("input[name=emailReceiver]").val();
-            if(name && email) {
+
                 $.ajax({
                     type: "POST",
                     url: "./creating_newsletter.php",
                     data: { name: name, email: email }
                 }).done(function( msg ) {
-                    if(msg == 'false') {
-                        usermsg = 'Field of name or email is empty';
-                    } else if(msg == 'no') {
+                    usermsg = 'Field of name or email is empty';
+                    if(msg == 'no') {
                         usermsg = 'This email already added';
-                    } else {
+                    } else if(msg == 'yes'){
                         usermsg = "Data Saved";
                     }
                     $('.modal-body').append("<p>"+usermsg+'</p>');
                     $("input[name=nameReceiver]").val('');
                     $("input[name=emailReceiver]").val('');
                 });
-            }
+
         }
     </script>
 </head>
