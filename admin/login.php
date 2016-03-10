@@ -11,11 +11,9 @@ if($_GET['logout']) {
     session_destroy();
     header('location: index.php ');
 }
-if (!$name || $name != $cfg['login'] || $password != $cfg['password']) {
+if (!$name || $name != $cfg['db_user']->value || $password != $cfg['db_passwd']->value) {
     return false;
 } else {
     $_SESSION['admin'] = $cfg['login'];
     return true;
 }
-
-?>
