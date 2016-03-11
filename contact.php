@@ -27,5 +27,6 @@ if ($message && $email && $name) {
     $mail->Subject = $subject;
     $mail->Body = $text;
     $mail->send();
+
 }
 require_once('admin/templates/site_contact.template.php');
