@@ -17,10 +17,15 @@ if($_POST['name'] && $_POST['email']){
 }
 
 $subject = $_POST['object'];
-$text = $_POST['maintext'];
+$textBody = $_POST['maintext'];
 $file = $_FILES['userfile']['name'];
 $checkboxSendNewsletter = $_POST['sendnewsletter'];
+$domain = $_SERVER['SERVER_NAME'];
 $cfg = site_setting_all();
+$text = file_get_contents('templates/mail.template.php');
+$text = str_replace('%title%', $subject, $text);
+$text = str_replace('%maintext%', $textBody, $text);
+$text = str_replace('%domain%', $domain, $text);
 
 if ($_POST['object']) {
     $cfg = site_setting_all();
