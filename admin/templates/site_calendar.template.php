@@ -130,10 +130,6 @@
                                 <td class="col-sm-8"><?=$lang['MAINTEXT'][60]?></td>
                             </tr>
                             <tr>
-                                <td class="col-sm-2"><i class="fa fa-clock-o"></i> 11:00 - 12:00</td>
-                                <td class="col-sm-8"><?=$lang['MAINTEXT'][61]?></td>
-                            </tr>
-                            <tr>
                                 <td class="col-sm-2"><i class="fa fa-clock-o"></i> 12:00 - 14:00</td>
                                 <td class="col-sm-8"><?=$lang['MAINTEXT'][62]?></td>
                             </tr>
