@@ -187,7 +187,7 @@
                         <!-- Date/Time -->
                         <table class="table table-striped del-mar-bot">
                             <tr>
-                                <td class="col-sm-2"><i class="fa fa-clock-o"></i> 9:00</td>
+                                <td class="col-sm-2"><i class="fa fa-clock-o"></i> 8:00</td>
                                 <td class="col-sm-8"><?=$lang['MAINTEXT'][72]?></td>
                             </tr>
                             <tr>
