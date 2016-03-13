@@ -200,7 +200,7 @@
                 <div class="col-md-8 del-pad-x">
                     <p><?=$lang['MAINTEXT'][beforebtn]?></p>
                 </div>
-                <div class="col-md-4 del-pad-x">
+                <div class="col-md-3 col-md-offset-1 del-pad-x">
                     <button type="button" class="btn btn-lg btn-default btn-block blue-button" data-toggle="modal" data-target="#myModal"><?=$lang['MAINTEXT'][25]?></button>
 
 
