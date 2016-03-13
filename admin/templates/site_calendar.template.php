@@ -130,10 +130,6 @@
                                 <td class="col-sm-8"><?=$lang['MAINTEXT'][60]?></td>
                             </tr>
                             <tr>
-                                <td class="col-sm-2"><i class="fa fa-clock-o"></i> 11:00 - 12:00</td>
-                                <td class="col-sm-8"><?=$lang['MAINTEXT'][61]?></td>
-                            </tr>
-                            <tr>
                                 <td class="col-sm-2"><i class="fa fa-clock-o"></i> 12:00 - 14:00</td>
                                 <td class="col-sm-8"><?=$lang['MAINTEXT'][62]?></td>
                             </tr>
@@ -191,7 +187,7 @@
                         <!-- Date/Time -->
                         <table class="table table-striped del-mar-bot">
                             <tr>
-                                <td class="col-sm-2"><i class="fa fa-clock-o"></i> 9:00</td>
+                                <td class="col-sm-2"><i class="fa fa-clock-o"></i> 8:00</td>
                                 <td class="col-sm-8"><?=$lang['MAINTEXT'][72]?></td>
                             </tr>
                             <tr>
@@ -446,7 +442,7 @@
             </div>
             <div class="col-sm-12">
                 <div class="list-group">
-                    <a href="download/doc-1.doc" target="_blank" class="list-group-item media">
+                    <a href="<?=$lang['MAINTEXT'][File1_url]?>" target="_blank" class="list-group-item media">
                         <div class="pull-left">
                             <i class="fa fa-file-word-o fa-2x"></i>
                         </div>
@@ -455,7 +451,7 @@
                             <small><?=$lang['MAINTEXT'][File1d]?></small>
                         </div>
                     </a>
-                    <a href="download/doc-2.pdf" target="_blank" class="list-group-item media mg-tp">
+                    <a href="<?=$lang['MAINTEXT'][File2_url]?>" target="_blank" class="list-group-item media mg-tp">
                         <div class="pull-left">
                             <i class="fa fa-file-pdf-o fa-2x"></i>
                         </div>
@@ -464,7 +460,7 @@
                             <small><?=$lang['MAINTEXT'][File2d]?></small>
                         </div>
                     </a>
-                    <a href="index.php" class="list-group-item media mg-tp">
+                    <a href="<?=$lang['MAINTEXT'][File3_url]?>" target="_blank" class="list-group-item media mg-tp">
                         <div class="pull-left">
                             <i class="fa fa-file-pdf-o fa-2x"></i>
                         </div>
@@ -473,7 +469,7 @@
                             <small><?=$lang['MAINTEXT'][File3d]?></small>
                         </div>
                     </a>
-                    <a href="index.php" class="list-group-item media mg-tp">
+                    <a href="<?=$lang['MAINTEXT'][File4_url]?>" target="_blank"class="list-group-item media mg-tp">
                         <div class="pull-left">
                             <i class="fa fa-file-word-o fa-2x"></i>
                         </div>
