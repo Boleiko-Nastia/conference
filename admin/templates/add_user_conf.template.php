@@ -146,7 +146,7 @@
 <!-- Footer -->
 <footer>
     <div class="col-sm-12 text-center">
-        &copy; 2015 PMW
+        &copy; <?php echo date('Y');?> PMW
     </div>
 </footer>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>

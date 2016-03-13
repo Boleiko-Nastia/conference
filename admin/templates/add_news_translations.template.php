@@ -170,7 +170,7 @@
 
     <footer>
         <div class="col-sm-12 text-center">
-            &copy; 2015 PMW
+            &copy; <?php echo date('Y');?> PMW
         </div>
     </footer>
 

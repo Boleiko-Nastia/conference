@@ -342,7 +342,7 @@
             </div>
             <div class="col-sm-12">
                 <div class="list-group">
-                    <a href="download/doc-1.doc" target="_blank" class="list-group-item media">
+                    <a href="<?=$lang['MAINTEXT'][File1_url]?>" target="_blank" class="list-group-item media">
                         <div class="pull-left">
                             <i class="fa fa-file-word-o fa-2x"></i>
                         </div>
@@ -351,7 +351,7 @@
                             <small><?=$lang['MAINTEXT'][File1d]?></small>
                         </div>
                     </a>
-                    <a href="download/doc-2.pdf" target="_blank" class="list-group-item media mg-tp">
+                    <a href="<?=$lang['MAINTEXT'][File2_url]?>" target="_blank" class="list-group-item media mg-tp">
                         <div class="pull-left">
                             <i class="fa fa-file-pdf-o fa-2x"></i>
                         </div>
@@ -360,7 +360,7 @@
                             <small><?=$lang['MAINTEXT'][File2d]?></small>
                         </div>
                     </a>
-                    <a href="index.php" class="list-group-item media mg-tp">
+                    <a href="<?=$lang['MAINTEXT'][File3_url]?>" target="_blank" class="list-group-item media mg-tp">
                         <div class="pull-left">
                             <i class="fa fa-file-pdf-o fa-2x"></i>
                         </div>
@@ -369,7 +369,7 @@
                             <small><?=$lang['MAINTEXT'][File3d]?></small>
                         </div>
                     </a>
-                    <a href="index.php" class="list-group-item media mg-tp">
+                    <a href="<?=$lang['MAINTEXT'][File4_url]?>" target="_blank"class="list-group-item media mg-tp">
                         <div class="pull-left">
                             <i class="fa fa-file-word-o fa-2x"></i>
                         </div>

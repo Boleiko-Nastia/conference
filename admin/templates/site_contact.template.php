@@ -125,28 +125,28 @@
                 <br>
                 <form name="sentMessage" method="post" action="../../contact.php" id="contactForm" novalidate>
                     <div class="control-group form-group">
-                        <div class="controls">
-                            <label><?=$lang['MAINTEXT'][142]?></label>
-                            <input type="text" class="form-control" id="name" name="name" required data-validation-required-message="<?=$lang['MAINTEXT'][143]?>" placeholder="<?=$lang['MAINTEXT'][144]?>">
+                    <div class="controls">
+                    <label><?=$lang['MAINTEXT'][142]?></label>
+                            <input type="text" class="form-control" id="name" required data-validation-required-message="<?=$lang['MAINTEXT'][143]?>" placeholder="">
                             <p class="help-block"></p>
-                        </div>
+                    </div>
                     </div>
                     <div class="control-group form-group">
                         <div class="controls">
                             <label><?=$lang['MAINTEXT'][145]?></label>
-                            <input type="tel" class="form-control" id="phone" name="phone" required data-validation-required-message="<?=$lang['MAINTEXT'][146]?>" placeholder="<?=$lang['MAINTEXT'][147]?>">
+                            <input type="tel" class="form-control" id="phone" required data-validation-required-message="<?=$lang['MAINTEXT'][146]?>" placeholder="">
                         </div>
                     </div>
                     <div class="control-group form-group">
                         <div class="controls">
                             <label><?=$lang['MAINTEXT'][148]?></label>
-                            <input type="email" class="form-control" id="email" name="email" required data-validation-required-message="<?=$lang['MAINTEXT'][149]?>" placeholder="<?=$lang['MAINTEXT'][150]?>">
+                            <input type="email" class="form-control" id="email" required data-validation-required-message="<?=$lang['MAINTEXT'][149]?>" placeholder="">
                         </div>
                     </div>
                     <div class="control-group form-group">
                         <div class="controls">
                             <label><?=$lang['MAINTEXT'][151]?></label>
-                            <textarea rows="10" cols="100" class="form-control" name="message" id="message" required data-validation-required-message="<?=$lang['MAINTEXT'][152]?>" placeholder="<?=$lang['MAINTEXT'][153]?>" maxlength="999" style="resize:none"></textarea>
+                            <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="<?=$lang['MAINTEXT'][152]?>" placeholder="" maxlength="999" style="resize:none"></textarea>
                         </div>
                     </div>
                     <div id="success"></div>
@@ -246,7 +246,7 @@
             </div>
             <div class="col-sm-12">
                 <div class="list-group">
-                    <a href="download/doc-1.doc" target="_blank" class="list-group-item media">
+                    <a href="<?=$lang['MAINTEXT'][File1_url]?>" target="_blank" class="list-group-item media">
                         <div class="pull-left">
                             <i class="fa fa-file-word-o fa-2x"></i>
                         </div>
@@ -255,7 +255,7 @@
                             <small><?=$lang['MAINTEXT'][File1d]?></small>
                         </div>
                     </a>
-                    <a href="download/doc-2.pdf" target="_blank" class="list-group-item media mg-tp">
+                    <a href="<?=$lang['MAINTEXT'][File2_url]?>" target="_blank" class="list-group-item media mg-tp">
                         <div class="pull-left">
                             <i class="fa fa-file-pdf-o fa-2x"></i>
                         </div>
@@ -264,7 +264,7 @@
                             <small><?=$lang['MAINTEXT'][File2d]?></small>
                         </div>
                     </a>
-                    <a href="index.php" class="list-group-item media mg-tp">
+                    <a href="<?=$lang['MAINTEXT'][File3_url]?>" target="_blank" class="list-group-item media mg-tp">
                         <div class="pull-left">
                             <i class="fa fa-file-pdf-o fa-2x"></i>
                         </div>
@@ -273,7 +273,7 @@
                             <small><?=$lang['MAINTEXT'][File3d]?></small>
                         </div>
                     </a>
-                    <a href="index.php" class="list-group-item media mg-tp">
+                    <a href="<?=$lang['MAINTEXT'][File4_url]?>" target="_blank"class="list-group-item media mg-tp">
                         <div class="pull-left">
                             <i class="fa fa-file-word-o fa-2x"></i>
                         </div>
