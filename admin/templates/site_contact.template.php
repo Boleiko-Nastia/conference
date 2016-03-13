@@ -125,28 +125,28 @@
                 <br>
                 <form name="sentMessage" method="post" action="../../contact.php" id="contactForm" novalidate>
                     <div class="control-group form-group">
-                        <div class="controls">
-                            <label><?=$lang['MAINTEXT'][142]?></label>
-                            <input type="text" class="form-control" id="name" name="name" required data-validation-required-message="<?=$lang['MAINTEXT'][143]?>" placeholder="<?=$lang['MAINTEXT'][144]?>">
+                    <div class="controls">
+                    <label><?=$lang['MAINTEXT'][142]?></label>
+                            <input type="text" class="form-control" id="name" required data-validation-required-message="<?=$lang['MAINTEXT'][143]?>" placeholder="">
                             <p class="help-block"></p>
-                        </div>
+                    </div>
                     </div>
                     <div class="control-group form-group">
                         <div class="controls">
                             <label><?=$lang['MAINTEXT'][145]?></label>
-                            <input type="tel" class="form-control" id="phone" name="phone" required data-validation-required-message="<?=$lang['MAINTEXT'][146]?>" placeholder="<?=$lang['MAINTEXT'][147]?>">
+                            <input type="tel" class="form-control" id="phone" required data-validation-required-message="<?=$lang['MAINTEXT'][146]?>" placeholder="">
                         </div>
                     </div>
                     <div class="control-group form-group">
                         <div class="controls">
                             <label><?=$lang['MAINTEXT'][148]?></label>
-                            <input type="email" class="form-control" id="email" name="email" required data-validation-required-message="<?=$lang['MAINTEXT'][149]?>" placeholder="<?=$lang['MAINTEXT'][150]?>">
+                            <input type="email" class="form-control" id="email" required data-validation-required-message="<?=$lang['MAINTEXT'][149]?>" placeholder="">
                         </div>
                     </div>
                     <div class="control-group form-group">
                         <div class="controls">
                             <label><?=$lang['MAINTEXT'][151]?></label>
-                            <textarea rows="10" cols="100" class="form-control" name="message" id="message" required data-validation-required-message="<?=$lang['MAINTEXT'][152]?>" placeholder="<?=$lang['MAINTEXT'][153]?>" maxlength="999" style="resize:none"></textarea>
+                            <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="<?=$lang['MAINTEXT'][152]?>" placeholder="" maxlength="999" style="resize:none"></textarea>
                         </div>
                     </div>
                     <div id="success"></div>
