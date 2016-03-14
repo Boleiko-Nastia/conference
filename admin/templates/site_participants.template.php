@@ -129,26 +129,13 @@
                                 <th class="col-sm-2"><?=$lang['MAINTEXT'][Participant]?></th>
                                 <th class="col-sm-2"><?=$lang['MAINTEXT'][Place]?></th>
                                 <th class="col-sm-6"><?=$lang['MAINTEXT'][Report]?></th>
+                                <?php foreach($user_conf as $id => $user): ?>
                             <tr>
-                                <td class="col-sm-2">Иванов Иван Иванович</td>
-                                <td class="col-sm-2">Харьковский начиональный университет радиоэлектроники</td>
-                                <td class="col-sm-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, veritatis, tempora, necessitatibus inventore nisi quam quia</td>
+                                <td class="col-sm-2"><?=$user['name']?></td>
+                                <td class="col-sm-2"><?=$user['job']?></td>
+                                <td class="col-sm-6"><?=$user['lecture_title']?></td>
                             </tr>
-                            <tr>
-                                <td class="col-sm-2">Иванов Иван Иванович</td>
-                                <td class="col-sm-2">Харьковский начиональный университет радиоэлектроники</td>
-                                <td class="col-sm-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, veritatis, tempora, necessitatibus inventore nisi quam quia</td>
-                            </tr>
-                            <tr>
-                                <td class="col-sm-2">Иванов Иван Иванович</td>
-                                <td class="col-sm-2">Харьковский начиональный университет радиоэлектроники</td>
-                                <td class="col-sm-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, veritatis, tempora, necessitatibus inventore nisi quam quia</td>
-                            </tr>
-                            <tr>
-                                <td class="col-sm-2">Иванов Иван Иванович</td>
-                                <td class="col-sm-2">Харьковский начиональный университет радиоэлектроники</td>
-                                <td class="col-sm-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, veritatis, tempora, necessitatibus inventore nisi quam quia</td>
-                            </tr>
+                                <?php endforeach; ?>
                         </table>
                     </div>
                 </div>
@@ -165,30 +152,14 @@
                                 <th class="col-sm-2"><?=$lang['MAINTEXT'][Univercity]?></th>
                                 <th class="col-sm-6"><?=$lang['MAINTEXT'][Report]?></th>
                             </tr>
-                            <tr>
-                                <td class="col-sm-2">Иванов Иван Иванович</td>
-                                <td class="col-sm-2">Петров Петр Петрович</td>
-                                <td class="col-sm-2">Харьковский начиональный университет радиоэлектроники</td>
-                                <td class="col-sm-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
-                            </tr>
-                            <tr>
-                                <td class="col-sm-2">Иванов Иван Иванович</td>
-                                <td class="col-sm-2">Петров Петр Петрович</td>
-                                <td class="col-sm-2">Харьковский начиональный университет радиоэлектроники</td>
-                                <td class="col-sm-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
-                            </tr>
-                            <tr>
-                                <td class="col-sm-2">Иванов Иван Иванович</td>
-                                <td class="col-sm-2">Петров Петр Петрович</td>
-                                <td class="col-sm-2">Харьковский начиональный университет радиоэлектроники</td>
-                                <td class="col-sm-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
-                            </tr>
-                            <tr>
-                                <td class="col-sm-2">Иванов Иван Иванович</td>
-                                <td class="col-sm-2">Петров Петр Петрович</td>
-                                <td class="col-sm-2">Харьковский начиональный университет радиоэлектроники</td>
-                                <td class="col-sm-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
-                            </tr>
+                            <?php foreach($user_sem as $id => $user): ?>
+                                <tr>
+                                    <td class="col-sm-2"><?=$user['name']?></td>
+                                    <td class="col-sm-2"><?=$user['head']?></td>
+                                    <td class="col-sm-2"><?=$user['job']?></td>
+                                    <td class="col-sm-6"><?=$user['lecture_title']?></td>
+                                </tr>
+                            <?php endforeach; ?>
                         </table>
                     </div>
                 </div>
