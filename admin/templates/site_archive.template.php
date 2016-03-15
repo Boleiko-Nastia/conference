@@ -269,7 +269,142 @@
                     </div>
                 </div>
             </div>
+            
+            <hr>
+            <!-- Pager -->
+        </div>
 
+
+
+        <!-- Blog Sidebar Widgets Column -->
+
+
+        <div class="col-sm-3 del-pad-x">
+
+            <!-- Sidebar Column -->
+            <div class="col-sm-12">
+                <div class="list-group">
+                    <a href="news.php" class="list-group-item">Новости</a>
+                    <a href="#" class="list-group-item">Программа конференции</a>
+                    <a href="#" class="list-group-item">Сборник работ</a>
+                    <a href="#" class="list-group-item">Решение конференции</a>
+                </div>
+            </div>
+
+            <!-- Date Column -->
+            <div class="col-sm-12">
+                <h3 class="page-header"><?=$lang['DATES']?></h3>
+            </div>
+            <div class="col-sm-12">
+                <div class="media">
+                    <div class="pull-left">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                <i class="fa fa-calendar fa-stack-1x fa-inverse"></i>
+                            </span>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading"><?=$lang['DATE']['Date1'][0]?></h4>
+                        <p><?=$lang['DATE']['Date1']['TEXT']?></p>
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="pull-left">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                <i class="fa fa-calendar fa-stack-1x fa-inverse"></i>
+                            </span>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading"><?=$lang['DATE']['Date2'][0]?></h4>
+                        <p><?=$lang['DATE']['Date2']['TEXT']?></p>
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="pull-left">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                <i class="fa fa-calendar fa-stack-1x fa-inverse"></i>
+                            </span>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading"><?=$lang['DATE']['Date3'][0]?></h4>
+                        <p><?=$lang['DATE']['Date3']['TEXT']?></p>
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="pull-left">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                <i class="fa fa-calendar fa-stack-1x fa-inverse"></i>
+                            </span>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading"><?=$lang['DATE']['Date4'][0]?></h4>
+                        <p><?=$lang['DATE']['Date4']['TEXT']?></p>
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="pull-left">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                <i class="fa fa-calendar fa-stack-1x fa-inverse"></i>
+                            </span>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading"><?=$lang['DATE']['Date5'][0]?></h4>
+                        <p><?=$lang['DATE']['Date5']['TEXT']?></p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Download Column -->
+            <div class="col-sm-12">
+                <h3 class="page-header"><?=$lang['FILES']?></h3>
+            </div>
+            <div class="col-md-12">
+                <div class="list-group">
+                    <a href="<?=$lang['MAINTEXT'][File1_url]?>" target="_blank" class="list-group-item media">
+                        <div class="pull-left">
+                            <i class="fa fa-file-word-o fa-2x"></i>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading"><?=$lang['MAINTEXT'][File1]?></h4>
+                            <small><?=$lang['MAINTEXT'][File1d]?></small>
+                        </div>
+                    </a>
+                    <a href="<?=$lang['MAINTEXT'][File2_url]?>" target="_blank" class="list-group-item media mg-tp">
+                        <div class="pull-left">
+                            <i class="fa fa-file-pdf-o fa-2x"></i>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading"><?=$lang['MAINTEXT'][File2]?></h4>
+                            <small><?=$lang['MAINTEXT'][File2d]?></small>
+                        </div>
+                    </a>
+                    <a href="<?=$lang['MAINTEXT'][File3_url]?>" target="_blank" class="list-group-item media mg-tp">
+                        <div class="pull-left">
+                            <i class="fa fa-file-pdf-o fa-2x"></i>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading"><?=$lang['MAINTEXT'][File3]?></h4>
+                            <small><?=$lang['MAINTEXT'][File3d]?></small>
+                        </div>
+                    </a>
+                    <a href="<?=$lang['MAINTEXT'][File4_url]?>" target="_blank"class="list-group-item media mg-tp">
+                        <div class="pull-left">
+                            <i class="fa fa-file-word-o fa-2x"></i>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading"><?=$lang['MAINTEXT'][File4]?></h4>
+                            <small><?=$lang['MAINTEXT'][File4d]?></small>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- /.row -->
 
     <hr>
