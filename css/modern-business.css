@@ -141,6 +141,9 @@ a,
     background-color: #CE2039;
 }
 /* sections*/
+.sections {
+    margin-top: 40px;
+}
 .sections .btn {
     padding: 6px 40px;
     margin-left: 20px;
