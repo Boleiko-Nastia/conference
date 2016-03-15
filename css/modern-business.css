@@ -43,6 +43,10 @@ header.carousel .fill {
 
 
 /* MENU */
+
+.navbar-fixed-top .navbar-collapse{
+    max-height: 800px;
+}
 .navbar-brand {
     min-height: 70px;
 }
