@@ -125,13 +125,6 @@
                 <br>
                 <form name="sentMessage" method="post" action="../../contact.php" id="contactForm" novalidate>
                     <div class="control-group form-group">
-                    <div class="controls">
-                    <label><?=$lang['MAINTEXT'][142]?></label>
-                            <input type="text" class="form-control" id="name" required data-validation-required-message="<?=$lang['MAINTEXT'][143]?>" placeholder="">
-                            <p class="help-block"></p>
-                    </div>
-                    </div>
-                    <div class="control-group form-group">
                         <div class="controls">
                             <label><?=$lang['MAINTEXT'][142]?></label>
                             <input type="text" class="form-control" id="name" required data-validation-required-message="<?=$lang['MAINTEXT'][143]?>" placeholder="<?=$lang['MAINTEXT'][144]?>">
