@@ -200,13 +200,13 @@ $lang['MAINTEXT'][86] = 'Ужин';
 $lang['MAINTEXT'][87] = 'Культурная программа';
 
 $lang['MAINTEXT'][88] = '19 мая 2016';
-$lang['MAINTEXT'][89] = 'Выездное заседание секций (Опошня)';
+$lang['MAINTEXT'][89] = 'Выездное заседание секций';
 $lang['MAINTEXT'][90] = 'Завтрак';
 $lang['MAINTEXT'][91] = 'Выезд в Опошню';
 $lang['MAINTEXT'][92] = 'Заседание секций';
 $lang['MAINTEXT'][93] = 'Экскурсия ';
 $lang['MAINTEXT'][94] = 'Подведение итогов';
-$lang['MAINTEXT'][95] = 'Обед-Банкет';
+$lang['MAINTEXT'][95] = 'Обед-банкет';
 $lang['MAINTEXT'][96] = 'Ужин';
 $lang['MAINTEXT'][97] = 'Отъезд в Харьков';
 
@@ -303,7 +303,7 @@ $lang['MAINTEXT'][136] = 'Тел.';
 $lang['MAINTEXT'][137] = '+38 (057) 702-13-78';
 $lang['MAINTEXT'][138] = 'Электронная почта кафедры';
 $lang['MAINTEXT'][139] = 'Email';
-$lang['MAINTEXT'][140] = 'PMW.NURE.UA';
+$lang['MAINTEXT'][140] = 'pmw.nure.ua';
 $lang['MAINTEXT'][141] = 'Напишите нам:';
 $lang['MAINTEXT'][142] = 'ФИО:';
 $lang['MAINTEXT'][143] = 'Введите Ваше полное имя, фамилию и отчество!';
