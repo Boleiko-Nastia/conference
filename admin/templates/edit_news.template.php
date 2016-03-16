@@ -90,7 +90,11 @@
                                 echo '<div class="control-group form-group">';
                                 echo '<div class="thumbnail pad-15">';
                                 echo '<div class-"col-sm-12">';
-                                echo '<h4>'.$av['title'].'</h4>';
+                                echo '<div class="row">';
+                                echo '<div class="col-sm-8"><h4>'.$av['title'].'</h4></div>';
+                                echo '<div class="col-sm-4">';
+                                echo '<a href="#"><button type="submit" class="btn btn-primary red-button pull-right">Удалить</button></a>;';
+                                echo '</div>';
                                 echo '<p><i class="fa fa-clock-o"></i> Опубликовано '.$av['date_create'].'</p><br>';
                                 echo '<div class="controls">
                                         <a href="edit_news_translation.php?article='.$ak.'&lang=ru"><button type="submit" class="btn btn-primary blue-button">Редактировать RU-версию</button></a>

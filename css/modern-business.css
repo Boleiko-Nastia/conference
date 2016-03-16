@@ -43,6 +43,10 @@ header.carousel .fill {
 
 
 /* MENU */
+
+.navbar-fixed-top .navbar-collapse{
+    max-height: 800px;
+}
 .navbar-brand {
     min-height: 70px;
 }
@@ -68,12 +72,20 @@ header.carousel .fill {
 .navbar-inverse .navbar-brand {
     color: #aaa;
 }
+.red-button:hover,
+.red-button:focus,
+.red-button:active,
+.red-button:active:hover,
 .blue-button:hover,
 .blue-button:focus,
 .blue-button:active{
     border-color: #CE2039;
 }
 
+.red-button:hover,
+.red-button:focus,
+.red-button:active,
+.red-button:active:hover,
 .carousel-indicators .active,
 .blue-button:hover,
 .blue-button:focus,
@@ -141,6 +153,9 @@ a,
     background-color: #CE2039;
 }
 /* sections*/
+.sections {
+    margin-top: 40px;
+}
 .sections .btn {
     padding: 6px 40px;
     margin-left: 20px;
@@ -341,7 +356,11 @@ ul.dropdown-menu > li > a:focus{
     background-color: #172240;
     border-color: #172240;
 }
-
+.red-button{
+    color: #fff;
+    background-color: #E4445B;
+    border-color: #980016;
+}
 .hr-for-mobile {
         visibility: hidden; 
     }
