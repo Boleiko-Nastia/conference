@@ -85,6 +85,79 @@
 
                 <!-- Contact Details Column -->
                 <div class="col-sm-12 del-pad-x">
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <!--Когда были добавлены участники показать таблицу в таком виде
+                 <h2 class="page-header"><?=$lang['MAINTEXT'][123]?></h2>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <div class="media">
+                                <div class="pull-left icon-section-part">
+                                    <span class="fa-stack fa-lg">
+                                        <image class="icon-section" src="../img/icon_sections/icon-1.svg">
+                                    </span>
+                                </div>
+                                <div class="media-body calendar-head">
+                                    <h3 class="media-heading">Секция <strong>"Пример 1(не подтягиваются названия секций с переводов)"</strong></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <table class="table table-striped del-mar-bot">
+                                <tr>
+                                    <td class="col-sm-2">Иванов Иван Иванович</td>
+                                    <td class="col-sm-2">Харьковский начиональный университет радиоэлектроники</td>
+                                    <td class="col-sm-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, veritatis, tempora, necessitatibus inventore nisi quam quia</td>
+                                    <td class="col-sm-1">
+                                        <div class="pull-right">
+                                            <button type="button" class="btn btn-primary red-button" aria-label="Right Align" title="Удалить"><i class="fa fa-times"></i></button>
+                                            <br>
+                                            <button type="button" class="btn btn-primary blue-button mg-tp" aria-label="Right Align" title="Редактировать"><i class="fa fa-pencil"></i></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <td class="col-sm-2">Иванов Иван Иванович</td>
+                                    <td class="col-sm-2">Харьковский начиональный университет радиоэлектроники</td>
+                                    <td class="col-sm-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, veritatis, tempora, necessitatibus inventore nisi quam quia</td>
+                                    <td class="col-sm-1">
+                                        <div class="pull-right">
+                                            <button type="button" class="btn btn-primary red-button" aria-label="Right Align" title="Удалить"><i class="fa fa-times"></i></button>
+                                            <br>
+                                            <button type="button" class="btn btn-primary blue-button mg-tp" aria-label="Right Align" title="Редактировать"><i class="fa fa-pencil"></i></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="col-sm-2"><?=$lang['MAINTEXT'][Participant]?></th>
+                                    <th class="col-sm-2"><?=$lang['MAINTEXT'][Place]?></th>
+                                    <th class="col-sm-6"><?=$lang['MAINTEXT'][Report]?></th>
+                                    <?php foreach($user_conf as $id => $user): ?>
+                                <tr>
+                                    <td class="col-sm-2"><?=$user['name']?></td>
+                                    <td class="col-sm-2"><?=$user['job']?></td>
+                                    <td class="col-sm-6"><?=$user['lecture_title']?></td>
+                                </tr>
+                                    <?php endforeach; ?>
+                            </table>
+                        </div>
+                    </div>
+-->
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
                     <form action="./add_user_conf.php" method="post">
                         <div class="controls">
                             <label>Выберите секцию:</label>
