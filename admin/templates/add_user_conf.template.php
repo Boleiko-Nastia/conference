@@ -133,7 +133,6 @@
                                 </tr>
 
 
-                                    /* Modal delete*/
                                             <div class="modal fade popup-delete" id="delete_user" tabindex="-1" role="dialog" aria-labelledby="delete_user">
                                                 <div class="modal-dialog" role="document">
                                                     <div class="modal-content">
@@ -151,10 +150,8 @@
                                                 </div>
                                               </div>
                                             </div>
-                                            /* / Modal delete*/
 
 
-                                    /* Modal edit*/
                                             <div class="modal fade popup-delete" id="edit_user" tabindex="-1" role="dialog" aria-labelledby="edit_user">
                                                 <div class="modal-dialog" role="document">
                                                     <div class="modal-content">
@@ -189,7 +186,6 @@
                                                 </div>
                                               </div>
                                             </div>
-                                        /* / Modal edit*/
 
 
 
