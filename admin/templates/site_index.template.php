@@ -245,18 +245,7 @@
                                         <div class="form-group">
                                             <label for="inputPosition" class="col-sm-3 control-label">*<?=$lang['MAINTEXT'][Form6]?></label>
                                             <div class="col-sm-8">
-                                                <div class="dropdown">
-                                                    <button class="btn position btn-default dropdown-toggle" name="position" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                                        <?=$lang['MAINTEXT'][Form6ph]?>
-                                                        <span class="caret"></span>
-                                                    </button>
-                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                                        <li><a href="#"><?=$lang['MAINTEXT'][Form6ph1]?></a></li>
-                                                        <li><a href="#"><?=$lang['MAINTEXT'][Form6ph2]?></a></li>
-                                                        <li><a href="#"><?=$lang['MAINTEXT'][Form6ph3]?></a></li>
-                                                        <li><a href="#"><?=$lang['MAINTEXT'][Form6ph4]?></a></li>
-                                                    </ul>
-                                                </div>
+                                                <textarea class="form-control" name="degree" id="inputWorkplace" placeholder="<?=$lang['MAINTEXT'][Form6ph]?>" rows="2" cols="100" style="resize:vertical"></textarea>
                                             </div>
                                         </div>
                                         <div class="form-group">
@@ -264,6 +253,13 @@
                                                 <br> <h6><small><?=$lang['MAINTEXT'][Form7c]?></small></h6></label>
                                             <div class="col-sm-8">
                                                 <textarea class="form-control" name="degree" id="inputWorkplace" placeholder="<?=$lang['MAINTEXT'][Form7ph]?>" rows="2" cols="100" style="resize:vertical"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-3 control-label"><?=$lang['MAINTEXT'][FormAfter7]?>
+                                                <br> <h6><small><?=$lang['MAINTEXT'][Form7c]?></small></h6></label>
+                                            <div class="col-sm-8">
+                                                <textarea class="form-control" id="inputWorkplace" placeholder="<?=$lang['MAINTEXT'][FormAfter7ph]?>" rows="2" cols="100" style="resize:vertical"></textarea>
                                             </div>
                                         </div>
                                         <hr>
