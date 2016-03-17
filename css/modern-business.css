@@ -398,7 +398,7 @@ ul.dropdown-menu > li > a:focus{
 .popup-delete .modal-body, .popup-delete .form-group {
     content: " ";
     display: table;
-    
+}    
 /* Footer */
 footer {
     margin-bottom: 0 !important;
