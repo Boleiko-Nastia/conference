@@ -95,8 +95,10 @@
                     
                     
                     
+                    
+                    
                     <!--Когда были добавлены участники показать таблицу в таком виде
-                 <h2 class="page-header"><?=$lang['MAINTEXT'][123]?></h2>
+
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <div class="media">
@@ -113,17 +115,87 @@
                         <div class="panel-body">
                             <table class="table table-striped del-mar-bot">
                                 <tr>
+                                    <th class="col-sm-2">Участник</th>
+                                    <th class="col-sm-2">Место работы</th>
+                                    <th class="col-sm-6">Название доклада</th>
+                                </tr>
+                                <tr>
                                     <td class="col-sm-2">Иванов Иван Иванович</td>
                                     <td class="col-sm-2">Харьковский начиональный университет радиоэлектроники</td>
                                     <td class="col-sm-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, veritatis, tempora, necessitatibus inventore nisi quam quia</td>
                                     <td class="col-sm-1">
                                         <div class="pull-right">
-                                            <button type="button" class="btn btn-primary red-button" aria-label="Right Align" title="Удалить"><i class="fa fa-times"></i></button>
+                                            <button type="button" class="btn btn-primary red-button" aria-label="Right Align" data-toggle="modal" data-target="#delete_user" title="Удалить"><i class="fa fa-times"></i></button>
                                             <br>
-                                            <button type="button" class="btn btn-primary blue-button mg-tp" aria-label="Right Align" title="Редактировать"><i class="fa fa-pencil"></i></button>
+                                            <button type="button" class="btn btn-primary blue-button mg-tp" aria-label="Right Align" data-toggle="modal" data-target="#edit_user" title="Редактировать"><i class="fa fa-pencil"></i></button>
                                         </div>
                                     </td>
                                 </tr>
+
+
+                                    /* Modal delete*/
+                                            <div class="modal fade popup-delete" id="delete_user" tabindex="-1" role="dialog" aria-labelledby="delete_user">
+                                                <div class="modal-dialog" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                            <h4 class="modal-title" id="delete user#1">Подтверждение удаления</h4>
+                                                        </div>
+                                                    <div class="modal-body">
+                                                    <p>Вы действительно хотите удалить участника "Иванов Иван Иванович"?</p>
+                                                    </div>
+                                                  <div class="modal-footer">
+                                                    <button type="button" class="btn btn-primary red-button" data-dismiss="modal">Удалить</button>
+                                                    <button type="button" class="btn btn-primary blue-button">Отмена</button>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            /* / Modal delete*/
+
+
+                                    /* Modal edit*/
+                                            <div class="modal fade popup-delete" id="edit_user" tabindex="-1" role="dialog" aria-labelledby="edit_user">
+                                                <div class="modal-dialog" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                            <h4 class="modal-title" id="edit user#1">Редактирование участника</h4>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <div class="form-group">
+                                                                <label class="col-sm-3 control-label">Участник</label>
+                                                                <div class="col-sm-8">
+                                                                    <textarea class="form-control" required id="inputName" placeholder="Иванов Иван Иванович" rows="2" cols="100" style="resize:vertical"></textarea>
+                                                                </div>                                                               
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="col-sm-3 control-label">Место работы</label>
+                                                                <div class="col-sm-8">
+                                                                    <textarea class="form-control" required id="inputWork" placeholder="Харьковский начиональный университет радиоэлектроники" rows="3" cols="100" style="resize:vertical"></textarea>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="col-sm-3 control-label">Название доклада</label>
+                                                                <div class="col-sm-8">
+                                                                    <textarea class="form-control" required id="inputArticle" placeholder="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, veritatis, tempora, necessitatibus inventore nisi quam quia" rows="5" cols="100" style="resize:vertical"></textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                  <div class="modal-footer">
+                                                    <button type="button" class="btn btn-primary red-button" data-dismiss="modal">Сохранить</button>
+                                                    <button type="button" class="btn btn-primary blue-button">Отмена</button>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                        /* / Modal edit*/
+
+
+
+
+
+
                                 <td class="col-sm-2">Иванов Иван Иванович</td>
                                     <td class="col-sm-2">Харьковский начиональный университет радиоэлектроники</td>
                                     <td class="col-sm-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, veritatis, tempora, necessitatibus inventore nisi quam quia</td>
@@ -149,7 +221,9 @@
                             </table>
                         </div>
                     </div>
--->
+                    
+                    -->
+                    
                     
                     
                     
