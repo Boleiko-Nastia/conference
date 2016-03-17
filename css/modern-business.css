@@ -392,6 +392,13 @@ ul.dropdown-menu > li > a:focus{
     align-items: center;
 }
 
+.popup-delete {
+    margin-top: 15%;
+}
+.popup-delete .modal-body, .popup-delete .form-group {
+    content: " ";
+    display: table;
+    
 /* Footer */
 footer {
     margin-bottom: 0 !important;
