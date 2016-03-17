@@ -85,6 +85,48 @@
  
             <!-- Contact Details Column -->
                 <div class="col-sm-12 del-pad-x">
+                    
+                    <!--Example for editing news
+                            <div class="thumbnail pad-15">
+                                <div class-"col-sm-12">
+                                    <div class="row">
+                                        <div class="col-sm-8"><h4>Название новости №1 Пример</h4></div>
+                                        <div class="col-sm-4">
+                                            <a href="#">
+                                                <button type="submit" class="btn btn-primary red-button pull-right" data-toggle="modal" data-target="#delete_news">Удалить</button>
+                                            </a>
+                                        </div>
+
+                                        <div class="modal fade popup-delete" id="delete_news" tabindex="-1" role="dialog" aria-labelledby="delete_news">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                        <h4 class="modal-title" id="delete news#1">Подтверждение удаления</h4>
+                                                    </div>
+                                                <div class="modal-body">
+                                                <p>Вы действительно хотите удалить новость "Название новости №1 Пример"?</p>
+                                                </div>
+                                              <div class="modal-footer">
+                                                <button type="button" class="btn btn-primary red-button" data-dismiss="modal">Удалить</button>
+                                                <button type="button" class="btn btn-primary blue-button">Отмена</button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+
+                                    </div>
+
+                                    <p><i class="fa fa-clock-o"></i> Опубликовано 2016-03-17</p><br>
+                                    <div class="controls">
+                                        <a href="edit_news_RU.php"><button type="submit" class="btn btn-primary blue-button">Редактировать RU-версию</button></a>
+                                        <a href="edit_news_UA.php"><button type="submit" class="btn btn-primary blue-button mg-l-20">Редактировать UA-версию</button></a>
+                                        <a href="edit_news_ENG.php"><button type="submit" class="btn btn-primary blue-button mg-l-20">Редактировать ENG-версию</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                    -->
+                    
                         <?php
                             foreach($articles as $ak => $av) {
                                 echo '<div class="control-group form-group">';
