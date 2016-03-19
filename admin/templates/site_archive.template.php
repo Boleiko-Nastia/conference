@@ -48,13 +48,13 @@
                     <a href="index.php"><?=$lang['MENU_HOME']?></a>
                 </li>
                 <li>
+                    <a href="news.php"><?=$lang['NEWS']?></a>
+                </li>
+                <li>
                     <a href="sections.php"><?=$lang['CONFERENCE_AREA']?></a>
                 </li>
                 <li>
                     <a href="calendar.php"><?=$lang['CALENDAR']?></a>
-                </li>
-                <li>
-                    <a href="news.php"><?=$lang['NEWS']?></a>
                 </li>
                 <li>
                     <a href="commission.php"><?=$lang['ORGANISERS']?></a>
@@ -107,20 +107,19 @@
 
         <div class="col-sm-9">
             <h2 class="page-header"><?=$lang['MAINTEXT'][128]?></h2>
-            
             <!--Downloads RUS-->
             <div class="col-sm-12 del-pad-x">
                 <div class="col-lg-3 col-md-4 col-sm-6 div-file">
                     <div class="panel panel-default text-center">
                         <div class="panel-heading">
-                            <span class="fa-stack fa-5x">
-                                  <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                                  <i class="fa fa-file-word-o fa-stack-1x fa-inverse"></i>
-                            </span>
                         </div>
                         <div class="panel-body">
-                            <h4>Информационное сообщение PMW-2016</h4>
-                            <p>(на русском, *.pdf, ~568 kB)</p>
+                            <div class="media">
+                                <div class="media-body">
+                                    <h4 class="media-heading">Информационное сообщение PMW-2016</h4>
+                                    <p class="small">(на русском, *.pdf ~568 kB)</p>
+                                </div>
+                            </div>
                             <a href="download/rus/Inf_soobschenie_PMW-2016_rus.pdf" target="_blank" class="btn btn-primary blue-button"><?=$lang['MAINTEXT'][Download]?></a>
                         </div>
                     </div>
@@ -128,14 +127,10 @@
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="panel panel-default text-center">
                         <div class="panel-heading">
-                            <span class="fa-stack fa-5x">
-                                  <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                                  <i class="fa fa-file-pdf-o fa-stack-1x fa-inverse"></i>
-                            </span>
                         </div>
                         <div class="panel-body">
                             <h4>Требования к оформлению тезисов конференции</h4>
-                            <p>(на русском, *.pdf, ~170 kB)</p>
+                            <p class="small">(на русском, *.pdf ~170 kB)</p>
                             <a href="download/rus/Trebovania_k_oformleniyu_tezisov_konferentsii_rus.pdf" target="_blank" class="btn btn-primary blue-button"><?=$lang['MAINTEXT'][Download]?></a>
                         </div>
                     </div>
@@ -143,14 +138,10 @@
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="panel panel-default text-center">
                         <div class="panel-heading">
-                            <span class="fa-stack fa-5x">
-                                  <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                                  <i class="fa fa-file-word-o fa-stack-1x fa-inverse"></i>
-                            </span>
                         </div>
                         <div class="panel-body">
                             <h4>Требования к оформлению материалов школы-семинара</h4>
-                            <p>(на русском, *.pdf, ~234 kB)</p>
+                            <p class="small">(на русском, *.pdf ~234 kB)</p>
                             <a href="download/rus/Trebovania_k_oformleniyu_materialov_shkoly-seminara_rus.pdf" target="_blank" class="btn btn-primary blue-button"><?=$lang['MAINTEXT'][Download]?></a>
                         </div>
                     </div>
@@ -158,14 +149,10 @@
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="panel panel-default text-center">
                         <div class="panel-heading">
-                            <span class="fa-stack fa-5x">
-                                  <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                                  <i class="fa fa-file-word-o fa-stack-1x fa-inverse"></i>
-                            </span>
                         </div>
                         <div class="panel-body">
                             <h4>Заявка на участие</h4>
-                            <p>(на русском, *.pdf, ~118 kB)</p>
+                            <p class="small">(на русском, *.pdf ~118 kB)</p>
                             <a href="download/rus/Zayavka_rus.pdf" target="_blank" class="btn btn-primary blue-button"><?=$lang['MAINTEXT'][Download]?></a>
                         </div>
                     </div>
@@ -177,14 +164,10 @@
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="panel panel-default text-center">
                         <div class="panel-heading">
-                            <span class="fa-stack fa-5x">
-                                  <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                                  <i class="fa fa-file-word-o fa-stack-1x fa-inverse"></i>
-                            </span>
                         </div>
                         <div class="panel-body">
                             <h4>Інформаційне повідомлення PMW-2016</h4>
-                            <p>(українською, *.pdf, ~573 kB)</p>
+                            <p class="small">(українською, *.pdf<br> ~573 kB)</p>
                             <a href="download/ukr/Inf_povidomlennya_PMW-2016_ukr.pdf" target="_blank" class="btn btn-primary blue-button"><?=$lang['MAINTEXT'][Download]?></a>
                         </div>
                     </div>
@@ -192,14 +175,10 @@
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="panel panel-default text-center">
                         <div class="panel-heading">
-                            <span class="fa-stack fa-5x">
-                                  <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                                  <i class="fa fa-file-pdf-o fa-stack-1x fa-inverse"></i>
-                            </span>
                         </div>
                         <div class="panel-body">
                             <h4>Вимоги до оформлення тез конференції</h4>
-                            <p>(українською, *.pdf, ~170 kB)</p>
+                            <p class="small">(українською, *.pdf<br> ~170 kB)</p>
                             <a href="download/ukr/Vimogi_do_oformlennya_tez_konferentsiyi_ukr.pdf" target="_blank" class="btn btn-primary blue-button"><?=$lang['MAINTEXT'][Download]?></a>
                         </div>
                     </div>
@@ -207,14 +186,10 @@
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="panel panel-default text-center">
                         <div class="panel-heading">
-                            <span class="fa-stack fa-5x">
-                                  <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                                  <i class="fa fa-file-word-o fa-stack-1x fa-inverse"></i>
-                            </span>
                         </div>
                         <div class="panel-body">
                             <h4>Вимоги оформлення матеріалів школи-семінару</h4>
-                            <p>(українською, *.pdf, ~164 kB)</p>
+                            <p class="small">(українською, *.pdf<br> ~164 kB)</p>
                             <a href="download/ukr/Vimogi_oformlennya_materialiv_shkoli-seminaru_ukr.pdf" target="_blank" class="btn btn-primary blue-button"><?=$lang['MAINTEXT'][Download]?></a>
                         </div>
                     </div>
@@ -222,14 +197,10 @@
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="panel panel-default text-center">
                         <div class="panel-heading">
-                            <span class="fa-stack fa-5x">
-                                  <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                                  <i class="fa fa-file-word-o fa-stack-1x fa-inverse"></i>
-                            </span>
                         </div>
                         <div class="panel-body">
                             <h4>Заявка на участь</h4>
-                            <p>(українською, *.pdf, ~132 kB)</p>
+                            <p class="small">(українською, *.pdf<br> ~132 kB)</p>
                             <a href="download/ukr/Zayavka_ukr.pdf" target="_blank" class="btn btn-primary blue-button"><?=$lang['MAINTEXT'][Download]?></a>
                         </div>
                     </div>
@@ -241,14 +212,10 @@
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="panel panel-default text-center">
                         <div class="panel-heading">
-                            <span class="fa-stack fa-5x">
-                                  <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                                  <i class="fa fa-file-word-o fa-stack-1x fa-inverse"></i>
-                            </span>
                         </div>
                         <div class="panel-body">
                             <h4>Requirements to the design of the conference abstracts</h4>
-                            <p>(English, *.doc, ~32 kB)</p>
+                            <p class="small">(English, *.doc ~32 kB)</p>
                             <a href="download/eng/Requirements_to_the_design_of_the_conference_abstracts_eng.doc" target="_blank" class="btn btn-primary blue-button"><?=$lang['MAINTEXT'][Download]?></a>
                         </div>
                     </div>
@@ -256,20 +223,15 @@
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="panel panel-default text-center">
                         <div class="panel-heading">
-                            <span class="fa-stack fa-5x">
-                                  <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                                  <i class="fa fa-file-pdf-o fa-stack-1x fa-inverse"></i>
-                            </span>
                         </div>
                         <div class="panel-body">
                             <h4>Requirements to the design of materials of the youth workshop</h4>
-                            <p>(English, *.doc, ~34 kBB)</p>
+                            <p class="small">(English, *.doc ~34 kB)</p>
                             <a href="download/eng/Requirements_to_the_design_of_materials_of_the_youth_workshop_eng.doc" target="_blank" class="btn btn-primary blue-button"><?=$lang['MAINTEXT'][Download]?></a>
                         </div>
                     </div>
                 </div>
             </div>
-            
             <hr>
             <!-- Pager -->
         </div>
