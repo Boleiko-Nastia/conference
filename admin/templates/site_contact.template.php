@@ -47,13 +47,13 @@
                     <a href="index.php"><?=$lang['MENU_HOME']?></a>
                 </li>
                 <li>
+                    <a href="news.php"><?=$lang['NEWS']?></a>
+                </li>
+                <li>
                     <a href="sections.php"><?=$lang['CONFERENCE_AREA']?></a>
                 </li>
                 <li>
                     <a href="calendar.php"><?=$lang['CALENDAR']?></a>
-                </li>
-                <li>
-                    <a href="news.php"><?=$lang['NEWS']?></a>
                 </li>
                 <li>
                     <a href="commission.php"><?=$lang['ORGANISERS']?></a>
