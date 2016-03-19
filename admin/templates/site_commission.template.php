@@ -231,14 +231,6 @@
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="thumbnail">
-                        <img class="img-responsive" src="img/partners/bgty.png" alt="">
-                        <div class="caption">
-                            <!--<p class="text-center">Белорусский государственный технологический университет (Белоруссия)</p>-->
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="thumbnail">
                         <img class="img-responsive" src="img/partners/kpi.png" alt="">
                         <div class="caption">
                             <!--<p class="text-center">Национальный технический университет Украины «Киевский политехнический институт</p>-->
