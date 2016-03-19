@@ -44,17 +44,17 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-                                <li>
+                <li>
                     <a href="index.php"><?=$lang['MENU_HOME']?></a>
+                </li>
+                <li>
+                    <a href="news.php"><?=$lang['NEWS']?></a>
                 </li>
                 <li>
                     <a href="sections.php"><?=$lang['CONFERENCE_AREA']?></a>
                 </li>
                 <li>
                     <a href="calendar.php"><?=$lang['CALENDAR']?></a>
-                </li>
-                <li>
-                    <a href="news.php"><?=$lang['NEWS']?></a>
                 </li>
                 <li>
                     <a href="commission.php"><?=$lang['ORGANISERS']?></a>
@@ -170,8 +170,17 @@
 
 
         <div class="col-sm-3 del-pad-x">
+        <!-- Sidebar Column -->
+            <div class="col-sm-12">
+                <div class="list-group">
+                    <a href="news.php" class="list-group-item"><?=$lang['NEWS']?></a>
+                    <a href="#" class="list-group-item"><?=$lang['PROGRAM']?></a>
+                    <a href="#" class="list-group-item"><?=$lang['COLLECTIONOFARTICLES']?></a>
+                    <a href="#" class="list-group-item"><?=$lang['DECISION']?></a>
+                </div>
+            </div>
 
-<!-- Date Column -->
+        <!-- Date Column -->
             <div class="col-sm-12">
                 <h3 class="page-header"><?=$lang['DATES']?></h3>
             </div>
