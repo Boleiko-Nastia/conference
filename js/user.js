@@ -29,11 +29,19 @@ $(function () {
                 } else {
                     var div = document.getElementById('success');
                     div.style.display = 'block';
+                    document.getElementById('user').reset();
                 }
             }
         });
     });
 });
+
+$('#myModal').on('shown.bs.modal', function() {
+    var div = document.getElementById('danger');
+    div.style.display = 'none';
+    var div = document.getElementById('success');
+    div.style.display = 'none';
+})
 
 
 

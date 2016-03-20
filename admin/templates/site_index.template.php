@@ -242,7 +242,7 @@
                                         <div class="form-group">
                                             <label for="inputPosition" class="col-sm-3 control-label">*<?=$lang['MAINTEXT'][Form6]?></label>
                                             <div class="col-sm-8">
-                                                <textarea class="form-control" name="degree" id="inputWorkplace" placeholder="<?=$lang['MAINTEXT'][Form6ph]?>" rows="2" cols="100" style="resize:vertical"></textarea>
+                                                <textarea class="form-control" name="job" id="inputWorkplace" placeholder="<?=$lang['MAINTEXT'][Form6ph]?>" rows="2" cols="100" style="resize:vertical"></textarea>
                                             </div>
                                         </div>
                                         <div class="form-group">
@@ -256,7 +256,7 @@
                                             <label class="col-sm-3 control-label"><?=$lang['MAINTEXT'][FormAfter7]?>
                                                 <br> <h6><small><?=$lang['MAINTEXT'][Form7c]?></small></h6></label>
                                             <div class="col-sm-8">
-                                                <textarea class="form-control" id="inputWorkplace" placeholder="<?=$lang['MAINTEXT'][FormAfter7ph]?>" rows="2" cols="100" style="resize:vertical"></textarea>
+                                                <textarea class="form-control" name="academic_title" id="inputWorkplace" placeholder="<?=$lang['MAINTEXT'][FormAfter7ph]?>" rows="2" cols="100" style="resize:vertical"></textarea>
                                             </div>
                                         </div>
                                         <hr>
