@@ -7,6 +7,9 @@ $job = $_POST['job'];
 $titlelecture = $_POST['titlelecture'];
 if($section_id && $fullname && $job && $titlelecture) {
     $id = addMember($fullname,$job,$titlelecture,$section_id);
+    if($id) {
+        header('Location: add_user_conf.php');
+    }
 }
 
 $sections = getAllSection();

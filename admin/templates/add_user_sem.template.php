@@ -85,9 +85,7 @@
 
                 <!-- Contact Details Column -->
                 <div class="col-sm-12 del-pad-x">
-                    <form name="sentMessage" id="contactForm" action="./add_user_sem.php" method="post" novalidate>
-                        
-                        <!--Когда были добавлены участники показать таблицу в таком виде
+
                         <div class="panel panel-default">
                             <div class="panel-heading">
                                 <h3><strong>Участники молодежной школы-семинара</strong>
@@ -102,97 +100,84 @@
                                         <th class="col-sm-6">Название доклада</th>
                                     </td>
                                     </tr>
+                                    <?php foreach($members as $k => $user): ?>
                                     <tr>
-                                        <td class="col-sm-2">Иванов Иван Иванович</td>
-                                        <td class="col-sm-2">Петров Петр Петрович</td>
-                                        <td class="col-sm-2">Харьковский начиональный университет радиоэлектроники</td>
-                                        <td class="col-sm-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+                                        <td class="col-sm-2"><?=$user['name']?></td>
+                                        <td class="col-sm-2"><?=$user['head']?></td>
+                                        <td class="col-sm-2"><?=$user['job']?></td>
+                                        <td class="col-sm-4"><?=$user['lecture_title']?></td>
                                         <td class="col-sm-1">
                                         <div class="pull-right">
-                                            <button type="button" class="btn btn-primary red-button" aria-label="Right Align" data-toggle="modal" data-target="#delete_user" title="Удалить"><i class="fa fa-times"></i></button>
+                                            <button type="button" class="btn btn-primary red-button" aria-label="Right Align" data-toggle="modal" data-target="#delete_user_<?=$user['id']?>" title="Удалить"><i class="fa fa-times"></i></button>
                                             <br>
-                                            <button type="button" class="btn btn-primary blue-button mg-tp" aria-label="Right Align" data-toggle="modal" data-target="#edit_user" title="Редактировать"><i class="fa fa-pencil"></i></button>
+                                            <button type="button" class="btn btn-primary blue-button mg-tp" aria-label="Right Align" data-toggle="modal" data-target="#edit_user_<?=$user['id']?>" title="Редактировать"><i class="fa fa-pencil"></i></button>
                                         </div>
                                     </tr>
-                                    <tr>
-                                        <td class="col-sm-2">Иванов Иван Иванович</td>
-                                        <td class="col-sm-2">Петров Петр Петрович</td>
-                                        <td class="col-sm-2">Харьковский начиональный университет радиоэлектроники</td>
-                                        <td class="col-sm-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
-                                        <td class="col-sm-1">
-                                        <div class="pull-right">
-                                            <button type="button" class="btn btn-primary red-button" aria-label="Right Align" data-toggle="modal" data-target="#delete_user" title="Удалить"><i class="fa fa-times"></i></button>
-                                            <br>
-                                            <button type="button" class="btn btn-primary blue-button mg-tp" aria-label="Right Align" data-toggle="modal" data-target="#edit_user" title="Редактировать"><i class="fa fa-pencil"></i></button>
+                                        <div class="modal fade popup-delete" id="delete_user_<?=$user['id']?>" tabindex="-1" role="dialog" aria-labelledby="delete_user">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                        <h4 class="modal-title" id="delete user#1">Подтверждение удаления</h4>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <p>Вы действительно хотите удалить участника "<?=$user['name']?>"?</p>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-primary red-button" onclick="delUser(<?=$user['id']?>)" data-dismiss="modal">Удалить</button>
+                                                        <button type="button" class="btn btn-primary blue-button" data-dismiss="modal">Отмена</button>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </tr>
+
+
+                                        <div class="modal fade popup-delete" id="edit_user_<?=$user['id']?>" tabindex="-1" role="dialog" aria-labelledby="edit_user">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                        <h4 class="modal-title" id="edit user#1">Редактирование участника</h4>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="form-group">
+                                                            <label class="col-sm-3 control-label">Участник</label>
+                                                            <div class="col-sm-8">
+                                                                <textarea class="form-control" required id="inputName_<?=$user['id']?>" placeholder="Иванов Иван Иванович" rows="2" cols="100" style="resize:vertical"><?=$user['name']?></textarea>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="col-sm-3 control-label">Руководитель</label>
+                                                            <div class="col-sm-8">
+                                                                <textarea class="form-control" required id="inputHead_<?=$user['id']?>" placeholder="" rows="2" cols="100" style="resize:vertical"><?=$user['head']?></textarea>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="col-sm-3 control-label">ВУЗ</label>
+                                                            <div class="col-sm-8">
+                                                                <textarea class="form-control" required id="inputWork_<?=$user['id']?>" placeholder="Харьковский начиональный университет радиоэлектроники" rows="3" cols="100" style="resize:vertical"><?=$user['job']?></textarea>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="col-sm-3 control-label">Название доклада</label>
+                                                            <div class="col-sm-8">
+                                                                <textarea class="form-control" required id="inputArticle_<?=$user['id']?>" placeholder="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, veritatis, tempora, necessitatibus inventore nisi quam quia" rows="5" cols="100" style="resize:vertical"><?=$user['lecture_title']?></textarea>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-primary red-button" onclick="saveUser(<?=$user['id']?>)" data-dismiss="modal">Сохранить</button>
+                                                        <button type="button" class="btn btn-primary blue-button" data-dismiss="modal">Отмена</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    <?php endforeach; ?>
                                 </table>
                             </div>
                         </div>
-
-                        <div class="modal fade popup-delete" id="delete_user" tabindex="-1" role="dialog" aria-labelledby="delete_user">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                        <h4 class="modal-title" id="delete user#1">Подтверждение удаления</h4>
-                                    </div>
-                                <div class="modal-body">
-                                <p>Вы действительно хотите удалить участника "Иванов Иван Иванович"?</p>
-                                </div>
-                              <div class="modal-footer">
-                                <button type="button" class="btn btn-primary red-button" data-dismiss="modal">Удалить</button>
-                                <button type="button" class="btn btn-primary blue-button">Отмена</button>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-
-                        <div class="modal fade popup-delete" id="edit_user" tabindex="-1" role="dialog" aria-labelledby="edit_user">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                        <h4 class="modal-title" id="edit user#1">Редактирование участника</h4>
-                                    </div>
-                                    <div class="modal-body">
-                                        <div class="form-group">
-                                            <label class="col-sm-3 control-label">Участник</label>
-                                            <div class="col-sm-8">
-                                                <textarea class="form-control" required id="inputName" placeholder="Иванов Иван Иванович" rows="2" cols="100" style="resize:vertical"></textarea>
-                                            </div>                                                               
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="col-sm-3 control-label">Руководитель</label>
-                                            <div class="col-sm-8">
-                                                <textarea class="form-control" required id="inputWork" placeholder="" rows="2" cols="100" style="resize:vertical"></textarea>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="col-sm-3 control-label">ВУЗ</label>
-                                            <div class="col-sm-8">
-                                                <textarea class="form-control" required id="inputArticle" placeholder="Харьковский начиональный университет радиоэлектроники" rows="3" cols="100" style="resize:vertical"></textarea>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="col-sm-3 control-label">Название доклада</label>
-                                            <div class="col-sm-8">
-                                                <textarea class="form-control" required id="inputArticle" placeholder="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, veritatis, tempora, necessitatibus inventore nisi quam quia" rows="5" cols="100" style="resize:vertical"></textarea>
-                                            </div>
-                                        </div>
-                                    </div>
-                              <div class="modal-footer">
-                                <button type="button" class="btn btn-primary red-button" data-dismiss="modal">Сохранить</button>
-                                <button type="button" class="btn btn-primary blue-button">Отмена</button>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
--->
-
-
+                    <form name="sentMessage" id="contactForm" action="./add_user_sem.php" method="post" novalidate>
                         <div>
                             <label class="mg-tp-20">Фамилия Имя Отчество участника:</label>
                             <input class="form-control" name="fullname" type="text" required data-validation-required-message="Введите фамилию, имя и отчество участника!" placeholder="Иванов Иван Иванович">
@@ -238,6 +223,32 @@
                         };
                         $(update_receiver);
                         $("#Receiver").change(update_receiver);
+                        function delUser(id){
+                            $.ajax({
+                                type: 'post',
+                                url: '../admin/bin/del_user.php',
+                                data: {id : id},
+                                success: function (data) {
+                                    location.reload();
+                                }
+                            });
+                        }
+
+                        function saveUser(id){
+                            name = $('textarea#inputName_'+id).val();
+                            job = $('textarea#inputWork_'+id).val();
+                            lecture_title = $('textarea#inputArticle_'+id).val();
+                            head = $('textarea#inputHead_'+id).val();
+
+                            $.ajax({
+                                type: 'post',
+                                url: '../admin/bin/save_user.php',
+                                data: {id : id,name: name, job: job, lecture_title: lecture_title, head: head},
+                                success: function (data) {
+                                    location.reload();
+                                }
+                            });
+                        }
                     </script>
                     <div class="footer-push"></div>
 

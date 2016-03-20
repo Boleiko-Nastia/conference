@@ -5,5 +5,6 @@ $id = $_POST['id'];
 $name = $_POST['name'];
 $job = $_POST['job'];
 $lecture_title = $_POST['lecture_title'];
+$head = $_POST['head'];
 
-saveUser($id,$name,$job,$lecture_title);
+saveUser($id,$name,$job,$lecture_title, $head);

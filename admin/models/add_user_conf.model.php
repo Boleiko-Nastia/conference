@@ -38,12 +38,13 @@ function delMember($id){
     return $db->delete('conference_members');
 }
 
-function saveUser($id,$name,$job,$lecture_title){
+function saveUser($id,$name,$job,$lecture_title,$head = NULL){
     global $db;
     $data = array(
         'name'=>$name,
         'job'=>$job,
-        'lecture_title'=>$lecture_title
+        'lecture_title'=>$lecture_title,
+        'head'=>$head
     );
     $db->where('id',$id);
     return $db->update('conference_members', $data);
