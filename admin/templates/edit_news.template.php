@@ -167,7 +167,7 @@
 
     <footer>
         <div class="col-sm-12 text-center">
-            &copy; <?=date('Y')?> PMW
+            &copy; 2016 PMW
         </div>
     </footer>
 

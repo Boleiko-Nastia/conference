@@ -47,13 +47,13 @@
                     <a href="index.php"><?=$lang['MENU_HOME']?></a>
                 </li>
                 <li>
+                    <a href="news.php"><?=$lang['NEWS']?></a>
+                </li>
+                <li>
                     <a href="sections.php"><?=$lang['CONFERENCE_AREA']?></a>
                 </li>
                 <li>
                     <a href="calendar.php"><?=$lang['CALENDAR']?></a>
-                </li>
-                <li>
-                    <a href="news.php"><?=$lang['NEWS']?></a>
                 </li>
                 <li>
                     <a href="commission.php"><?=$lang['ORGANISERS']?></a>
@@ -297,7 +297,7 @@
 <!-- Footer -->
 <footer>
     <div class="col-sm-12">
-        <center>&copy; <?php echo date('Y');?> PMW </center>
+        <center>&copy; 2016 PMW </center>
     </div>
 </footer>
 

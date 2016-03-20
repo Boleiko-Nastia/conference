@@ -22,9 +22,9 @@ $lang['CONDITIONS'] = 'Условия';
 $lang['CALENDAR'] = 'Календарь';
 $lang['NEWS'] = 'Новости';
 $lang['CALENDAR'] = 'Календарь';
-$lang['ORGANISERS'] = 'Огранизаторы';
+$lang['ORGANISERS'] = 'Оргкомитет';
 $lang['SPEAKERS'] = 'Участники';
-$lang['ARCHIVE'] = 'Архив';
+$lang['ARCHIVE'] = 'Репозиторий';
 $lang['CONTACTS'] = 'Контакты';
 
 //right sidebar

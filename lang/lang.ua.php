@@ -21,9 +21,9 @@ $lang['CONFERENCE_AREA'] = 'Секції';
 $lang['CONDITIONS'] = 'Умови';
 $lang['CALENDAR'] = 'Календар';
 $lang['NEWS'] = 'Новини';
-$lang['ORGANISERS'] = 'Огранізатори';
+$lang['ORGANISERS'] = 'Огркомітет';
 $lang['SPEAKERS'] = 'Учасники';
-$lang['ARCHIVE'] = 'Архів';
+$lang['ARCHIVE'] = 'Репозиторій';
 $lang['CONTACTS'] = 'Контакти';
 
 //right sidebar

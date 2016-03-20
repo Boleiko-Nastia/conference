@@ -43,17 +43,17 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-                                <li>
+                <li>
                     <a href="index.php"><?=$lang['MENU_HOME']?></a>
+                </li>
+                <li>
+                    <a href="news.php"><?=$lang['NEWS']?></a>
                 </li>
                 <li>
                     <a href="sections.php"><?=$lang['CONFERENCE_AREA']?></a>
                 </li>
                 <li>
                     <a href="calendar.php"><?=$lang['CALENDAR']?></a>
-                </li>
-                <li>
-                    <a href="news.php"><?=$lang['NEWS']?></a>
                 </li>
                 <li class="active">
                     <a href="commission.php"><?=$lang['ORGANISERS']?></a>
@@ -231,14 +231,6 @@
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="thumbnail">
-                        <img class="img-responsive" src="img/partners/bgty.png" alt="">
-                        <div class="caption">
-                            <!--<p class="text-center">Белорусский государственный технологический университет (Белоруссия)</p>-->
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="thumbnail">
                         <img class="img-responsive" src="img/partners/kpi.png" alt="">
                         <div class="caption">
                             <!--<p class="text-center">Национальный технический университет Украины «Киевский политехнический институт</p>-->
@@ -391,7 +383,7 @@
 <!-- Footer -->
 <footer>
     <div class="col-sm-12">
-        <center>&copy; <?php echo date('Y');?> PMW </center>
+        <center>&copy; 2016 PMW </center>
     </div>
 </footer>
 
