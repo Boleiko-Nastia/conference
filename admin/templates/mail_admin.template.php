@@ -22,7 +22,7 @@
 			    <table cellpadding="0" cellspacing="0" border="0" align="center" width="650" style="font-family: Helvetica,Arial,sans-serif" class="header">
 			      <tr>
 			        <td bgcolor="#172240" height="80" align="left">
-						<a href="index.php" style="text-decoration: none;"><img src="logo.png" style="margin: 0; padding: 20px;"></a>
+						<a href="index.php" style="text-decoration: none;"><img src="%domain%/img/logo.png" style="margin: 0; padding: 20px;"></a>
 			        </td>
 			      </tr>
 				  <tr>
@@ -36,7 +36,7 @@
 						<table cellpadding="0" cellspacing="0" border="0"  style="color: #333; font: normal 11px Helvetica,Arial,sans-serif; margin: 0; padding: 0;" width="620" class="content">
 						<tr>
 							<td style="padding: 15px 0 15px; border-bottom: 2px solid #888;font-family: Helvetica,Arial,sans-serif; "  valign="top" align="center">
-								<h3 style="color:#444; font-weight: bold; margin: 0; padding: 0; line-height: 28px; font-size: 24px;">Успешно зарегистрирован новый участник <br> Иванов Иван Иванович!</h3>
+								<h3 style="color:#444; font-weight: bold; margin: 0; padding: 0; line-height: 28px; font-size: 24px;">Успешно зарегистрирован новый участник <br> %NSL%!</h3>
 							</td>
 						</tr>	
 						</table>
@@ -50,7 +50,7 @@
 							</td>
 							<td style="padding: 10px; border-bottom: 1px solid #bbb;"  valign="top">
 								<p style="color:#333; font-weight: normal; margin: 0; padding: 0; line-height: 20px; font-size: 14px;font-family: Helvetica,Arial,sans-serif; ">
-									Иванов
+									%surname%
 								</p>
 								
 							</td>
@@ -64,7 +64,7 @@
 							</td>
 							<td style="padding: 10px; border-bottom: 1px solid #bbb; background-color: #eee;"  valign="top">
 								<p style="color:#333; font-weight: normal; margin: 0; padding: 0; line-height: 20px; font-size: 14px;font-family: Helvetica,Arial,sans-serif; ">
-									Иван
+									%name%
 								</p>
 								
 							</td>
@@ -78,7 +78,7 @@
 							</td>
 							<td style="padding: 10px; border-bottom: 1px solid #bbb;"  valign="top">
 								<p style="color:#333; font-weight: normal; margin: 0; padding: 0; line-height: 20px; font-size: 14px;font-family: Helvetica,Arial,sans-serif; ">
-									Иванович
+									%lastname%
 								</p>
 								
 							</td>
@@ -92,7 +92,7 @@
 							</td>
 							<td style="padding: 10px; border-bottom: 1px solid #bbb; background-color: #eee;"  valign="top">
 								<p style="color:#333; font-weight: normal; margin: 0; padding: 0; line-height: 20px; font-size: 14px;font-family: Helvetica,Arial,sans-serif; ">
-									Харьковский национальный университет радиоэлетроники, Кафедра Мультимедийных систем и технологий
+									%study%
 								</p>
 								
 							</td>
@@ -106,7 +106,7 @@
 							</td>
 							<td style="padding: 10px; border-bottom: 1px solid #bbb;"  valign="top">
 								<p style="color:#333; font-weight: normal; margin: 0; padding: 0; line-height: 20px; font-size: 14px;font-family: Helvetica,Arial,sans-serif; ">
-									Старший преподаватель
+									%job%
 								</p>
 								
 							</td>
@@ -120,7 +120,7 @@
 							</td>
 							<td style="padding: 10px; border-bottom: 1px solid #bbb; background-color: #eee;"  valign="top">
 								<p style="color:#333; font-weight: normal; margin: 0; padding: 0; line-height: 20px; font-size: 14px;font-family: Helvetica,Arial,sans-serif; ">
-									Кандидат философских наук
+									%degree%
 								</p>
 								
 							</td>
@@ -134,7 +134,7 @@
 							</td>
 							<td style="padding: 10px; border-bottom: 1px solid #bbb;"  valign="top">
 								<p style="color:#333; font-weight: normal; margin: 0; padding: 0; line-height: 20px; font-size: 14px;font-family: Helvetica,Arial,sans-serif; ">
-									Доцент
+									%academictitle%
 								</p>
 								
 							</td>
@@ -148,7 +148,7 @@
 							</td>
 							<td style="padding: 10px; border-bottom: 1px solid #bbb; background-color: #eee;"  valign="top">
 								<p style="color:#333; font-weight: normal; margin: 0; padding: 0; line-height: 20px; font-size: 14px;font-family: Helvetica,Arial,sans-serif; ">
-									Очное
+									%internally%
 								</p>
 								
 							</td>
@@ -162,7 +162,7 @@
 							</td>
 							<td style="padding: 10px; border-bottom: 1px solid #bbb;"  valign="top">
 								<p style="color:#333; font-weight: normal; margin: 0; padding: 0; line-height: 20px; font-size: 14px;font-family: Helvetica,Arial,sans-serif; ">
-									Конференция, Школа-семинар
+									%participation%
 								</p>
 								
 							</td>
@@ -176,7 +176,7 @@
 							</td>
 							<td style="padding: 10px; border-bottom: 1px solid #bbb; background-color: #eee;"  valign="top">
 								<p style="color:#333; font-weight: normal; margin: 0; padding: 0; line-height: 20px; font-size: 14px;font-family: Helvetica,Arial,sans-serif; ">
-									ivanov_ivan@ukr.net
+									%email%
 								</p>
 								
 							</td>
@@ -190,7 +190,7 @@
 							</td>
 							<td style="padding: 10px; border-bottom: 1px solid #bbb;"  valign="top">
 								<p style="color:#333; font-weight: normal; margin: 0; padding: 0; line-height: 20px; font-size: 14px;font-family: Helvetica,Arial,sans-serif; ">
-									
+									%tel%
 								</p>
 								
 							</td>
@@ -204,7 +204,7 @@
 							</td>
 							<td style="padding: 10px 10px 30px 10px; border-bottom: 1px solid #bbb; background-color: #eee;"  valign="top">
 								<p style="color:#333; font-weight: normal; margin: 0; padding: 0; line-height: 20px; font-size: 14px;font-family: Helvetica,Arial,sans-serif; ">
-									Украина, Харьков, пр.Ленина 2, дом 3, индекс: 61000
+									%address%
 								</p>
 								
 							</td>
