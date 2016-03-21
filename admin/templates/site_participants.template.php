@@ -106,6 +106,8 @@
         <div class="col-sm-9 del-pad-x">
             <div class="col-sm-12">
                 <h2 class="page-header"><?=$lang['MAINTEXT'][123]?></h2>
+                <?php foreach($user_conf as $section_id => $users): ?>
+                    <?php foreach($users as $title => $user): ?>
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <div class="media">
@@ -115,11 +117,11 @@
                                       <i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i>
                                 </span>-->
                                 <span class="fa-stack fa-lg">
-                                    <image class="icon-section" src="img/icon_sections/icon-1.svg">
+                                    <image class="icon-section" src="img/icon_sections/icon-<?=$section_id?>.svg">
                                 </span>
                             </div>
                             <div class="media-body calendar-head">
-                                <h3 class="media-heading"><?=$lang['MAINTEXT'][Section]?> <strong>"<?=$lang['MAINTEXT'][Section1]?>"</strong></h3>
+                                <h3 class="media-heading"><?=$lang['MAINTEXT'][Section]?> <strong>"<?=$title?>"</strong></h3>
                             </div>
                         </div>
                     </div>
@@ -129,17 +131,18 @@
                                 <th class="col-sm-2"><?=$lang['MAINTEXT'][Participant]?></th>
                                 <th class="col-sm-2"><?=$lang['MAINTEXT'][Place]?></th>
                                 <th class="col-sm-6"><?=$lang['MAINTEXT'][Report]?></th>
-                                <?php foreach($user_conf as $id => $user): ?>
+                            <?php foreach($user as $k => $u): ?>
                             <tr>
-                                <td class="col-sm-2"><?=$user['name']?></td>
-                                <td class="col-sm-2"><?=$user['job']?></td>
-                                <td class="col-sm-6"><?=$user['lecture_title']?></td>
+                                <td class="col-sm-2"><?=$u['name']?></td>
+                                <td class="col-sm-2"><?=$u['job']?></td>
+                                <td class="col-sm-6"><?=$u['lecture_title']?></td>
                             </tr>
-                                <?php endforeach; ?>
+                            <?php endforeach; ?>
                         </table>
                     </div>
                 </div>
-
+                    <?php endforeach; ?>
+                <?php endforeach; ?>
                 <hr>
 
                 <h2 class="page-header"><?=$lang['MAINTEXT'][124]?></h2>
