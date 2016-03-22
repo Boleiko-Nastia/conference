@@ -21,3 +21,11 @@ function get_lang(){
     global $db;
     return $db->get('conference_lang');
 }
+
+function delNews($id){
+    global $db;
+    $db->where('id', $id);
+    $db->delete('conference_article');
+    $db->where('article_id', $id);
+    $db->delete('conference_article_translation');
+}
