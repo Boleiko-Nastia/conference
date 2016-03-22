@@ -120,7 +120,17 @@
                     <img class="img-responsive img-hover" src="img/news-img/<?=$article['image_id'].'.'.$article['image_type']?>" alt="">
                 </a>
                 <hr>
-                <p><?=$article['full_text']?></p>
+                <p><?php
+                    if(!$_GET['id']) {
+                        $string = substr($article['full_text'], 0, 200);
+                        $string = rtrim($string, "!,.-");
+                        $string = substr($string, 0, strrpos($string, ' '));
+                        $string .= '…';
+                    } else {
+                        $string = $article['full_text'];
+                    }
+                    echo $string;
+                    ?></p>
                 <?php if(!$_GET['id']):?>
                 <a class="btn btn-primary blue-button" href="?id=<?=$id?>"><?=$lang['MAINTEXT'][More]?><i class="fa fa-angle-right"></i></a>
                 <?php endif; ?>
