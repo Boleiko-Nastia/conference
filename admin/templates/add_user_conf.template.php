@@ -91,16 +91,20 @@
 
 
                     <?php foreach($members as $title => $member): ?>
+                        <?php
+                            $sec_id = preg_match('/\-(.+)/i',$title,$m) ? $m[1] : 1;
+                            $sec_title = preg_replace('/\-.+/i','',$title);
+                        ?>
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <div class="media">
                                 <div class="pull-left icon-section-part">
                                     <span class="fa-stack fa-lg">
-                                        <image class="icon-section" src="../img/icon_sections/icon-1.svg">
+                                        <image class="icon-section" src="../img/icon_sections/icon-<?=$sec_id?>.svg">
                                     </span>
                                 </div>
                                 <div class="media-body calendar-head">
-                                    <h3 class="media-heading"><?=$title?></strong></h3>
+                                    <h3 class="media-heading"><?=$sec_title?></strong></h3>
                                 </div>
                             </div>
                         </div>

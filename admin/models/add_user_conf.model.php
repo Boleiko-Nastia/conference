@@ -19,14 +19,14 @@ function addMember($fullname,$job,$titlelecture,$section_id){
 function getMembers() {
     global $db;
     $db->join("conference_sections cs", "cm.section_id=cs.id", "LEFT");
-    $result = $db->get('conference_members cm',null,'cs.title,cm.id,cm.name,cm.job,cm.lecture_title,cm.head');
+    $result = $db->get('conference_members cm',null,'cs.id as sec_id,cs.title,cm.id,cm.name,cm.job,cm.lecture_title,cm.head');
     $members = array();
 
     foreach($result as $k => $v){
         if($v['title'] == NULL){
             continue;
         }
-        $members[$v['title']][] = array('id'=>$v['id'],'name'=>$v['name'],'job'=>$v['job'],'lecture_title'=>$v['lecture_title'],'head'=>$v['head']);
+        $members[$v['title'].'-'.$v['sec_id']][] = array('id'=>$v['id'],'name'=>$v['name'],'job'=>$v['job'],'lecture_title'=>$v['lecture_title'],'head'=>$v['head']);
     }
 
     return $members;
