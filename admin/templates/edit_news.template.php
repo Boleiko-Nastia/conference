@@ -132,7 +132,6 @@
                 </div>
                 </div>
                 <hr>
-                <div class="footer-push"></div>
             </div>
         <!-- /.row -->
 
@@ -142,6 +141,7 @@
 
     </div>
     <!-- /.container -->
+    <div class="footer-push"></div>
     </div>
     <!-- Footer -->
 
