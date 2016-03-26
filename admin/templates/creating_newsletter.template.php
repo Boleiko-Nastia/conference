@@ -206,7 +206,6 @@
 
                                 </div>
                             </div>
-                            <div class="footer-push"></div>
 
                             <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
                             <script>
@@ -226,9 +225,6 @@
                                 $("#Receiver").change(update_receiver);
                             </script>
 
-
-                            <div id="success"></div>
-                            <!-- For success/fail messages -->
                             <button type="submit" class="btn btn-primary blue-button mg-tp-20">Выполнить рассылку</button>
                             <div class="footer-push"></div>
                     </form>
