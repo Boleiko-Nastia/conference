@@ -85,6 +85,7 @@
 
             <!-- Contact Details Column -->
                     <?php foreach($articles as $ak => $av): ?>
+
                         <div class="col-sm-12 del-pad-x">
                             <div class="thumbnail pad-15">
                                 <div class-"col-sm-12">
@@ -92,11 +93,11 @@
                                         <div class="col-sm-8"><h4><?=$av['title']?></h4></div>
                                         <div class="col-sm-4">
                                             <a href="#">
-                                                <button type="submit" class="btn btn-primary red-button pull-right" data-toggle="modal" data-target="#delete_news">Удалить</button>
+                                                <button type="submit" class="btn btn-primary red-button pull-right" data-toggle="modal" data-target="#delete_news_<?=$ak?>">Удалить</button>
                                             </a>
                                         </div>
 
-                                        <div class="modal fade popup-delete" id="delete_news" tabindex="-1" role="dialog" aria-labelledby="delete_news">
+                                        <div class="modal fade popup-delete" id="delete_news_<?=$ak?>" tabindex="-1" role="dialog" aria-labelledby="delete_news">
                                             <div class="modal-dialog" role="document">
                                                 <div class="modal-content">
                                                     <div class="modal-header">
