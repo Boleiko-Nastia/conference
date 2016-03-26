@@ -4,6 +4,7 @@ function get_articles($id = ''){
     if($id) {
         $db->where('cat.id',$id);
     }
+    $db->orderBy('ca.id','DESC');
     $db->join("conference_article ca", "cat.article_id=ca.id", "LEFT");
     $db->join("conference_lang cl", "cat.lang_id=cl.id", "LEFT");
     $db->join("conference_images ci", "ci.id=ca.image_id", "LEFT");

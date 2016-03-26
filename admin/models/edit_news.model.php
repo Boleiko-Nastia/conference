@@ -1,6 +1,7 @@
 <?php
 function get_articles(){
     global $db;
+    $db->orderBy('ca.id','DESC');
     $db->join("conference_article ca", "cat.article_id=ca.id", "LEFT");
     $db->join("conference_lang cl", "cat.lang_id=cl.id", "LEFT");
     $article = $db->get('conference_article_translation cat',null,'cat.title,cl.lang,cat.article_id,ca.date_create');
