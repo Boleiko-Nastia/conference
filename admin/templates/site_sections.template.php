@@ -170,7 +170,7 @@
                 <hr>
                 <h4><?=$lang['MAINTEXT'][29]?> </h4><p><?=$lang['MAINTEXT'][after29]?></p>
                 <div class="col-sm-12 del-pad-x">
-                    <a target="_blank" href="Proba_I1.html"><image class="3d-tour img-responsive" src="img/3D-tour.jpg"></a>
+                    <a target="_blank" href="virtual3D-tour.html"><image class="3d-tour img-responsive" src="img/3D-tour.jpg"></a>
                 </div>
             </div>
         </div>

@@ -106,25 +106,39 @@
                     <li class="active">Рассылка писем</li>
                 </ol>
 
-                <!-- Contact Details Column -->
+            <!-- Contact Details Column -->
                 <div>
                 <div class="col-sm-12 del-pad-x">
                     <form name="sentMessage" action="./creating_newsletter.php" method="post" id="contactForm" novalidate enctype="multipart/form-data">
-                        <div class="control-group form-group">
-                            <div class="controls">
-                                <label>Заголовок письма</label>
-                                <input type="text" name="object" class="form-control" id="name" required data-validation-required-message="Введите заголовок новости!" placeholder="Введите заголовок новости...">
-                                <p class="help-block"></p>
+                        <!----><small> Для создания заголовка и основного текста новости необходимо выбрать один из предложенных пунктов ниже. Для ручного создания новости необходимо выбраь пункт "Создание письма вручную" и заполнть поля "Заголовок письма", "Основной текст новости". Для автоматического создания письма необходимо выбрать пункт "Использовать темплит" и загрузить сверстанное письмо! </small><hr>
+                        <label class="big-text">
+                            <input name="creating-news" type="radio" checked> Создание письма вручную</input>
+                        </label>
+                            <div class="control-group form-group pad-left-20 mg-tp-10">
+                                <div class="controls">
+                                    <label>Заголовок письма</label>
+                                    <input type="text" name="object" class="form-control" id="name" required data-validation-required-message="Введите заголовок новости!" placeholder="Введите заголовок новости...">
+                                    <p class="help-block"></p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="control-group form-group mg-tp-20">
-                            <div class="controls">
-                                <label>Основной текст новости:</label>
-                                <textarea name="maintext" rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Введите новость в виде текстового сообщения!" placeholder="Введите текст..." maxlength="2999" style="resize:none"></textarea>
+                            <div class="control-group form-group mg-tp-10 pad-left-20">
+                                <div class="controls">
+                                    <label>Основной текст новости:</label>
+                                    <textarea name="maintext" rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Введите новость в виде текстового сообщения!" placeholder="Введите текст..." maxlength="2999" style="resize:none"></textarea>
+                                </div> 
                             </div>
-                        </div>
+                            <br>
+                        <label class="big-text">
+                            <input class="big-text" name="upload-templete" type="radio"> <strong>Использовать темплит</strong></input>
+                        </label>
+                            <div class="form-group mg-tp-10 pad-left-20">
+                                <label for="exampleInputFile">Загрузить готовое письмо:</label>
+                                <input type="file" name="userfile" id="exampleInputFile">
+                            </div>
+                        
+                        <hr>
                         <div class="form-group mg-tp-20">
-                            <label for="exampleInputFile">Прикрепить файл:</label>
+                            <label for="exampleInputFile">Прикрепить файл к письму:</label>
                             <input type="file" name="userfile" id="exampleInputFile">
                         </div>
                         <div class="checkbox mg-tp-40">
@@ -132,36 +146,47 @@
                                 <input name="sendnewsletter" type="checkbox"> Выполнить рассылку зарегистрированным участникам</input>
                             </label>
 
-                                <br/>
+                                <br>
                                 <label class="mg-tp-20">
                                     <input name="addreceiver" type="checkbox" value="yes" id="Receiver" name="Receiver">Добавить получателя вручную</input>
                                 </label>
 
                                 <br>
                                 <div class="pad-left-20">
-                                    <label for="Receiver" class="mg-tp-20">Фамилия Имя Отчество:</label>
-                                    <input id="nameReceiver" name="nameReceiver" class="form-control mg-tp" type="text" disabled="disabled"  required="required" data-validation-required-message="Введите фамилию, имя и отчество получателя!" placeholder="Иванов Иван Иванович">
-                                    </input>
-                                    <br>
                                     <label for="Receiver">Email:</label>
                                     <input id="emailReceiver" name="emailReceiver" class="form-control mg-tp" type="email" disabled="disabled"  required="required" data-validation-required-message="Введите адрес электронной почты получателя!" placeholder="ivanov_ivan@ukr.net">
                                     </input>
                                     <label for="Receiver" class="mg-tp-20"><button type="button" onclick="add_user()" data-toggle="modal" data-target="#myModal" class="btn btn-primary blue-button" id="buttonReceiver" name="buttonReceiver" disabled="disabled">Добавить</button>
-                                    <!--Show error message for admin (before button)
-                                        <div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> Заполните все поля!</div>
-                                    END error message-->
-                                    <!--Show error message for admin (before button) Если человек с такими же ФИО, местом работы и названием доклада уже есть в таблице
-                                        <div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> Такой участник уже добавлен!</div>
-                                    END error message-->
-                                    <!--Show success message for admin (instead of button)
-                                        <div class="alert alert-success text-left" role="alert"><i class="fa fa-check"></i> ФИО успешно добавлен!</div>
-                                    END success message-->
-                                    <label for="Receiver" class="mg-tp-20"><button type="submit" class="btn btn-primary blue-button" id="buttonReceiver" name="buttonReceiver" disabled="disabled">Добавить</button>
                                     </label>
-                                </div>
+                                    <hr>
+                                    <!--Show error message for admin (before button) END error message-->
+                                        <div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> Заполните все поля!</div>
+                                    
+                                    <!--Show error message for admin (before button) Если человек с такими же mail уже есть в базе END error message-->
+                                        <div class="alert alert-danger text-left mg-tp-15" role="alert"><i class="fa fa-exclamation-circle"></i> Этот человек уже внесен в список получателей!</div>
+                                    
+                                    <!--Show success message for admin (instead of button)END success message-->
+                                    <div class="alert alert-success text-left mg-tp-15" role="alert"><i class="fa fa-check"></i> MAIL успешно добавлен!</div>
 
-                            <br>
-                            <hr>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h4>Получатели рассылки, добавленные вручную</h4>
+                                        </div>
+                                        <div class="panel-body">
+                                            <table class="table table-striped del-mar-bot">
+                                                <tr>
+                                                    <td class="col-sm-2">receiver1@ukr.net</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="col-sm-2">receiver2@ukr.net</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="col-sm-2">receiver3@ukr.net</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>    
+                                </div>
                             <!-- Modal -->
                             <div class="modal fade" id="myModal" role="dialog">
                                 <div class="modal-dialog">
@@ -181,7 +206,6 @@
 
                                 </div>
                             </div>
-                            <div class="footer-push"></div>
 
                             <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
                             <script>
@@ -201,9 +225,6 @@
                                 $("#Receiver").change(update_receiver);
                             </script>
 
-
-                            <div id="success"></div>
-                            <!-- For success/fail messages -->
                             <button type="submit" class="btn btn-primary blue-button mg-tp-20">Выполнить рассылку</button>
                             <div class="footer-push"></div>
                     </form>

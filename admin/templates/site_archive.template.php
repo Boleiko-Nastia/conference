@@ -105,7 +105,7 @@
 
     <div class="row">
 
-        <div class="col-sm-9">
+                <div class="col-sm-9">
             <h2 class="page-header"><?=$lang['MAINTEXT'][128]?></h2>
             <!--Downloads RUS-->
             <div class="col-sm-12 del-pad-x">
@@ -152,8 +152,8 @@
                         </div>
                         <div class="panel-body">
                             <h4>Заявка на участие</h4>
-                            <p class="small">(на русском, *.pdf ~118 kB)</p>
-                            <a href="download/rus/Zayavka_rus.pdf" target="_blank" class="btn btn-primary blue-button"><?=$lang['MAINTEXT'][Download]?></a>
+                            <p class="small">(на русском, *.doc ~31 kB)</p>
+                            <a href="download/rus/Zayavka_rus.doc" target="_blank" class="btn btn-primary blue-button"><?=$lang['MAINTEXT'][Download]?></a>
                         </div>
                     </div>
                 </div>
@@ -200,8 +200,8 @@
                         </div>
                         <div class="panel-body">
                             <h4>Заявка на участь</h4>
-                            <p class="small">(українською, *.pdf<br> ~132 kB)</p>
-                            <a href="download/ukr/Zayavka_ukr.pdf" target="_blank" class="btn btn-primary blue-button"><?=$lang['MAINTEXT'][Download]?></a>
+                            <p class="small">(українською, *.doc<br> ~30 kB)</p>
+                            <a href="download/ukr/Zayavka_ukr.doc" target="_blank" class="btn btn-primary blue-button"><?=$lang['MAINTEXT'][Download]?></a>
                         </div>
                     </div>
                 </div>
@@ -214,9 +214,20 @@
                         <div class="panel-heading">
                         </div>
                         <div class="panel-body">
+                            <h4>Informatonal message PMW-2016</h4>
+                            <p class="small">(English, *.pdf ~541 kB)</p>
+                            <a href="download/eng/Informatonal_message_PMW-2016_eng.pdf" target="_blank" class="btn btn-primary blue-button"><?=$lang['MAINTEXT'][Download]?></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="panel panel-default text-center">
+                        <div class="panel-heading">
+                        </div>
+                        <div class="panel-body">
                             <h4>Requirements to the design of the conference abstracts</h4>
-                            <p class="small">(English, *.doc ~32 kB)</p>
-                            <a href="download/eng/Requirements_to_the_design_of_the_conference_abstracts_eng.doc" target="_blank" class="btn btn-primary blue-button"><?=$lang['MAINTEXT'][Download]?></a>
+                            <p class="small">(English, *.pdf ~141 kB)</p>
+                            <a href="download/eng/Requirements_to_the_design_of_the_conference_abstracts_eng.pdf" target="_blank" class="btn btn-primary blue-button"><?=$lang['MAINTEXT'][Download]?></a>
                         </div>
                     </div>
                 </div>
@@ -226,8 +237,46 @@
                         </div>
                         <div class="panel-body">
                             <h4>Requirements to the design of materials of the youth workshop</h4>
-                            <p class="small">(English, *.doc ~34 kB)</p>
-                            <a href="download/eng/Requirements_to_the_design_of_materials_of_the_youth_workshop_eng.doc" target="_blank" class="btn btn-primary blue-button"><?=$lang['MAINTEXT'][Download]?></a>
+                            <p class="small">(English, *.pdf ~170 kB)</p>
+                            <a href="download/eng/Requirements_to_the_design_of_materials_of_the_youth_workshop_eng.pdf" target="_blank" class="btn btn-primary blue-button"><?=$lang['MAINTEXT'][Download]?></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="panel panel-default text-center">
+                        <div class="panel-heading">
+                        </div>
+                        <div class="panel-body">
+                            <h4>Application for participation</h4>
+                            <p class="small">(English, *.doc ~32 kB)</p>
+                            <a href="download/eng/Participation_PMW-2016.doc" target="_blank" class="btn btn-primary blue-button"><?=$lang['MAINTEXT'][Download]?></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--Downloads bionica--> 
+            <div class="col-sm-12 del-pad-x">
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="panel panel-default text-center">
+                        <div class="panel-heading">
+                        </div>
+                        <div class="panel-body">
+                            <h4>Вимоги до оформлення статті у журналі «Біоніка інтелекту»</h4>
+                            <p class="small">(українською, *.doc ~162 kB)</p>
+                            <a href="download/ukr/Oformlennya_statti_Bionika_intelektu_ukr.doc" target="_blank" class="btn btn-primary blue-button"><?=$lang['MAINTEXT'][Download]?></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="panel panel-default text-center">
+                        <div class="panel-heading">
+                        </div>
+                        <div class="panel-body">
+                            <h4>Requirements to the journal “Bionics Of Intelligence”</h4>
+                            <p class="small">(English, *.doc ~141 kB)</p>
+                            <a href="download/eng/Instructions_Bionics_of_intelligence_eng.doc" target="_blank" class="btn btn-primary blue-button"><?=$lang['MAINTEXT'][Download]?></a>
                         </div>
                     </div>
                 </div>
