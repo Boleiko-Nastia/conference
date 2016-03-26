@@ -298,13 +298,13 @@
                                             <label class="col-sm-3 control-label"><?=$lang['MAINTEXT'][FormAfter9]?>
                                                 <br> <h6><small><?=$lang['MAINTEXT'][FormAfter9c]?></small></h6></label>
                                             <div class="col-sm-8">
-                                                <textarea class="form-control" name="study" id="inputCo-Author" placeholder="<?=$lang['MAINTEXT'][FormAfter9ph]?>" rows="4" cols="100" style="resize:vertical"></textarea>
+                                                <textarea class="form-control" name="coauthor" id="inputCo-Author" placeholder="<?=$lang['MAINTEXT'][FormAfter9ph]?>" rows="4" cols="100" style="resize:vertical"></textarea>
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <label class="col-sm-3 control-label"><?=$lang['MAINTEXT'][FormAfter9New]?></label>
                                             <div class="col-sm-8">
-                                                <textarea class="form-control" name="study" id="inputTitleReport" placeholder="<?=$lang['MAINTEXT'][FormAfter9Newph]?>" rows="2" cols="100" style="resize:vertical"></textarea>
+                                                <textarea class="form-control" name="titlereport" id="inputTitleReport" placeholder="<?=$lang['MAINTEXT'][FormAfter9Newph]?>" rows="2" cols="100" style="resize:vertical"></textarea>
                                             </div>
                                         </div>
                                         <hr>

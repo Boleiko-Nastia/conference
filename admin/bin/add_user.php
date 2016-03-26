@@ -10,13 +10,15 @@ $study = $_POST['study'];
 $job = $_POST['job'];
 $degree = $_POST['degree'];
 $event = $_POST['event'];
+$coauthor = $_POST['coauthor'];
+$titlereport = $_POST['titlereport'];
 $participation = implode(',',array($_POST['participation_1'],$_POST['participation_2'],$_POST['participation_3']));
 $email = $_POST['email'];
 $tel = $_POST['tel'];
 $address = $_POST['address'];
 $position = $_POST['position'];
 $academictitle = $_POST['academic_title'];
-$data = array('name'=>$name,'middlename'=>$lastname,'job'=>$job,'study'=>$study,'degree'=>$degree,'academictitle'=>$academictitle,'surname'=>$surename,'internally'=>$event,'email'=>$email,'address'=>$address,'phone'=>$tel,'participation'=>$participation,'position'=>$position);
+$data = array('name'=>$name,'middlename'=>$lastname,'job'=>$job,'titlereport'=>$titlereport,'coauthor'=>$coauthor,'study'=>$study,'degree'=>$degree,'academictitle'=>$academictitle,'surname'=>$surename,'internally'=>$event,'email'=>$email,'address'=>$address,'phone'=>$tel,'participation'=>$participation,'position'=>$position);
 $id = add_user($data);
 if($id){
     echo 'true';
