@@ -73,7 +73,7 @@
                 </div>
             </div>
             <div class="col-sm-9">
-                <h1 class="page-header">Редактирование новости RU
+                <h1 class="page-header">Редактирование новости <?=strtoupper($_GET['lang'])?>
                 </h1>
                 <ol class="breadcrumb">
                     <li><a href="index.html">Главная</a>
@@ -81,7 +81,7 @@
                     <li><a href="main_ADMIN.html">Администратор</a>
                     </li>
                     <li><a href="edit_news.php">Редактирование новостей</a></li>
-                    <li><a href="edit_news_RU.php">Редактирование новости RU</a>
+                    <li><a href="edit_news_RU.php">Редактирование новости <?=strtoupper($_GET['lang'])?></a>
                     </li>
                 </ol>
                 <!-- Contact Details Column -->
