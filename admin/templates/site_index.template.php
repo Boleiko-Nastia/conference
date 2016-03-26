@@ -292,12 +292,19 @@
                                                         <?=$lang['MAINTEXT'][Form9ph2]?>
                                                     </label>
                                                 </div>
-                                                <!--<div class="checkbox">
-                                                    <label>
-                                                        <input type="checkbox" name="participation_3" value="<?=$lang['MAINTEXT'][Form9ph3]?>">
-                                                        <?=$lang['MAINTEXT'][Form9ph3]?>
-                                                    </label>
-                                                </div>-->
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-3 control-label"><?=$lang['MAINTEXT'][FormAfter9]?>
+                                                <br> <h6><small><?=$lang['MAINTEXT'][FormAfter9c]?></small></h6></label>
+                                            <div class="col-sm-8">
+                                                <textarea class="form-control" name="study" id="inputCo-Author" placeholder="<?=$lang['MAINTEXT'][FormAfter9ph]?>" rows="4" cols="100" style="resize:vertical"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-3 control-label"><?=$lang['MAINTEXT'][FormAfter9New]?></label>
+                                            <div class="col-sm-8">
+                                                <textarea class="form-control" name="study" id="inputTitleReport" placeholder="<?=$lang['MAINTEXT'][FormAfter9Newph]?>" rows="2" cols="100" style="resize:vertical"></textarea>
                                             </div>
                                         </div>
                                         <hr>
