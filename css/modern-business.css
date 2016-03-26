@@ -288,6 +288,11 @@ ul.dropdown-menu > li > a:focus{
     background-color: #CE2039;
     color: #fff;
 }
+
+.big-text {
+    font-size: 18px!important;
+}    
+    
 /*margin < */
 .mg-tp {
     margin-top: 5px;
