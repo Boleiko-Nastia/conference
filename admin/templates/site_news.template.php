@@ -105,39 +105,11 @@
     <div class="row">
 
         <div class="col-sm-9 del-pad-x">
-            
-            
-<!--EXAMPLE START-->
-                    <div class="col-sm-12">
-                <!-- First Blog Post -->
-                    <h2>
-                        <a href="post-1.html">Начало приема документов</a>
-                    </h2>
-                    <p class="lead">
-                        Добавлено: Чеботарева И.Б.
-                    </p>
-                    <p><i class="fa fa-clock-o"></i> Опубликовано 2016-03-21</p>
-                    <hr>
-                    <a href="post-1.html">
-                        <img class="img-responsive img-hover" src="img/post/2.png" alt="">
-                    </a>
-                    <hr>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, veritatis, tempora, necessitatibus inventore nisi quam quia repellat ut tempore laborum possimus eum dicta id animi corrupti debitis ipsum officiis rerum.</p>
-                    <a class="btn btn-primary blue-button" href="post-1.html">Подробнее <i class="fa fa-angle-right"></i></a>
-
-                    <hr>
-
-                </div>
-                <hr>
-<!--EXAMPLE END-->
-            
-            
-            
             <?php foreach($public_articles as $id => $article): ?>
             <div class="col-sm-12">
                 <!-- First Blog Post -->
                 <h2>
-                    <a href="?id=<?=$id?>"></a>
+                    <a href="?id=<?=$id?>"><?=$article['title']?></a>
                 </h2>
                 <p class="lead">
                     <?=$lang['MAINTEXT'][AddBy]?><?=$article['addedby']?>
