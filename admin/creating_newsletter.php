@@ -4,13 +4,18 @@ include_once('libs/PHPMailer/PHPMailerAutoload.php');
 include_once('models/creating_newsletter.model.php');
 include_once('models/site_setting.php');
 
-if($_POST['name'] && $_POST['email']){
-    $id = searchEmail($_POST['email']);
+if($_POST['email']){
+    $emails = array();
+    if($_COOKIE['email']) {
+        $emails = explode(',', $_COOKIE['email']);
+    }
+    if($emails && array_search($_POST['email'],$emails)) {
+        $id = array_search($_POST['email'],$emails);
+    }
     if($id) {
         echo 'no';
     } else {
-        $data = array('name' => $_POST['name'], 'email' => $_POST['email']);
-        $id = addUser($data);
+        setcookie('email',$_COOKIE['email'].','.$_POST['email']);
         echo 'yes';
     }
     exit;
@@ -26,6 +31,7 @@ $text = file_get_contents('templates/mail.template.php');
 $text = str_replace('%title%', $subject, $text);
 $text = str_replace('%maintext%', $textBody, $text);
 $text = str_replace('%domain%', $domain, $text);
+$emails = explode(',', $_COOKIE['email']);
 
 if ($_POST['object']) {
     $cfg = site_setting_all();
@@ -39,17 +45,23 @@ if ($_POST['object']) {
     $mail->CharSet = 'UTF-8';
     $mail->SMTPSecure = 'ssl';
     $mail->setFrom('turumburum@gmail.com', 'Mailer');
-    $emails = getEmails();
-    foreach($emails as $count => $email) {
-        $mail->addAddress($email['email'], $email['name']);
+    if(empty($emails)) {
+        $emails = getEmails();
     }
-    $info = new SplFileInfo($_FILES['userfile']['name']);
-    $uploadfile = $_FILES['userfile']['name'];
-    $mail->addAttachment($_FILES['userfile']['tmp_name'], $uploadfile);
+    foreach($emails as $count => $email) {
+        if(!$email)continue;
+        $mail->addAddress($email, $email);
+    }
+    if($_FILES['userfile']['name']) {
+        $info = new SplFileInfo($_FILES['userfile']['name']);
+        $uploadfile = $_FILES['userfile']['name'];
+        $mail->addAttachment($_FILES['userfile']['tmp_name'], $uploadfile);
+    }
     $mail->isHTML(true);
     $mail->Subject = $subject;
     $mail->Body = $text;
     $mail->send();
+    setcookie('email', NULL);
 }
 
 

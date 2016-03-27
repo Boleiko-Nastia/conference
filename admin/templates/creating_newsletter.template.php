@@ -34,22 +34,23 @@
                     url: "./creating_newsletter.php",
                     data: { name: name, email: email }
                 }).done(function( msg ) {
-                    usermsg = 'Field of name or email is empty';
+                    usermsg = 'alert1';
                     if(msg == 'no') {
-                        usermsg = 'This email already added';
+                        usermsg = 'alert2';
                     } else if(msg == 'yes'){
-                        usermsg = "Data Saved";
+                        usermsg = "alert3";
                     }
-                    $('.modal-body').append("<p>"+usermsg+'</p>');
-                    $("input[name=nameReceiver]").val('');
-                    $("input[name=emailReceiver]").val('');
+                    $('#'+usermsg).css('display', 'block')
+                    restartEmails();
+                    setTimeout(function() {
+                        $('#'+usermsg).fadeOut('fast');
+                    }, 1000);
                 });
-
         }
     </script>
 </head>
 
-<body>
+<body onload="restartEmails()">
 <div class="wrapper">
 
     <!-- Navigation -->
@@ -156,34 +157,26 @@
                                     <label for="Receiver">Email:</label>
                                     <input id="emailReceiver" name="emailReceiver" class="form-control mg-tp" type="email" disabled="disabled"  required="required" data-validation-required-message="Введите адрес электронной почты получателя!" placeholder="ivanov_ivan@ukr.net">
                                     </input>
-                                    <label for="Receiver" class="mg-tp-20"><button type="button" onclick="add_user()" data-toggle="modal" data-target="#myModal" class="btn btn-primary blue-button" id="buttonReceiver" name="buttonReceiver" disabled="disabled">Добавить</button>
+                                    <label for="Receiver" class="mg-tp-20"><button type="button" onclick="add_user()" data-toggle="modal"  class="btn btn-primary blue-button" id="buttonReceiver" name="buttonReceiver" disabled="disabled">Добавить</button>
                                     </label>
                                     <hr>
                                     <!--Show error message for admin (before button) END error message-->
-                                        <div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> Заполните все поля!</div>
+                                        <div class="alert alert-danger" role="alert" id="alert1" style="display: none"><i class="fa fa-exclamation-circle"></i> Заполните все поля!</div>
                                     
                                     <!--Show error message for admin (before button) Если человек с такими же mail уже есть в базе END error message-->
-                                        <div class="alert alert-danger text-left mg-tp-15" role="alert"><i class="fa fa-exclamation-circle"></i> Этот человек уже внесен в список получателей!</div>
+                                        <div class="alert alert-danger text-left mg-tp-15" role="alert" id="alert2" style="display: none"><i class="fa fa-exclamation-circle"></i> Этот человек уже внесен в список получателей!</div>
                                     
                                     <!--Show success message for admin (instead of button)END success message-->
-                                    <div class="alert alert-success text-left mg-tp-15" role="alert"><i class="fa fa-check"></i> MAIL успешно добавлен!</div>
+                                    <div class="alert alert-success text-left mg-tp-15" role="alert" id="alert3" style="display: none"><i class="fa fa-check"></i> MAIL успешно добавлен!</div>
 
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <h4>Получатели рассылки, добавленные вручную</h4>
                                         </div>
                                         <div class="panel-body">
-                                            <table class="table table-striped del-mar-bot">
-                                                <tr>
-                                                    <td class="col-sm-2">receiver1@ukr.net</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="col-sm-2">receiver2@ukr.net</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="col-sm-2">receiver3@ukr.net</td>
-                                                </tr>
+                                            <table class="table table-striped del-mar-bot"  id="tablePrint">
                                             </table>
+
                                         </div>
                                     </div>    
                                 </div>
@@ -200,7 +193,7 @@
                                         <div class="modal-body">
                                         </div>
                                         <div class="modal-footer">
-                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            <button type="button"  class="btn btn-default" data-dismiss="modal">Close</button>
                                         </div>
                                     </div>
 
@@ -253,7 +246,32 @@
 
 <!-- Bootstrap Core JavaScript -->
 <script src="../js/bootstrap.min.js"></script>
-
+<script>
+    function getCookie(cname) {
+        var name = cname + "=";
+        var ca = document.cookie.split(';');
+        for(var i=0; i<ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0)==' ') c = c.substring(1);
+            if (c.indexOf(name) == 0) return c.substring(name.length,c.length);
+        }
+        return "";
+    }
+</script>
+<script>
+    function restartEmails() {
+        var emails = getCookie('email').split('%2C');
+        var tableContent = '';
+        for (var i = 0; i < emails.length; i++) {
+            if (i == 0)continue;
+            tableContent += "<tr><td class=\"col-sm-2\">" + unescape(emails[i]) + "</td></tr>";
+        }
+        document.getElementById('tablePrint').innerHTML = tableContent;
+    }
+    $('#myModal').on('hidden.bs.modal', function () {
+        restartEmails();
+    })
+</script>
 <!-- Contact Form JavaScript -->
 <!-- Do not edit these files! In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
 <!--<script src="../js/jqBootstrapValidation.js"></script>-->

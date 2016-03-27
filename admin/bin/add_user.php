@@ -54,7 +54,7 @@ if($id) {
     $mail->CharSet = 'UTF-8';
     $mail->SMTPSecure = 'ssl';
     $mail->setFrom('turumburum@gmail.com', 'Mailer');
-    $mail->addAddress('mst@nure.ua', 'PMW');
+    $mail->addAddress('pmw@nure.ua', 'PMW');
     $mail->isHTML(true);
     $mail->Subject = 'Успешно зарегистрирован новый участник';
     $mail->Body = $text;
