@@ -31,7 +31,9 @@ $text = file_get_contents('templates/mail.template.php');
 $text = str_replace('%title%', $subject, $text);
 $text = str_replace('%maintext%', $textBody, $text);
 $text = str_replace('%domain%', $domain, $text);
-$emails = explode(',', $_COOKIE['email']);
+if($_COOKIE['email']) {
+    $emails = explode(',', $_COOKIE['email']);
+}
 
 if ($_POST['object']) {
     $cfg = site_setting_all();
@@ -45,7 +47,7 @@ if ($_POST['object']) {
     $mail->CharSet = 'UTF-8';
     $mail->SMTPSecure = 'ssl';
     $mail->setFrom('turumburum@gmail.com', 'Mailer');
-    if(empty($emails)) {
+    if($_POST['sendnewsletter'] == 'on') {
         $emails = getEmails();
     }
     foreach($emails as $count => $email) {
