@@ -153,6 +153,10 @@
 
                                 <br>
                                 <div class="pad-left-20">
+                                    <label for="Receiver" class="mg-tp-20">Фамилия Имя Отчество:</label>
+                                    <input id="nameReceiver" name="nameReceiver" class="form-control mg-tp" type="text" disabled="disabled"  required="required" data-validation-required-message="Введите фамилию, имя и отчество получателя!" placeholder="Иванов Иван Иванович">
+                                    </input>
+                                    <br>
                                     <label for="Receiver">Email:</label>
                                     <input id="emailReceiver" name="emailReceiver" class="form-control mg-tp" type="email" disabled="disabled"  required="required" data-validation-required-message="Введите адрес электронной почты получателя!" placeholder="ivanov_ivan@ukr.net">
                                     </input>
