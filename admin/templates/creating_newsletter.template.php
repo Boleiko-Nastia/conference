@@ -110,15 +110,16 @@
                 <div>
                 <div class="col-sm-12 del-pad-x">
                     <form name="sentMessage" action="./creating_newsletter.php" method="post" id="contactForm" novalidate enctype="multipart/form-data">
-                        <!----><small> Для создания заголовка и основного текста новости необходимо выбрать один из предложенных пунктов ниже. Для ручного создания новости необходимо выбраь пункт "Создание письма вручную" и заполнть поля "Заголовок письма", "Основной текст новости". Для автоматического создания письма необходимо выбрать пункт "Использовать темплит" и загрузить сверстанное письмо! </small><hr>
-                        <label class="big-text">
-                            <input name="creating-news" type="radio" checked> Создание письма вручную</input>
-                        </label>
+                        <small> Для создания заголовка и основного текста новости необходимо выбрать один из предложенных пунктов ниже. Для ручного создания новости необходимо выбраь пункт "Создание письма вручную" и заполнть поля "Заголовок письма", "Основной текст новости". Для автоматического создания письма необходимо выбрать пункт "Использовать темплит" и загрузить сверстанное письмо! </small><hr>
+                        
+                            <input name="creating-type" type="radio" checked></input>
+                            <label class="big-text"> Создание письма вручную</label>
+                        
                             <div class="control-group form-group pad-left-20 mg-tp-10">
                                 <div class="controls">
                                     <label>Заголовок письма</label>
                                     <input type="text" name="object" class="form-control" id="name" required data-validation-required-message="Введите заголовок новости!" placeholder="Введите заголовок новости...">
-                                    <p class="help-block"></p>
+                                    <p class="help-block hide1"></p>
                                 </div>
                             </div>
                             <div class="control-group form-group mg-tp-10 pad-left-20">
@@ -128,14 +129,14 @@
                                 </div> 
                             </div>
                             <br>
-                        <label class="big-text">
-                            <input class="big-text" name="upload-templete" type="radio"> <strong>Использовать темплит</strong></input>
-                        </label>
+                        
+                            <input name="creating-type" type="radio"></input>
+                            <label class="big-text"> Использовать темплит</label>
+                        
                             <div class="form-group mg-tp-10 pad-left-20">
                                 <label for="exampleInputFile">Загрузить готовое письмо:</label>
                                 <input type="file" name="userfile" id="exampleInputFile">
                             </div>
-                        
                         <hr>
                         <div class="form-group mg-tp-20">
                             <label for="exampleInputFile">Прикрепить файл к письму:</label>
