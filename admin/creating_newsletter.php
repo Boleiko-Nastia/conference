@@ -27,15 +27,23 @@ $file = $_FILES['userfile']['name'];
 $checkboxSendNewsletter = $_POST['sendnewsletter'];
 $domain = $_SERVER['SERVER_NAME'];
 $cfg = site_setting_all();
-$text = file_get_contents('templates/mail.template.php');
-$text = str_replace('%title%', $subject, $text);
-$text = str_replace('%maintext%', $textBody, $text);
-$text = str_replace('%domain%', $domain, $text);
+
+if($_FILES['templatefile']) {
+    $info = new SplFileInfo($_FILES['templatefile']['name']);
+    $uploadfile = $_FILES['templatefile']['tmp_name'];
+    $text = file_get_contents($uploadfile);
+} else {
+    $text = file_get_contents('templates/mail.template.php');
+    $text = str_replace('%title%', $subject, $text);
+    $text = str_replace('%maintext%', $textBody, $text);
+    $text = str_replace('%domain%', $domain, $text);
+}
+
 if($_COOKIE['email']) {
     $emails = explode(',', $_COOKIE['email']);
 }
 
-if ($_POST['object']) {
+if ($_POST['object'] || $_FILES['templatefile']) {
     $cfg = site_setting_all();
     $mail = new PHPMailer;
     $mail->isSMTP();

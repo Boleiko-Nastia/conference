@@ -113,7 +113,7 @@
                     <form name="sentMessage" action="./creating_newsletter.php" method="post" id="contactForm" novalidate enctype="multipart/form-data">
                         <!----><small> Для создания заголовка и основного текста новости необходимо выбрать один из предложенных пунктов ниже. Для ручного создания новости необходимо выбраь пункт "Создание письма вручную" и заполнть поля "Заголовок письма", "Основной текст новости". Для автоматического создания письма необходимо выбрать пункт "Использовать темплит" и загрузить сверстанное письмо! </small><hr>
                         <label class="big-text">
-                            <input name="creating-news" type="radio" checked> Создание письма вручную</input>
+                            <input name="creating-news" id="hand" type="radio" checked> Создание письма вручную</input>
                         </label>
                             <div class="control-group form-group pad-left-20 mg-tp-10">
                                 <div class="controls">
@@ -130,11 +130,11 @@
                             </div>
                             <br>
                         <label class="big-text">
-                            <input class="big-text" name="upload-templete" type="radio"> <strong>Использовать темплит</strong></input>
+                            <input class="big-text" id="template" name="upload-templete" type="radio"> <strong>Использовать темплит</strong></input>
                         </label>
                             <div class="form-group mg-tp-10 pad-left-20">
                                 <label for="exampleInputFile">Загрузить готовое письмо:</label>
-                                <input type="file" name="userfile" id="exampleInputFile">
+                                <input type="file" name="templatefile" id="templatefile">
                             </div>
                         
                         <hr>
@@ -205,23 +205,6 @@
                             </div>
 
                             <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-                            <script>
-                                var update_receiver = function () {
-                                    if ($("#Receiver").is(":checked")) {
-                                        $('#nameReceiver').prop('disabled', false);
-                                        $('#emailReceiver').prop('disabled', false);
-                                        $('#buttonReceiver').prop('disabled', false);
-                                    }
-                                    else {
-                                        $('#nameReceiver').prop('disabled', 'disabled');
-                                        $('#emailReceiver').prop('disabled', 'disabled');
-                                        $('#buttonReceiver').prop('disabled', 'disabled');
-                                    }
-                                };
-                                $(update_receiver);
-                                $("#Receiver").change(update_receiver);
-                            </script>
-
                             <button type="submit" class="btn btn-primary blue-button mg-tp-20">Выполнить рассылку</button>
                             <div class="footer-push"></div>
                     </form>
@@ -276,6 +259,7 @@
         restartEmails();
     })
 </script>
+<script src="../../js/admin.js"></script>
 <!-- Contact Form JavaScript -->
 <!-- Do not edit these files! In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
 <!--<script src="../js/jqBootstrapValidation.js"></script>-->
