@@ -24,6 +24,7 @@ if($_POST['title']){
 
     $data['article_id'] = $article_id;
     $data['title'] = $_POST['title'];
+    $data['addedby'] = $_POST['name'];
     $data['full_text'] = $_POST['article'];
     $lang_id = '';
     $lang = get_lang();
