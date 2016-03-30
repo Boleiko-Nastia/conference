@@ -22,7 +22,7 @@
 			    <table cellpadding="0" cellspacing="0" border="0" align="center" width="650" style="font-family: Helvetica,Arial,sans-serif" class="header">
 			      <tr>
 			        <td bgcolor="#172240" height="80" align="left">
-						<a href="index.php" style="text-decoration: none;"><img src="%domain%/img/logo.png" style="margin: 0; padding: 20px;"></a>
+						<a href="http://pmw.nure.ua/index.php" style="text-decoration: none;"><img src="%domain%/img/logo.png" style="margin: 0; padding: 20px;"></a>
 			        </td>
 			      </tr>
 				  <tr>
@@ -45,9 +45,16 @@
 									%maintext%
 								</p>
 								<br><br>
-								<a href="index.php" style="text-decoration: none;"><img src="%domain%/img/button_ukr.png" style="margin: 0; padding: 20px 0px 20px 410px;"></a>
+								<!--<a href="http://pmw.nure.ua/index.php" style="text-decoration: none;"><img src="%domain%/button.png" style="margin: 0; padding: 20px 0px 20px 410px;"></a>-->
 							</td>
-						</tr>		
+						</tr>	
+						<tr>
+							<td style="padding: 0; width:20%; "> </td>
+							<td style="padding: 0; width: 60%; height:50px; font-weight: bold; text-transform: uppercase; text-align: center; background: #CE2039; color:#fff; line-height: 25px; font-size: 16px;font-family: Helvetica,Arial,sans-serif; "><a href="http://pmw.nure.ua/index.php" ><div style="height:100%;width:100% font-weight: bold; text-transform: uppercase; text-align: center; background: #CE2039; color:#fff; line-height: 25px; font-size: 16px;font-family: Helvetica,Arial,sans-serif; ">Официальный сайт конференции</div></a></td>
+							<td style="padding: 0; width: 20%;; "> </td>
+						</tr>
+						<tr style="height: 20px;">
+						</tr>
 						</table>	
 					</td>
 					<td width="16" bgcolor="#ffffff" style="font-size: 0px;font-family: Helvetica,Arial,sans-serif; background: #fff;">&nbsp;</td>
@@ -56,8 +63,8 @@
 				<table cellpadding="0" cellspacing="0" border="0" align="center" width="650" style="font-family: Helvetica,Arial,sans-serif; line-height: 10px;" bgcolor="#698291" class="footer">
 			      <tr>
 			        <td bgcolor="#172240"  align="center" style="padding: 15px 0 10px; font-size: 11px; color:#fff; margin: 0; line-height: 1.2;font-family: Georgia, serif;" valign="top">
-						<p style="padding: 5px 15px; font-size: 11px; color:#fff; margin: 0; font-family: Helvetica,Arial,sans-serif;">Ви отримуєте цю розсилку, тому що є діючим або можливим учасником конференції PMW-2016 у Харківському національному університетi радіоелектроніки.</p>
-						<p style="padding: 5px 15px; font-size: 11px; color:#fff; margin: 0 0 8px 0; font-family: Helvetica,Arial,sans-serif;">Виникли труднощі з відображенням змісту листа? <webversion style="color: #CE2039; text-decoration: none;">Виконайте перегляд в своєму браузері.</webversion>.<br> Більше не цікавлять новини конференції? <unsubscribe style="color: #CE2039; text-decoration: none;">Відписатися від розсилки</unsubscribe> зараз.</p>
+						<p style="padding: 5px 15px; font-size: 11px; color:#fff; margin: 0; font-family: Helvetica,Arial,sans-serif;">Вы получаете данную рассылку, потому что являетесь действительным или возможным участником конференции <br>PMW-2016 В Харьковском национальном университете радиoэлектроники.</p>
+						<p style="padding: 5px 15px; font-size: 11px; color:#fff; margin: 0 0 8px 0; font-family: Helvetica,Arial,sans-serif;">Возникли трудности с отображенем содержимого письма? <webversion style="color: #CE2039; text-decoration: none;">Посмотрите его в своем браузере.</webversion>.<br> Больше не интересуют новости конференци? <unsubscribe style="color: #CE2039; text-decoration: none;">Отписаться от рассылки</unsubscribe> сейчас.</p>
 					</td>
 			      </tr> 
 				</table><!-- footer-->
