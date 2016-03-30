@@ -34,22 +34,23 @@
                     url: "./creating_newsletter.php",
                     data: { name: name, email: email }
                 }).done(function( msg ) {
-                    usermsg = 'Field of name or email is empty';
+                    usermsg = 'alert1';
                     if(msg == 'no') {
-                        usermsg = 'This email already added';
+                        usermsg = 'alert2';
                     } else if(msg == 'yes'){
-                        usermsg = "Data Saved";
+                        usermsg = "alert3";
                     }
-                    $('.modal-body').append("<p>"+usermsg+'</p>');
-                    $("input[name=nameReceiver]").val('');
-                    $("input[name=emailReceiver]").val('');
+                    $('#'+usermsg).css('display', 'block')
+                    restartEmails();
+                    setTimeout(function() {
+                        $('#'+usermsg).fadeOut('fast');
+                    }, 1000);
                 });
-
         }
     </script>
 </head>
 
-<body>
+<body onload="restartEmails()">
 <div class="wrapper">
 
     <!-- Navigation -->
@@ -110,16 +111,15 @@
                 <div>
                 <div class="col-sm-12 del-pad-x">
                     <form name="sentMessage" action="./creating_newsletter.php" method="post" id="contactForm" novalidate enctype="multipart/form-data">
-                        <small> Для создания заголовка и основного текста новости необходимо выбрать один из предложенных пунктов ниже. Для ручного создания новости необходимо выбраь пункт "Создание письма вручную" и заполнть поля "Заголовок письма", "Основной текст новости". Для автоматического создания письма необходимо выбрать пункт "Использовать темплит" и загрузить сверстанное письмо! </small><hr>
-                        
-                            <input name="creating-type" type="radio" checked></input>
-                            <label class="big-text"> Создание письма вручную</label>
-                        
+                        <!----><small> Для создания заголовка и основного текста новости необходимо выбрать один из предложенных пунктов ниже. Для ручного создания новости необходимо выбраь пункт "Создание письма вручную" и заполнть поля "Заголовок письма", "Основной текст новости". Для автоматического создания письма необходимо выбрать пункт "Использовать темплит" и загрузить сверстанное письмо! </small><hr>
+                        <label class="big-text">
+                            <input name="creating-news" id="hand" type="radio" checked> Создание письма вручную</input>
+                        </label>
                             <div class="control-group form-group pad-left-20 mg-tp-10">
                                 <div class="controls">
                                     <label>Заголовок письма</label>
                                     <input type="text" name="object" class="form-control" id="name" required data-validation-required-message="Введите заголовок новости!" placeholder="Введите заголовок новости...">
-                                    <p class="help-block hide1"></p>
+                                    <p class="help-block"></p>
                                 </div>
                             </div>
                             <div class="control-group form-group mg-tp-10 pad-left-20">
@@ -129,14 +129,14 @@
                                 </div> 
                             </div>
                             <br>
-                        
-                            <input name="creating-type" type="radio"></input>
-                            <label class="big-text"> Использовать темплит</label>
-                        
+                        <label class="big-text">
+                            <input class="big-text" id="template" name="upload-templete" type="radio"> <strong>Использовать темплит</strong></input>
+                        </label>
                             <div class="form-group mg-tp-10 pad-left-20">
                                 <label for="exampleInputFile">Загрузить готовое письмо:</label>
-                                <input type="file" name="userfile" id="exampleInputFile">
+                                <input type="file" name="templatefile" id="templatefile">
                             </div>
+                        
                         <hr>
                         <div class="form-group mg-tp-20">
                             <label for="exampleInputFile">Прикрепить файл к письму:</label>
@@ -161,34 +161,26 @@
                                     <label for="Receiver">Email:</label>
                                     <input id="emailReceiver" name="emailReceiver" class="form-control mg-tp" type="email" disabled="disabled"  required="required" data-validation-required-message="Введите адрес электронной почты получателя!" placeholder="ivanov_ivan@ukr.net">
                                     </input>
-                                    <label for="Receiver" class="mg-tp-20"><button type="button" onclick="add_user()" data-toggle="modal" data-target="#myModal" class="btn btn-primary blue-button" id="buttonReceiver" name="buttonReceiver" disabled="disabled">Добавить</button>
+                                    <label for="Receiver" class="mg-tp-20"><button type="button" onclick="add_user()" data-toggle="modal"  class="btn btn-primary blue-button" id="buttonReceiver" name="buttonReceiver" disabled="disabled">Добавить</button>
                                     </label>
                                     <hr>
                                     <!--Show error message for admin (before button) END error message-->
-                                        <div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> Заполните все поля!</div>
+                                        <div class="alert alert-danger" role="alert" id="alert1" style="display: none"><i class="fa fa-exclamation-circle"></i> Заполните все поля!</div>
                                     
                                     <!--Show error message for admin (before button) Если человек с такими же mail уже есть в базе END error message-->
-                                        <div class="alert alert-danger text-left mg-tp-15" role="alert"><i class="fa fa-exclamation-circle"></i> Этот человек уже внесен в список получателей!</div>
+                                        <div class="alert alert-danger text-left mg-tp-15" role="alert" id="alert2" style="display: none"><i class="fa fa-exclamation-circle"></i> Этот человек уже внесен в список получателей!</div>
                                     
                                     <!--Show success message for admin (instead of button)END success message-->
-                                    <div class="alert alert-success text-left mg-tp-15" role="alert"><i class="fa fa-check"></i> MAIL успешно добавлен!</div>
+                                    <div class="alert alert-success text-left mg-tp-15" role="alert" id="alert3" style="display: none"><i class="fa fa-check"></i> MAIL успешно добавлен!</div>
 
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <h4>Получатели рассылки, добавленные вручную</h4>
                                         </div>
                                         <div class="panel-body">
-                                            <table class="table table-striped del-mar-bot">
-                                                <tr>
-                                                    <td class="col-sm-2">receiver1@ukr.net</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="col-sm-2">receiver2@ukr.net</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="col-sm-2">receiver3@ukr.net</td>
-                                                </tr>
+                                            <table class="table table-striped del-mar-bot"  id="tablePrint">
                                             </table>
+
                                         </div>
                                     </div>    
                                 </div>
@@ -205,7 +197,7 @@
                                         <div class="modal-body">
                                         </div>
                                         <div class="modal-footer">
-                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            <button type="button"  class="btn btn-default" data-dismiss="modal">Close</button>
                                         </div>
                                     </div>
 
@@ -213,23 +205,6 @@
                             </div>
 
                             <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-                            <script>
-                                var update_receiver = function () {
-                                    if ($("#Receiver").is(":checked")) {
-                                        $('#nameReceiver').prop('disabled', false);
-                                        $('#emailReceiver').prop('disabled', false);
-                                        $('#buttonReceiver').prop('disabled', false);
-                                    }
-                                    else {
-                                        $('#nameReceiver').prop('disabled', 'disabled');
-                                        $('#emailReceiver').prop('disabled', 'disabled');
-                                        $('#buttonReceiver').prop('disabled', 'disabled');
-                                    }
-                                };
-                                $(update_receiver);
-                                $("#Receiver").change(update_receiver);
-                            </script>
-
                             <button type="submit" class="btn btn-primary blue-button mg-tp-20">Выполнить рассылку</button>
                             <div class="footer-push"></div>
                     </form>
@@ -258,7 +233,33 @@
 
 <!-- Bootstrap Core JavaScript -->
 <script src="../js/bootstrap.min.js"></script>
-
+<script>
+    function getCookie(cname) {
+        var name = cname + "=";
+        var ca = document.cookie.split(';');
+        for(var i=0; i<ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0)==' ') c = c.substring(1);
+            if (c.indexOf(name) == 0) return c.substring(name.length,c.length);
+        }
+        return "";
+    }
+</script>
+<script>
+    function restartEmails() {
+        var emails = getCookie('email').split('%2C');
+        var tableContent = '';
+        for (var i = 0; i < emails.length; i++) {
+            if (i == 0)continue;
+            tableContent += "<tr><td class=\"col-sm-2\">" + unescape(emails[i]) + "</td></tr>";
+        }
+        document.getElementById('tablePrint').innerHTML = tableContent;
+    }
+    $('#myModal').on('hidden.bs.modal', function () {
+        restartEmails();
+    })
+</script>
+<script src="../../js/admin.js"></script>
 <!-- Contact Form JavaScript -->
 <!-- Do not edit these files! In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
 <!--<script src="../js/jqBootstrapValidation.js"></script>-->
