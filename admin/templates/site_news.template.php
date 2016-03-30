@@ -122,10 +122,7 @@
                 <hr>
                 <p><?php
                     if(!$_GET['id']) {
-                        $string = substr($article['full_text'], 0, 200);
-                        $string = rtrim($string, "!,.-");
-                        $string = substr($string, 0, strrpos($string, ' '));
-                        $string .= '…';
+                        $string = mb_strimwidth($article['full_text'], 0, 200, "…");
                     } else {
                         $string = $article['full_text'];
                     }
