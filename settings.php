@@ -1,4 +1,5 @@
 <?php
+date_default_timezone_set( 'Europe/Kiev' );
 session_start();
 if($_POST['lang']) {
     setcookie('lang', $_POST['lang'], time() + (3600 * 24 * 30));
