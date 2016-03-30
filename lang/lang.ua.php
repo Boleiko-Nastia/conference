@@ -221,11 +221,11 @@ $lang['MAINTEXT'][99] = 'Офіційне закриття конференці�
 // site_news.template.php
 
 $lang['MAINTEXT'][100] = 'Новини';
-$lang['MAINTEXT'][101] = 'Главная';
+$lang['MAINTEXT'][101] = 'Головна';
 $lang['MAINTEXT'][102] = 'Новини';
-$lang['MAINTEXT'][AddBy] = 'Добавлено: ';
-$lang['MAINTEXT'][AddDate] = 'Опубликовано ';
-$lang['MAINTEXT'][More] = 'Подробнее ';
+$lang['MAINTEXT'][AddBy] = 'Додано: ';
+$lang['MAINTEXT'][AddDate] = 'Опубліковано о ';
+$lang['MAINTEXT'][More] = 'Детальніше ';
 
 
 // site_commission.template.php
