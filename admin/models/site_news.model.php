@@ -1,10 +1,14 @@
 <?php
-function get_articles($id = ''){
+function get_articles($id = 0){
     global $db;
-    if($id) {
-        $db->where('cat.id',$id);
+    if($id == 0) {
+        $id == '';
     }
-    $db->orderBy('ca.id','DESC');
+
+    if($id) {
+        $db->where('cat.article_id',$id);
+    }
+    $db->orderBy('cat.id','DESC');
     $db->join("conference_article ca", "cat.article_id=ca.id", "LEFT");
     $db->join("conference_lang cl", "cat.lang_id=cl.id", "LEFT");
     $db->join("conference_images ci", "ci.id=ca.image_id", "LEFT");

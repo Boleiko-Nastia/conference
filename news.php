@@ -4,7 +4,8 @@ require_once('admin/models/site_news.model.php');
 
 $articles = array();
 $public_articles = array();
-$articles = get_articles($_GET['id']);
+$articles = get_articles((int)$_GET['id']);
+
 foreach ($articles as $id => $lan) {
     if ($lan[strtolower($lang['LANG'])] == NULL) {
         $public_articles[$id] = array_shift($lan);
