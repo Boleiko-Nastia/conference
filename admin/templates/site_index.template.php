@@ -216,13 +216,13 @@
                                         <div class="form-group">
                                             <label class="col-sm-3 control-label">*<?=$lang['MAINTEXT'][Form2]?></label>
                                             <div class="col-sm-8">
-                                                <input class="form-control" required name="name" id="inputName" placeholder="<?=$lang['MAINTEXT'][Form2ph]?>">
+                                                <input class="form-control" required name="surename" id="inputName" placeholder="<?=$lang['MAINTEXT'][Form2ph]?>">
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <label class="col-sm-3 control-label">*<?=$lang['MAINTEXT'][Form3]?></label>
                                             <div class="col-sm-8">
-                                                <input class="form-control" required name="surename" id="inputSurename" placeholder="<?=$lang['MAINTEXT'][Form3ph]?>">
+                                                <input class="form-control" required name="name" id="inputSurename" placeholder="<?=$lang['MAINTEXT'][Form3ph]?>">
                                             </div>
                                         </div>
                                         <div class="form-group">

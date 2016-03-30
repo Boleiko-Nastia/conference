@@ -38,6 +38,8 @@ if($id) {
     $internally = ($event) ? 'очное' : 'заочное';
     $text = str_replace('%internally%', $internally, $text);
     $text = str_replace('%participation%', $participation, $text);
+    $text = str_replace('%coauthor%', $coauthor, $text);
+    $text = str_replace('%titlereport%', $titlereport, $text);
     $text = str_replace('%email%', $email, $text);
     $text = str_replace('%tel%', $tel, $text);
     $text = str_replace('%address%', $address, $text);

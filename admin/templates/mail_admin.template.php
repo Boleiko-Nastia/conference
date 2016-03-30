@@ -176,7 +176,7 @@
 							</td>
 							<td style="padding: 10px; border-bottom: 1px solid #bbb; background-color: #eee;"  valign="top">
 								<p style="color:#333; font-weight: normal; margin: 0; padding: 0; line-height: 20px; font-size: 14px;font-family: Helvetica,Arial,sans-serif; ">
-									Петров Петр Петрович, Харьковский национальный университет радиоэлектроники, Кафедра Мультимедийных систем и технологий 
+									%coauthor%
 								</p>
 								
 							</td>
@@ -190,7 +190,7 @@
 							</td>
 							<td style="padding: 10px; border-bottom: 1px solid #bbb;"  valign="top">
 								<p style="color:#333; font-weight: normal; margin: 0; padding: 0; line-height: 20px; font-size: 14px;font-family: Helvetica,Arial,sans-serif; ">
-									Использование современных технологий в электронных изданиях 
+									%titlereport%
 								</p>
 								
 							</td>
