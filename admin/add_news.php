@@ -2,7 +2,6 @@
 require_once('common.php');
 require_once('models/add_news.model.php');
 $data = array();
-$data['addedby'] = $_POST['name'];
 $image = $_FILES['articleimage'];
 
 $sendnewsletter = $_POST['sendnewsletter'];
