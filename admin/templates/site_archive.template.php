@@ -280,6 +280,19 @@
                         </div>
                     </div>
                 </div>
+                <?php foreach($files as $id => $file): ?>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="panel panel-default text-center">
+                            <div class="panel-heading">
+                            </div>
+                            <div class="panel-body" style="height: 230px">
+                                <h4><?=$file['file_name']?></h4>
+                                <p class="small">(English, *.<?=$file['type']?> ~<?=$file['size']?>)</p>
+                                <a href="files/<?=$file['id'].'.'.$file['type']?>"  target="_blank" class="btn btn-primary blue-button"><?=$lang['MAINTEXT'][Download]?></a>
+                            </div>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
             </div>
             <hr>
             <!-- Pager -->
