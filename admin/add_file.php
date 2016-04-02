@@ -16,6 +16,10 @@ $id = add_file($data);
 
 if($id) {
     $uploads_dir = '../files/';
+    if(!is_dir($uploads_dir)){
+        mkdir($uploads_dir);
+        chmod($uploads_dir, 0777);
+    }
     $uploadfile = $uploads_dir . basename($id).'.'.$info->getExtension();
     $upload_bool = move_uploaded_file($_FILES['addfile']['tmp_name'], $uploadfile);
     if($upload_bool == false) {
