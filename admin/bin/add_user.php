@@ -27,7 +27,7 @@ if($id){
 }
 if($id) {
     $text = file_get_contents('../templates/mail_admin.template.php');
-    $text = str_replace('%NSL%', $name.' '.$surename.' '.$lastname, $text);
+    $text = str_replace('%NSL%', $surename.' '.$name.' '.$lastname, $text);
     $text = str_replace('%surname%', $surename, $text);
     $text = str_replace('%name%', $name, $text);
     $text = str_replace('%lastname%', $lastname, $text);
