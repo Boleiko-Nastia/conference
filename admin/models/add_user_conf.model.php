@@ -26,7 +26,7 @@ function getMembers() {
         if($v['title'] == NULL){
             continue;
         }
-        $members[$v['title'].'-'.$v['sec_id']][] = array('id'=>$v['id'],'name'=>$v['name'],'job'=>$v['job'],'lecture_title'=>$v['lecture_title'],'head'=>$v['head']);
+        $members[$v['title'].'--'.$v['sec_id']][] = array('id'=>$v['id'],'name'=>$v['name'],'job'=>$v['job'],'lecture_title'=>$v['lecture_title'],'head'=>$v['head']);
     }
 
     return $members;

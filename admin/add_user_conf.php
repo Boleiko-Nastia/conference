@@ -14,4 +14,5 @@ if($section_id && $fullname && $job && $titlelecture) {
 
 $sections = getAllSection();
 $members = getMembers();
+
 require_once('templates/add_user_conf.template.php');

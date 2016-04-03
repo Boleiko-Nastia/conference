@@ -92,8 +92,8 @@
 
                     <?php foreach($members as $title => $member): ?>
                         <?php
-                            $sec_id = preg_match('/\-(.+)/i',$title,$m) ? $m[1] : 1;
-                            $sec_title = preg_replace('/\-.+/i','',$title);
+                            $sec_id = preg_match('/\--(.+)/i',$title,$m) ? $m[1] : 1;
+                            $sec_title = preg_replace('/\--.+/i','',$title);
                         ?>
                     <div class="panel panel-default">
                         <div class="panel-heading">
