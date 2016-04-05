@@ -48,7 +48,7 @@ $lang['DATE']['Date5']['TEXT'] = 'The finished article for magazine "Bionics int
 
 $lang['FILES'] = 'Files';
 $lang['MAINTEXT']['File1'] = 'Informatonal message PMW-2016';
-$lang['MAINTEXT']['File1_url'] = 'download/rus/Informatonal_message_PMW-2016_eng.pdf';
+$lang['MAINTEXT']['File1_url'] = 'download/eng/Informatonal_message_PMW-2016_eng.pdf';
 $lang['MAINTEXT']['File1d'] = '(English, *.pdf, ~541 kB)';
 $lang['MAINTEXT']['File2'] = 'Requirements to the design of the conference abstracts';
 $lang['MAINTEXT']['File2_url'] = 'download/eng/Requirements_to_the_design_of_the_conference_abstracts_eng.pdf';
@@ -57,7 +57,7 @@ $lang['MAINTEXT']['File3'] = 'Requirements to the design of materials of the you
 $lang['MAINTEXT']['File3_url'] = 'download/eng/Requirements_to_the_design_of_materials_of_the_youth_workshop_eng.pdf';
 $lang['MAINTEXT']['File3d'] = '(English, *.pdf, ~170 kB)';
 $lang['MAINTEXT']['File4'] = 'Application for participation';
-$lang['MAINTEXT']['File4_url'] = 'download/rus/Participation_PMW-2016.doc';
+$lang['MAINTEXT']['File4_url'] = 'download/eng/Participation_PMW-2016.doc';
 $lang['MAINTEXT']['File4d'] = '(English, *.doc, ~32 kB)';
 
 $lang['MAINTEXT']['TITLE'][0] = 'International Science and Technology Conference';
