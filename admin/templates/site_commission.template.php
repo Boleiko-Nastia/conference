@@ -106,11 +106,11 @@
         <!-- Team Members -->
         <div class="col-sm-9 del-pad-x">
 
-                        <div class="col-sm-12">
+            <div class="col-sm-12">
                 <h2 class="page-header"><?=$lang['MAINTEXT'][107]?></h2>
             </div>
             <div class="col-sm-12 del-pad-x">
-                                <div class="col-sm-12 del-pad-x">
+                <div class="col-sm-12 del-pad-x">
                     <div class="col-sm-4">
                         <div class="thumbnail org">
                             <img class="img-responsive" src="img/teachers/hahanov.png" alt="">
@@ -126,6 +126,28 @@
                 <div class="col-sm-12 del-pad-x">
                     <div class="col-sm-4">
                         <div class="thumbnail org">
+                            <img class="img-responsive" src="img/teachers/Rubin.jpg" alt="">
+                            <div class="caption">
+                                <h3><?=$lang['MAINTEXT'][AddName1]?><br>
+                                    <p class="comment"><?=$lang['MAINTEXT'][AddPosition1]?></p>
+                                </h3>
+                                <p><?=$lang['MAINTEXT'][AddTitle1]?></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="thumbnail org">
+                            <img class="img-responsive" src="img/teachers/Durnyak.jpg" alt="">
+                            <div class="caption">
+                                <h3><?=$lang['MAINTEXT'][AddName2]?><br>
+                                    <p class="comment"><?=$lang['MAINTEXT'][AddPosition2]?></p>
+                                </h3>
+                                <p><?=$lang['MAINTEXT'][AddTitle2]?></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="thumbnail org">
                             <img class="img-responsive" src="img/teachers/kirichok.png" alt="">
                             <div class="caption">
                                 <h3><?=$lang['MAINTEXT'][Name2]?><br>
@@ -135,6 +157,8 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="col-sm-12 del-pad-x">
                     <div class="col-sm-4">
                         <div class="thumbnail org">
                             <img class="img-responsive" src="img/teachers/tkachenko.png" alt="">
@@ -154,6 +178,17 @@
                                     <p class="comment"><?=$lang['MAINTEXT'][Position4]?></p>
                                 </h3>
                                 <p><?=$lang['MAINTEXT'][Title4]?></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="thumbnail org">
+                            <img class="img-responsive" src="img/teachers/Morflyuk.jpg" alt="">
+                            <div class="caption">
+                                <h3><?=$lang['MAINTEXT'][AddName3]?><br>
+                                    <p class="comment"><?=$lang['MAINTEXT'][AddPosition3]?></p>
+                                </h3>
+                                <p><?=$lang['MAINTEXT'][AddTitle3]?></p>
                             </div>
                         </div>
                     </div>
