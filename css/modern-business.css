@@ -152,6 +152,9 @@ a,
 .navbar-inverse .navbar-toggle:focus {
     background-color: #CE2039;
 }
+.navbar-toggle {
+    margin-top: 16px;
+}
 /* sections*/
 .sections {
     margin-top: 40px;
@@ -499,6 +502,18 @@ footer {
 
     header.carousel .carousel {
         height: 70%;
+    }
+}
+
+/*responsive menu*/
+
+@media(max-width:1000px) {
+    .navbar-right>li>a {
+        min-height: 40px;
+    }
+
+    .nav>li>a {
+        padding-top: 10px;
     }
 }
 /*Virtualizator flash*/
